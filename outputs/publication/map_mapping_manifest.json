@@ -1,0 +1,60 @@
+{
+  "width_mm": 160,
+  "height_mm": 185,
+  "projection": "Spherical LAEA, R=6371 km; main lon0=-90 lat0=10; Caribbean lon0=-75 lat0=18",
+  "join": "Natural Earth ISO_A3_EH -> MODEL_ISO3 -> country_code; no territorial inheritance",
+  "inputs": {
+    "data/processed/dpi_americas.csv": "9ce772753a594eef2ddbca41e94fbc10698822ab76f40cb694da1e8d8c982c5c",
+    "outputs/extensions/dpi_drivers/predictions.csv": "1a869cace7cb3b6b79e22894fff746efa7a274cf88bfc9d6f68cbb9b8f41eb68",
+    "data/raw/cow_contdird_v3.2.csv": "42b8fe2bc7fffe58665a38f7476d7d76cf3acd5a22e176c3691670997a4717f2",
+    "data/raw/cow_states_v2024.csv": "722153b45eda9c39826a04aab80ca7b29a8b1cfdfe5d92714503420555675484",
+    "data/cartography/americas_map_units_50m.geojson.gz": "c926253b8ecad72c00e2340a1cd658aa2f3ebdb07e510d72b6fd5f9de31f899a"
+  },
+  "states_2023": {
+    "Left": 18,
+    "Right": 10,
+    "NoDPI": 4,
+    "Center": 2,
+    "Unknown": 1
+  },
+  "evaluated_pairs": 1007,
+  "observed_changes": 93,
+  "origins": [
+    1985,
+    2022
+  ],
+  "low_coverage": [
+    "PAN",
+    "SUR"
+  ],
+  "edges": {
+    "pairs": 79,
+    "land": 36,
+    "water": 43,
+    "nodes": 31
+  },
+  "source_geometry_unchanged": true,
+  "sovereign_countries": 35,
+  "source_map_units": 56,
+  "territorial_context_units": 20,
+  "filters_and_aggregations": {
+    "Figure_01": "DPI year==2023; explicit 35-country outer join; source absence and unknown classification remain distinct",
+    "Figure_03": "model==markov; unique country/year consecutive observed pairs; pct=100*sum(changed)/count(changed); n<10 flag",
+    "Supplement_01": "verified COW 2016; DPI-covered nodes; one unordered edge per pair with unique type/distance category"
+  },
+  "raster_dpi": [
+    300,
+    600
+  ],
+  "raster_pixels": {
+    "300": [
+      1889,
+      2185
+    ],
+    "600": [
+      3779,
+      4370
+    ]
+  },
+  "uncertainty": "Descriptive observed frequencies; no confidence interval or causal effect inferred"
+}

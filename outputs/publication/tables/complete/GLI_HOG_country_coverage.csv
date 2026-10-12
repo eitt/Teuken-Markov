@@ -1,0 +1,36 @@
+Country code,Country,Source rows,Role present rows,Classified rows,Unknown rows,Absent series,First source year,Last source year,First aligned year,Last aligned year,Cow eligible rows,Cow eligibility unknown rows
+ARG,Argentina,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+ATG,Antigua and Barbuda,0,0,0,0,True,,,,,0,0
+BHS,Bahamas,54,0,0,54,False,1967.0,2020.0,1968.0,2021.0,48,0
+BLZ,Belize,60,0,0,60,False,1961.0,2020.0,1962.0,2021.0,40,0
+BOL,Bolivia,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+BRA,Brazil,76,76,75,1,False,1945.0,2020.0,1946.0,2021.0,76,0
+BRB,Barbados,55,55,55,0,False,1966.0,2020.0,1967.0,2021.0,55,0
+CAN,Canada,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+CHL,Chile,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+COL,Colombia,76,76,75,1,False,1945.0,2020.0,1946.0,2021.0,76,0
+CRI,Costa Rica,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+CUB,Cuba,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+DMA,Dominica,0,0,0,0,True,,,,,0,0
+DOM,Dominican Republic,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+ECU,Ecuador,76,76,74,2,False,1945.0,2020.0,1946.0,2021.0,76,0
+GRD,Grenada,0,0,0,0,True,,,,,0,0
+GTM,Guatemala,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+GUY,Guyana,55,55,55,0,False,1966.0,2020.0,1967.0,2021.0,55,0
+HND,Honduras,76,76,75,1,False,1945.0,2020.0,1946.0,2021.0,76,0
+HTI,Haiti,76,76,68,8,False,1945.0,2020.0,1946.0,2021.0,76,0
+JAM,Jamaica,59,59,59,0,False,1962.0,2020.0,1963.0,2021.0,59,0
+KNA,Saint Kitts and Nevis,0,0,0,0,True,,,,,0,0
+LCA,Saint Lucia,0,0,0,0,True,,,,,0,0
+MEX,Mexico,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+NIC,Nicaragua,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+PAN,Panama,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+PER,Peru,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+PRY,Paraguay,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+SLV,El Salvador,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+SUR,Suriname,46,46,46,0,False,1975.0,2020.0,1976.0,2021.0,46,0
+TTO,Trinidad and Tobago,59,59,59,0,False,1962.0,2020.0,1963.0,2021.0,59,0
+URY,Uruguay,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+USA,United States,76,76,76,0,False,1945.0,2020.0,1946.0,2021.0,76,0
+VCT,Saint Vincent and the Grenadines,0,0,0,0,True,,,,,0,0
+VEN,Venezuela,76,76,75,1,False,1945.0,2020.0,1946.0,2021.0,76,0

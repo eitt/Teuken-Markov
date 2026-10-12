@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+tmp/
+# Reproducible high-resolution and compiled delivery files remain local.
+outputs/publication/*_600dpi.png
+outputs/publication/Americas_Figures_and_Tables_English.pdf
+outputs/publication_figures/

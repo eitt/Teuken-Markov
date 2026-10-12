@@ -1,0 +1,11 @@
+English publication output validation
+
+106 tests passed in the complete offline suite; 14 affected chart/book tests passed after the final display refinements.
+Nine figures: six main figures and three supplements. Six English summary tables; complete English presentation exports preserve source identifiers alongside display labels.
+All nine SVG masters have English human labels and a minimum detected text size of 7 pt.
+All 18 PNG exports match the declared 160 mm width and figure-specific height at 300/600 dpi.
+Vector PDF masters retain declared final dimensions. The captioned 18-page PDF book embeds figures without scaling; fonts are embedded. Every final figure and PDF page was inspected. Long tables retain repeated headers and continued-table labels.
+Original model metrics, predictions, transition panels, scenario-summary, calibration and run-info files retain their exact baseline bytes. No model refitting, simulation rerun or political recoding was performed for presentation.
+Source checks reconcile DPI evaluation 1007 cases / 93 changes, periods 403/33 and 604/60, DPI–GLI HOG comparison 1019 jointly classified / 230 disagreements, and the original 500-path / 30-country / 2023–2029 scenario summaries.
+The mapping universe is 35 sovereign American countries, represented by 36 national map units plus 20 neutral territorial units. The verified compressed cartography is loaded offline; source geometries and polygon rings are preserved.
+The map ends on 1 January 2023. GLI source history ends on 31 December 2020. Scenarios are conditional, intervals are Monte Carlo quantiles, and geographical edges do not identify causal political diffusion.

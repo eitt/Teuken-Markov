@@ -218,4 +218,15 @@ python run_extensions.py --download --run
 python run_extensions.py --offline --run
 ```
 
+## Maps, figures and tables in English
+
+The publication package adds six main figures, three supplements and six presentation tables, all in English. It includes geopolitical maps, historical coverage, source disagreement, held-out performance and conditional scenarios. See [PUBLICATION_GUIDE.md](PUBLICATION_GUIDE.md) and the [figure gallery](outputs/publication/README.md).
+
+```bash
+python -m pip install -r requirements-publication.txt
+python run_publication.py
+```
+
+The command reads frozen outputs and verified local cartography without model fitting or downloads. It also re-renders the original diagnostics in English. Vector SVG/PDF masters, 300/600 dpi PNGs, plotted data and a captioned figure-and-table PDF are produced in `outputs/publication/`.
+
 La ampliación evalúa 1.007 casos DPI y 1.677 casos históricos GLI HOG. Los nuevos drivers no superan el Brier global de Markov simple en esta ejecución. GLI y DPI discrepan en el 22,57 % de las observaciones conjuntamente clasificadas y alineadas por fecha; las fuentes se conservan separadas. ENSO mide variabilidad climática, no cambio climático antropogénico.

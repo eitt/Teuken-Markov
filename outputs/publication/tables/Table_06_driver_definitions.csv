@@ -1,0 +1,13 @@
+Driver,Source,Time alignment,Interpretation,Main caveat
+Initial political state,DPI / GLI (separate panels),January t; target January t+1,"Observed Left, Center or Right state","Economic orientation coding; missing states excluded, not recoded as Center."
+Ideological duration,Derived within each political panel,Consecutive classified years through t,Memory of the same ideological state,Not the leader's years in office; left-censored and interrupted by missing states.
+Domestic growth and inflation,World Bank WDI,Annual t-1,Domestic economic conditions,Revised historical series; associations do not identify economic-voting effects.
+Electoral competitiveness,DPI EIEC,Political snapshot t,Executive election competitiveness code,Not an annual election schedule; used by DPI domestic specifications only.
+Trade and tourism exposure,World Bank WDI,Annual t-1 in legacy models,Trade/GDP and tourism receipts/export shares,Distinct denominators; exposure proxies are not bilateral trade links.
+Geographic neighborhood,COW Direct Contiguity / political panels,Neighbor states t; topology t-1 (2016 carried forward),Known-neighbor ideological shares and coverage,"Undirected land/water proximity, not evidence of causal diffusion; unknown neighbors excluded from share denominators."
+"Global growth, oil and food prices",WDI World / World Bank Pink Sheet,Annual t-1,Common macroeconomic and commodity variation,Not country-specific shocks; legacy models interact with t-1 trade/import shares.
+Oil × prior fuel-import share,Pink Sheet / WDI TM.VAL.FUEL.ZS.UN,Oil growth t-1 × import share t-2 / 100,Import-side fuel exposure in driver extension,"Fuels are broader than petroleum; a share of merchandise imports, not net imports or energy dependence."
+Oil × prior fuel-export share,Pink Sheet / WDI TX.VAL.FUEL.ZS.UN,Oil growth t-1 × export share t-2 / 100,Export-side fuel exposure in driver extension,Import and export share denominators differ; their difference is not net exposure.
+ENSO × prior agriculture share,NOAA ONI / WDI NV.AGR.TOTL.ZS,ONI mean t-1 × agriculture/GDP t-2 / 100,ENSO variability weighted by prior economic exposure,"11-window revised ONI aggregate; not national weather damage, anthropogenic warming or established January-1 information availability."
+COVID episode,Calendar indicator in legacy models,1 when t-1 is 2020 or 2021,Episode proxy at origins 2021–2022,Not mortality; a new episode cannot be learned before it enters a training window.
+Ukraine / oil counterfactuals,Scenario assumptions,Conditional scenario steps; not fitted Ukraine effects,Specified commodity perturbations,No estimable Ukraine indicator variation before the last DPI target; simulation is neither causal inference nor an operational forecast.

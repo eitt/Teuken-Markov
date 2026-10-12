@@ -1,0 +1,310 @@
+{
+  "language": "English",
+  "generated_utc": "2026-10-12T02:56:14.869498+00:00",
+  "last_DPI_observation": "2023-01-01",
+  "last_GLI_source_observation": "2020-12-31",
+  "figures": [
+    {
+      "id": "Figure_01",
+      "stem": "Figure_01",
+      "role": "main",
+      "width_mm": 160,
+      "height_mm": 185,
+      "title": "Executive-party economic orientation on 1 January 2023",
+      "caption": "Figure 1. DPI classification on 1 January 2023 for all 35 sovereign countries in the Americas: 18 Left (L), 2 Center (C), 10 Right (R), 1 unclassified (?) and 4 without DPI coverage (\u2013). Panama has an observation but no ideological classification. Dependent territories are neutral context. Caribbean circles locate eight small countries; marker size does not encode population or area. Source map units are preserved, including two units for Antigua and Barbuda sharing one national observation. The map shows the source's executive-party coding at the stated date. Canada is shown as Right because that is its DPI classification on 1 January 2023; source coding is preserved. Natural Earth v5.1.1 provides a generalized base map, not annual boundary reconstructions.",
+      "source": "DPI 2023; Natural Earth Admin 0 Map Units 1:50m, layer v5.1.1, repository release v5.1.2.",
+      "files": {
+        "svg": "Figure_01_master.svg",
+        "pdf": "Figure_01_master.pdf",
+        "png_300": "Figure_01_300dpi.png",
+        "data": "Figure_01_data.csv",
+        "png_600": "Figure_01_600dpi.png"
+      }
+    },
+    {
+      "id": "Figure_02",
+      "title": "Annual ideology composition and source coverage in the Americas",
+      "caption": "State counts are divided by a fixed registry of 35 current sovereign American countries. DPI records snapshots on 1 January of each year from 1975 to 2023; GLI records head-of-government snapshots on 31 December of each year from 1945 to 2020. The dashed boundary marks the classified share; grey and hatched regions distinguish recorded but unclassified states from absent source records. Historical absence may reflect state-system entry or source coverage. No ideology imputation, date pooling, role fallback or interpolation of missing observations is used.",
+      "source": "Cached DPI 2023 source and frozen outputs/history/gli_hog_aligned_panel.csv; actual source dates are retained.",
+      "width_mm": 160.0,
+      "height_mm": 175.0,
+      "stem": "Figure_02",
+      "role": "main",
+      "files": {
+        "svg": "Figure_02_master.svg",
+        "pdf": "Figure_02_master.pdf",
+        "png_300": "Figure_02_300dpi.png",
+        "data": "Figure_02_data.csv",
+        "png_600": "Figure_02_600dpi.png"
+      }
+    },
+    {
+      "id": "Figure_03",
+      "stem": "Figure_03",
+      "role": "main",
+      "width_mm": 160,
+      "height_mm": 185,
+      "title": "Observed ideological-transition frequency, origins 1985\u20132022",
+      "caption": "Figure 3. Observed annual changes in DPI class as a percentage of each country's available evaluated transitions: 93 changes across 1007 unique country-origin pairs, origins 1985\u20132022 and target years 1986\u20132023. The calculation uses the Markov model's evaluation rows once, without pooling models; values are observed change frequencies, not predicted probabilities or forecasting accuracy. Country denominators are provided in Figure_03_data.csv. Hatching and an asterisk indicate fewer than ten observed pairs: PAN 0/8; SUR 0/3. Cross-hatching marks no available evaluated pairs; dependent territories are neutral context. Coverage marks are descriptive, not tests of significance. Natural Earth v5.1.1 provides a generalized base map; the origin-year range does not indicate reconstructed historical boundaries.",
+      "source": "outputs/extensions/dpi_drivers/predictions.csv, model=markov; Natural Earth Admin 0 Map Units v5.1.1.",
+      "files": {
+        "svg": "Figure_03_master.svg",
+        "pdf": "Figure_03_master.pdf",
+        "png_300": "Figure_03_300dpi.png",
+        "data": "Figure_03_data.csv",
+        "png_600": "Figure_03_600dpi.png"
+      }
+    },
+    {
+      "id": "Figure_04",
+      "title": "DPI\u2013GLI disagreement by country",
+      "caption": "Rates use only jointly classified country-years, with country denominators in the right-hand column. The primary HOG comparison contains 230 disagreements among 1019 joint observations (22.6%). DPI snapshots on 1 January of year y are compared with GLI snapshots on 31 December of year y\u22121, for aligned years 1975\u20132021. Open diamonds flag countries with no joint classification; their rates are undefined, not zero. GLI used DPI among its coding sources, so this comparison is a measurement audit rather than independent validation. No confidence intervals or ranking uncertainty are estimated.",
+      "source": "Frozen outputs/history/dpi_gli_hog_comparison_by_country.csv and history_report.json; HOG is the primary role.",
+      "width_mm": 160.0,
+      "height_mm": 190.0,
+      "stem": "Figure_04",
+      "role": "main",
+      "files": {
+        "svg": "Figure_04_master.svg",
+        "pdf": "Figure_04_master.pdf",
+        "png_300": "Figure_04_300dpi.png",
+        "data": "Figure_04_data.csv",
+        "png_600": "Figure_04_600dpi.png"
+      }
+    },
+    {
+      "id": "Figure_05",
+      "title": "Probability scores and recovery of observed ideological changes",
+      "caption": "The extended DPI evaluation covers origins 1985\u20132022: 1007 country-year pairs and 93 observed changes. Panel (a) reproduces the frozen multiclass Brier scores for six models; the displayed score axis is restricted to 0.165\u20130.198. Panel (b) counts correct destination states among observed changes and predicted changes among actually unchanged pairs, using stored argmax decisions. Markov recovers 0/93 changes; reduced controls recover 2/93, with 1 false change prediction. All six models recover 0/60 changes for origins 2000\u20132022. Regression labels add oil and/or ENSO to the same reduced controls. No new fitting or inferential intervals are used.",
+      "source": "Frozen outputs/extensions/dpi_drivers/metrics.csv and predictions.csv; all comparisons use stored chronological predictions.",
+      "width_mm": 160.0,
+      "height_mm": 130.0,
+      "stem": "Figure_05",
+      "role": "main",
+      "files": {
+        "svg": "Figure_05_master.svg",
+        "pdf": "Figure_05_master.pdf",
+        "png_300": "Figure_05_300dpi.png",
+        "data": "Figure_05_data.csv",
+        "png_600": "Figure_05_600dpi.png"
+      }
+    },
+    {
+      "id": "Figure_06",
+      "title": "Conditional Monte Carlo paths under three hypothetical scenarios",
+      "caption": "The original main-model simulation starts from 30 classified countries in January 2023 and uses 500 paths through 2029. Lines show mean country counts; shaded regions show the 5th\u201395th percentiles across simulated paths. The initial state composition is identical across scenarios. Conditions are fixed according to the stored constant, recession, or energy-and-food scenario; annual updates are synchronous. These bands describe conditional path variation, excluding parameter uncertainty. They are neither confidence intervals nor forecasts of realized governments, and no causal interpretation is assigned to scenario contrasts.",
+      "source": "Frozen outputs/main/escenarios_resumen.csv; original simulation outputs are used without rerunning paths or fitting parameters.",
+      "width_mm": 160.0,
+      "height_mm": 180.0,
+      "stem": "Figure_06",
+      "role": "main",
+      "files": {
+        "svg": "Figure_06_master.svg",
+        "pdf": "Figure_06_master.pdf",
+        "png_300": "Figure_06_300dpi.png",
+        "data": "Figure_06_data.csv",
+        "png_600": "Figure_06_600dpi.png"
+      }
+    },
+    {
+      "id": "Supplement_01",
+      "stem": "Supplement_01",
+      "role": "supplement",
+      "width_mm": 160,
+      "height_mm": 185,
+      "title": "Geographic model connections in the 2016 COW snapshot",
+      "caption": "Supplementary Figure 1. COW Direct Contiguity v3.2 supplies 79 unique undirected pairs among 31 DPI-covered countries: 36 land connections (solid) and 43 water connections (dashed). All source water-distance categories up to 400 miles are included; links represent contiguity categories, not displayed line length. Natural Earth label points locate nodes and are not capitals. One great-circle link is drawn per pair without arrows; equal line widths within each type do not encode intensity. The source ends in 2016: historical evaluation uses min(t\u22121, 2016), and later graphs carry forward that snapshot. Connectivity is a model exposure assumption and does not establish causal diffusion. Countries without DPI coverage are outside this graph; territories remain neutral context. Natural Earth v5.1.1 provides a generalized base map, not a reconstruction of 2016 boundaries.",
+      "source": "COW Direct Contiguity v3.2, 2016 snapshot; Natural Earth Admin 0 Map Units v5.1.1.",
+      "files": {
+        "svg": "Supplement_01_master.svg",
+        "pdf": "Supplement_01_master.pdf",
+        "png_300": "Supplement_01_300dpi.png",
+        "data": "Supplement_01_data.csv",
+        "png_600": "Supplement_01_600dpi.png"
+      }
+    },
+    {
+      "id": "Supplement_02",
+      "title": "Calibration and ranking of change probabilities",
+      "caption": "Markov and reduced controls + oil + ENSO use the same frozen extended evaluation: 1007 country-year pairs and 93 observed changes, origins 1985\u20132022. Panel (a) uses 10 equal-width probability bins. Only nonempty bins are drawn, and labels give each bin's observation count; empty bins remain n=0 with undefined frequencies in the accompanying data. The dotted diagonal denotes perfect calibration. Panel (b) shows descriptive precision\u2013recall curves from all stored probabilities; the horizontal line is the observed change rate. There are no naive independent-observation confidence intervals, new thresholds chosen for reporting, model refits or causal claims.",
+      "source": "Frozen outputs/extensions/dpi_drivers/predictions.csv; descriptive bin summaries and precision\u2013recall coordinates only.",
+      "width_mm": 160.0,
+      "height_mm": 175.0,
+      "stem": "Supplement_02",
+      "role": "supplement",
+      "files": {
+        "svg": "Supplement_02_master.svg",
+        "pdf": "Supplement_02_master.pdf",
+        "png_300": "Supplement_02_300dpi.png",
+        "data": "Supplement_02_data.csv",
+        "png_600": "Supplement_02_600dpi.png"
+      }
+    },
+    {
+      "id": "Supplement_03",
+      "title": "Conditional one-step oil contrasts by country",
+      "caption": "The frozen reduced-controls + oil model changes only the hypothetical oil-price growth input to \u221250% or +50%, relative to a stored 0% reference, holding all other covariates at their stored origin-2023 values and the initial ideological states at their 1 January 2023 observations. Dots show the change in probability of leaving the initial state, in percentage points, for 30 classified countries. Colors and marker shapes identify initial Left, Center or Right states; countries are ordered by their largest absolute displayed contrast. Open markers identify missing fuel-exposure inputs (Haiti, St. Lucia, Venezuela); the model's stored probabilities use its training-time imputation and missingness indicators, not observed replacement exposures. Import and export shares have different denominators and are not net petroleum exposure. These are one-step conditional model contrasts, without parameter intervals, realized future outcomes or causal interpretation.",
+      "source": "Frozen outputs/extensions/dpi_drivers/conditional_oil_scenarios.csv; lean_oil probabilities, fixed national exposure year 2021 and origin 2023.",
+      "width_mm": 160.0,
+      "height_mm": 190.0,
+      "stem": "Supplement_03",
+      "role": "supplement",
+      "files": {
+        "svg": "Supplement_03_master.svg",
+        "pdf": "Supplement_03_master.pdf",
+        "png_300": "Supplement_03_300dpi.png",
+        "data": "Supplement_03_data.csv",
+        "png_600": "Supplement_03_600dpi.png"
+      }
+    }
+  ],
+  "tables": [
+    {
+      "id": "Table_01",
+      "title": "Source coverage and measurement units",
+      "caption": "Coverage describes the cached source snapshot, not the evaluation sample. Records count the unit named in each row; political classifications and macroeconomic grids are not interchangeable denominators.",
+      "source": "DPI 2023; GLI; World Bank WDI and Pink Sheet; NOAA ONI; COW Direct Contiguity v3.2. Cached manifests preserve retrieval dates and hashes.",
+      "stem": "Table_01_source_coverage",
+      "columns": [
+        "Source",
+        "Measure",
+        "Source years",
+        "Observation date",
+        "Countries",
+        "Records",
+        "Classified records",
+        "Main caveat"
+      ],
+      "row_count": 8,
+      "csv": "tables/Table_01_source_coverage.csv",
+      "markdown": "tables/Table_01_source_coverage.md",
+      "source_files": [
+        "data/processed/dpi_americas.csv",
+        "outputs/history/gli_hog_aligned_panel.csv",
+        "outputs/history/gli_leader_aligned_panel.csv",
+        "data/raw/driver_exposures_manifest.json",
+        "data/raw/climate_manifest.json"
+      ],
+      "language": "English"
+    },
+    {
+      "id": "Table_02",
+      "title": "Observed DPI classification on January 1, 2023",
+      "caption": "All 35 sovereign countries in the Americas are listed. Unknown means a DPI record is present but unclassified; No DPI means no country series. Neither category is Center. Source classifications are retained without recoding and do not describe governments in 2026.",
+      "source": "DPI 2023, processed January 2023 records; 35-country project crosswalk.",
+      "stem": "Table_02_dpi_membership_2023",
+      "columns": [
+        "Country",
+        "Country code",
+        "DPI state",
+        "Coverage status"
+      ],
+      "row_count": 35,
+      "csv": "tables/Table_02_dpi_membership_2023.csv",
+      "markdown": "tables/Table_02_dpi_membership_2023.md",
+      "source_files": [
+        "data/processed/dpi_americas.csv"
+      ],
+      "language": "English"
+    },
+    {
+      "id": "Table_03",
+      "title": "DPI\u2013GLI disagreement after date alignment",
+      "caption": "GLI December 31 records are aligned to January 1 of the next year and compared with DPI over 1975\u20132021. Rates use jointly classified country-years only; an undefined rate is blank in CSV and shown as an em dash here. The pooled rate weights records, not countries. HOG denotes head of government. GLI partly uses DPI as a coding source; this is measurement sensitivity, not independent validation.",
+      "source": "Frozen DPI\u2013GLI aligned comparison tables, head-of-government and leader roles.",
+      "stem": "Table_03_aligned_source_disagreement",
+      "columns": [
+        "Country",
+        "Country code",
+        "HOG paired records",
+        "HOG disagreements",
+        "HOG disagreement (%)",
+        "Leader paired records",
+        "Leader disagreements",
+        "Leader disagreement (%)"
+      ],
+      "row_count": 36,
+      "csv": "tables/Table_03_aligned_source_disagreement.csv",
+      "markdown": "tables/Table_03_aligned_source_disagreement.md",
+      "source_files": [
+        "outputs/history/dpi_gli_hog_comparison_by_country.csv",
+        "outputs/history/dpi_gli_leader_comparison_by_country.csv"
+      ],
+      "language": "English"
+    },
+    {
+      "id": "Table_04",
+      "title": "DPI driver-extension performance under chronological evaluation",
+      "caption": "Periods are defined by prediction origin, not target year. Each row counts the same cases separately for one model; rows and overlapping periods must not be summed. Correct change predictions require the highest-probability class to equal the observed new state. Multiclass Brier scores sum squared error across three classes (range 0\u20132); lower scores and losses are better. Log loss uses a 10^-12 probability floor. Overall accuracy is dominated by persistence.",
+      "source": "Frozen DPI driver-extension predictions and period metrics; expanding training windows use only previous outcomes.",
+      "stem": "Table_04_dpi_model_performance",
+      "columns": [
+        "Evaluation period",
+        "Model",
+        "Cases",
+        "Observed changes",
+        "Correct change predictions",
+        "Brier score",
+        "Clipped log loss",
+        "Accuracy (%)"
+      ],
+      "row_count": 18,
+      "csv": "tables/Table_04_dpi_model_performance.csv",
+      "markdown": "tables/Table_04_dpi_model_performance.md",
+      "source_files": [
+        "outputs/extensions/dpi_drivers/metrics_by_period.csv",
+        "outputs/extensions/dpi_drivers/predictions.csv"
+      ],
+      "language": "English"
+    },
+    {
+      "id": "Table_05",
+      "title": "GLI head-of-government historical-panel performance",
+      "caption": "Separate GLI panel; origins 1956\u20132020, aligned targets 1957\u20132021. The final aligned 2021 target represents the December 31, 2020 source observation. Correct change predictions use the highest-probability class. Brier range is 0\u20132; log-loss floor is 10^-12. All models share the same cases. This historical panel is not joined to DPI, and score levels from different samples do not constitute a controlled model comparison.",
+      "source": "Frozen GLI head-of-government predictions and metrics; chronological expanding evaluation.",
+      "stem": "Table_05_gli_hog_model_performance",
+      "columns": [
+        "Model",
+        "Cases",
+        "Observed changes",
+        "Correct change predictions",
+        "Brier score",
+        "Clipped log loss",
+        "Accuracy (%)"
+      ],
+      "row_count": 4,
+      "csv": "tables/Table_05_gli_hog_model_performance.csv",
+      "markdown": "tables/Table_05_gli_hog_model_performance.md",
+      "source_files": [
+        "outputs/extensions/gli_hog/metrics.csv",
+        "outputs/extensions/gli_hog/predictions.csv"
+      ],
+      "language": "English"
+    },
+    {
+      "id": "Table_06",
+      "title": "Driver definitions, time alignment and interpretation",
+      "caption": "t is the January prediction origin and t+1 the target. Driver extensions use prior exposure shares at t-2, whereas legacy interactions use t-1 shares. Revised sources support retrospective evaluation; they do not reconstruct real-time information sets. Coefficients and scenario responses are conditional model associations, not causal effects.",
+      "source": "Cached DPI/GLI, WDI, Pink Sheet, NOAA and COW sources; feature, driver and scenario definitions in the analysis code.",
+      "stem": "Table_06_driver_definitions",
+      "columns": [
+        "Driver",
+        "Source",
+        "Time alignment",
+        "Interpretation",
+        "Main caveat"
+      ],
+      "row_count": 12,
+      "csv": "tables/Table_06_driver_definitions.csv",
+      "markdown": "tables/Table_06_driver_definitions.md",
+      "source_files": [
+        "src/americas_markov/features.py",
+        "src/americas_markov/drivers.py",
+        "src/americas_markov/climate.py",
+        "src/americas_markov/simulation.py"
+      ],
+      "language": "English"
+    }
+  ],
+  "scope": "Presentation exports only; no model fitting or political recoding."
+}
