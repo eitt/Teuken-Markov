@@ -418,7 +418,7 @@ def main():
         analysis_commit=ANALYSIS_COMMIT, review_type="Targeted scoping review", studies=REFS),
         ensure_ascii=False, indent=2) + "\n")
     with (OUT / "literature_matrix.csv").open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(REFS[0]))
+        w = csv.DictWriter(f, fieldnames=list(REFS[0]), lineterminator="\n")
         w.writeheader()
         w.writerows(REFS)
     bib = []
@@ -449,7 +449,7 @@ def main():
         nearest.append([f'[{r["id"]}] {names[key]} ({r["year"]})',
                         r["overlap"], r["difference_or_limit"]])
     with (OUT / "closest_studies.csv").open("w", newline="") as f:
-        csv.writer(f).writerows(nearest)
+        csv.writer(f, lineterminator="\n").writerows(nearest)
     rows = [["Panel / model", "Cases", "Observed changes", "Multiclass Brier", "Correct new category / changes"]]
     evidence = []
     for panel, directory in [("DPI drivers", "dpi_drivers"), ("GLI HOG", "gli_hog")]:
