@@ -1,0 +1,2 @@
+# Preserve source download bytes: their SHA256 manifests must survive checkout.
+data/raw/* -text

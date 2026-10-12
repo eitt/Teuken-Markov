@@ -1,0 +1,36 @@
+country_code,country_name,aligned_country_years,dpi_records,gli_records,jointly_classified,disagreements,disagreement_rate
+ARG,Argentina,47,47,47,40,8,0.2
+ATG,Antigua & Barbuda,47,0,0,0,0,
+BHS,Bahamas,47,47,47,0,0,
+BLZ,Belize,47,47,47,0,0,
+BOL,Bolivia,47,47,47,44,7,0.1590909090909091
+BRA,Brazil,47,47,47,47,13,0.2765957446808511
+BRB,Barbados,47,47,47,47,18,0.3829787234042553
+CAN,Canada,47,47,47,47,24,0.5106382978723404
+CHL,Chile,47,47,47,40,5,0.125
+COL,Colombia,47,47,47,31,0,0.0
+CRI,Costa Rica,47,47,47,47,0,0.0
+CUB,Cuba,47,47,47,47,0,0.0
+DMA,Dominica,47,0,0,0,0,
+DOM,Dominican Republic,47,47,47,47,4,0.0851063829787234
+ECU,Ecuador,47,47,47,35,8,0.22857142857142856
+GRD,Grenada,47,47,0,0,0,
+GTM,Guatemala,47,47,47,32,2,0.0625
+GUY,Guyana,47,47,47,47,0,0.0
+HND,Honduras,47,47,47,40,16,0.4
+HTI,Haiti,47,47,47,7,3,0.42857142857142855
+JAM,Jamaica,47,47,47,47,1,0.02127659574468085
+KNA,St. Kitts and Nevis,47,0,0,0,0,
+LCA,St. Lucia,47,47,0,0,0,
+MEX,Mexico,47,47,47,47,24,0.5106382978723404
+NIC,Nicaragua,47,47,47,36,1,0.027777777777777776
+PAN,Panama,47,47,47,10,0,0.0
+PER,Peru,47,47,47,41,9,0.21951219512195122
+PRY,Paraguay,47,47,47,47,1,0.02127659574468085
+SLV,El Salvador,47,47,47,42,5,0.11904761904761904
+SUR,Suriname,47,47,46,3,3,1.0
+TTO,Trinidad and Tobago,47,47,47,47,36,0.7659574468085106
+URY,Uruguay,47,47,47,39,12,0.3076923076923077
+USA,United States of America,47,47,47,47,24,0.5106382978723404
+VCT,St. Vincent and the Grenadines,47,0,0,0,0,
+VEN,Venezuela,47,47,47,15,6,0.4

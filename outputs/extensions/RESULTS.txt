@@ -1,0 +1,24 @@
+Exploratory extension; original outputs/main are preserved.
+DPI includes a wider evaluation window; GLI is a separate historical source.
+Oil interactions use prior import/export exposures, not a net-import proxy.
+ONI describes ENSO variability; no anthropogenic climate attribution is claimed.
+All years use currently revised source values, not historical release vintages.
+Year fixed effects are not included; global shocks would be absorbed by unrestricted year effects.
+No direction Left/Right is imposed by a shock. Results report probabilities.
+Conditional price scenarios exclude parameter uncertainty and have fixed national exposures.
+
+DPI:
+        model    n  changes  brier_multiclass  accuracy
+  persistence 1007       93          0.184707  0.907646
+       markov 1007       93          0.171169  0.907646
+         lean 1007       93          0.172592  0.908640
+     lean_oil 1007       93          0.173445  0.908640
+    lean_enso 1007       93          0.173585  0.908640
+lean_oil_enso 1007       93          0.174484  0.907646
+
+GLI:
+           model    n  changes  brier_multiclass  accuracy
+     persistence 1677      167          0.199165  0.900417
+          markov 1677      167          0.183308  0.900417
+history_duration 1677      167          0.184468  0.900417
+ history_network 1677      167          0.186231  0.899225

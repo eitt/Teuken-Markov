@@ -1,0 +1,52 @@
+{
+  "panel_pairs": 1207,
+  "panel_changes": 108,
+  "evaluated_pairs": 1007,
+  "evaluated_changes": 93,
+  "first_origin": 1985,
+  "last_origin": 2022,
+  "last_target": 2023,
+  "model_specs": {
+    "lean": [
+      "gdp_growth",
+      "inflation",
+      "state_duration",
+      "eiec"
+    ],
+    "lean_oil": [
+      "gdp_growth",
+      "inflation",
+      "state_duration",
+      "eiec",
+      "oil_growth",
+      "fuel_import_share_prior",
+      "fuel_export_share_prior",
+      "oil_x_import_prior",
+      "oil_x_export_prior"
+    ],
+    "lean_enso": [
+      "gdp_growth",
+      "inflation",
+      "state_duration",
+      "eiec",
+      "enso_mean",
+      "agriculture_share_prior",
+      "enso_x_agriculture_prior"
+    ],
+    "lean_oil_enso": [
+      "gdp_growth",
+      "inflation",
+      "state_duration",
+      "eiec",
+      "oil_growth",
+      "fuel_import_share_prior",
+      "fuel_export_share_prior",
+      "oil_x_import_prior",
+      "oil_x_export_prior",
+      "enso_mean",
+      "agriculture_share_prior",
+      "enso_x_agriculture_prior"
+    ]
+  },
+  "interpretation": "Retrospective prediction with revised inputs; no causal effect or political direction imposed."
+}

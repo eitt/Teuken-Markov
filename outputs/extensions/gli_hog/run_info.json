@@ -1,0 +1,23 @@
+{
+  "panel_pairs": 1896,
+  "panel_changes": 185,
+  "evaluated_pairs": 1677,
+  "evaluated_changes": 167,
+  "first_origin": 1956,
+  "last_origin": 2020,
+  "last_target": 2021,
+  "model_specs": {
+    "history_duration": [
+      "state_duration"
+    ],
+    "history_network": [
+      "state_duration",
+      "neighbor_left",
+      "neighbor_center",
+      "neighbor_right",
+      "neighbor_known_weight",
+      "isolated"
+    ]
+  },
+  "interpretation": "Retrospective prediction with revised inputs; no causal effect or political direction imposed."
+}
