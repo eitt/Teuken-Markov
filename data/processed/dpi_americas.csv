@@ -1,0 +1,1520 @@
+country_code,country_name,year,state,ideology_raw,executive_party,election_held,eiec,system,years_in_office
+ARG,Argentina,1975,Left,Left,Peronist,0.0,7.0,Presidential,1.0
+ARG,Argentina,1976,Left,Left,Peronist,0.0,7.0,Presidential,2.0
+ARG,Argentina,1977,,0,independent,0.0,2.0,Presidential,1.0
+ARG,Argentina,1978,,0,independent,0.0,2.0,Presidential,2.0
+ARG,Argentina,1979,,0,independent,0.0,2.0,Presidential,3.0
+ARG,Argentina,1980,,0,independent,0.0,2.0,Presidential,4.0
+ARG,Argentina,1981,,0,independent,0.0,2.0,Presidential,5.0
+ARG,Argentina,1982,,0,independent,0.0,2.0,Presidential,1.0
+ARG,Argentina,1983,,0,independent,1.0,2.0,Presidential,1.0
+ARG,Argentina,1984,Center,Center,UCR,0.0,7.0,Presidential,1.0
+ARG,Argentina,1985,Center,Center,UCR,0.0,7.0,Presidential,2.0
+ARG,Argentina,1986,Center,Center,UCR,0.0,7.0,Presidential,3.0
+ARG,Argentina,1987,Center,Center,UCR,0.0,7.0,Presidential,4.0
+ARG,Argentina,1988,Center,Center,UCR,0.0,7.0,Presidential,5.0
+ARG,Argentina,1989,Center,Center,UCR,1.0,7.0,Presidential,6.0
+ARG,Argentina,1990,Right,Right,PJ,0.0,7.0,Presidential,1.0
+ARG,Argentina,1991,Right,Right,PJ,0.0,7.0,Presidential,2.0
+ARG,Argentina,1992,Right,Right,PJ,0.0,7.0,Presidential,3.0
+ARG,Argentina,1993,Right,Right,PJ,0.0,7.0,Presidential,4.0
+ARG,Argentina,1994,Right,Right,PJ,0.0,7.0,Presidential,5.0
+ARG,Argentina,1995,Right,Right,PJ,1.0,7.0,Presidential,6.0
+ARG,Argentina,1996,Right,Right,PJ,0.0,7.0,Presidential,7.0
+ARG,Argentina,1997,Right,Right,PJ,0.0,7.0,Presidential,8.0
+ARG,Argentina,1998,Right,Right,PJ,0.0,7.0,Presidential,9.0
+ARG,Argentina,1999,Right,Right,PJ,1.0,7.0,Presidential,10.0
+ARG,Argentina,2000,Center,Center,ATJE,0.0,7.0,Presidential,1.0
+ARG,Argentina,2001,Center,Center,ATJE,0.0,7.0,Presidential,2.0
+ARG,Argentina,2002,Right,Right,PJ,0.0,7.0,Presidential,1.0
+ARG,Argentina,2003,Right,Right,PJ,1.0,7.0,Presidential,1.0
+ARG,Argentina,2004,Left,Left,PJ,0.0,7.0,Presidential,2.0
+ARG,Argentina,2005,Left,Left,PJ,0.0,7.0,Presidential,3.0
+ARG,Argentina,2006,Left,Left,FPV,0.0,7.0,Presidential,4.0
+ARG,Argentina,2007,Left,Left,FPV,1.0,7.0,Presidential,5.0
+ARG,Argentina,2008,Left,Left,FPV,0.0,7.0,Presidential,1.0
+ARG,Argentina,2009,Left,Left,FPV,0.0,7.0,Presidential,2.0
+ARG,Argentina,2010,Left,Left,FPV,0.0,7.0,Presidential,3.0
+ARG,Argentina,2011,Left,Left,FPV,1.0,7.0,Presidential,4.0
+ARG,Argentina,2012,Left,Left,FPV,0.0,7.0,Presidential,5.0
+ARG,Argentina,2013,Left,Left,FPV,0.0,7.0,Presidential,1.0
+ARG,Argentina,2014,Left,Left,FPV,0.0,7.0,Presidential,2.0
+ARG,Argentina,2015,Left,Left,FPV,1.0,7.0,Presidential,3.0
+ARG,Argentina,2016,Right,Right,Cambiemos,0.0,7.0,Presidential,1.0
+ARG,Argentina,2017,Right,Right,Cambiemos,0.0,7.0,Presidential,2.0
+ARG,Argentina,2018,Right,Right,Cambiemos,0.0,7.0,Presidential,3.0
+ARG,Argentina,2019,Right,Right,Cambiemos,1.0,7.0,Presidential,4.0
+ARG,Argentina,2020,Left,Left,Frente de Todos,0.0,7.0,Presidential,1.0
+ARG,Argentina,2021,Left,Left,Frente de Todos,0.0,7.0,Presidential,2.0
+ARG,Argentina,2022,Left,Left,Frente de Todos,0.0,7.0,Presidential,3.0
+ARG,Argentina,2023,Left,Left,Frente de Todos,1.0,7.0,Presidential,4.0
+BHS,Bahamas,1975,Center,Center,PLP,0.0,7.0,Parliamentary,7.0
+BHS,Bahamas,1976,Center,Center,PLP,0.0,7.0,Parliamentary,8.0
+BHS,Bahamas,1977,Center,Center,PLP,0.0,7.0,Parliamentary,9.0
+BHS,Bahamas,1978,Center,Center,PLP,0.0,6.0,Parliamentary,10.0
+BHS,Bahamas,1979,Center,Center,PLP,0.0,6.0,Parliamentary,11.0
+BHS,Bahamas,1980,Center,Center,PLP,0.0,6.0,Parliamentary,12.0
+BHS,Bahamas,1981,Center,Center,PLP,0.0,6.0,Parliamentary,13.0
+BHS,Bahamas,1982,Center,Center,PLP,0.0,6.0,Parliamentary,14.0
+BHS,Bahamas,1983,Center,Center,PLP,0.0,7.0,Parliamentary,15.0
+BHS,Bahamas,1984,Center,Center,PLP,0.0,7.0,Parliamentary,16.0
+BHS,Bahamas,1985,Center,Center,PLP,0.0,7.0,Parliamentary,17.0
+BHS,Bahamas,1986,Center,Center,PLP,0.0,7.0,Parliamentary,18.0
+BHS,Bahamas,1987,Center,Center,PLP,0.0,7.0,Parliamentary,19.0
+BHS,Bahamas,1988,Center,Center,PLP,0.0,7.0,Parliamentary,20.0
+BHS,Bahamas,1989,Center,Center,PLP,0.0,7.0,Parliamentary,21.0
+BHS,Bahamas,1990,Center,Center,PLP,0.0,7.0,Parliamentary,22.0
+BHS,Bahamas,1991,Center,Center,PLP,0.0,7.0,Parliamentary,23.0
+BHS,Bahamas,1992,Center,Center,PLP,0.0,7.0,Parliamentary,24.0
+BHS,Bahamas,1993,Right,Right,FNM,0.0,7.0,Parliamentary,1.0
+BHS,Bahamas,1994,Right,Right,FNM,0.0,7.0,Parliamentary,2.0
+BHS,Bahamas,1995,Right,Right,FNM,0.0,7.0,Parliamentary,3.0
+BHS,Bahamas,1996,Right,Right,FNM,0.0,7.0,Parliamentary,4.0
+BHS,Bahamas,1997,Right,Right,FNM,0.0,7.0,Parliamentary,5.0
+BHS,Bahamas,1998,Right,Right,FNM,0.0,7.0,Parliamentary,1.0
+BHS,Bahamas,1999,Right,Right,FNM,0.0,7.0,Parliamentary,2.0
+BHS,Bahamas,2000,Right,Right,FNM,0.0,7.0,Parliamentary,3.0
+BHS,Bahamas,2001,Right,Right,FNM,0.0,7.0,Parliamentary,4.0
+BHS,Bahamas,2002,Right,Right,FNM,0.0,7.0,Parliamentary,5.0
+BHS,Bahamas,2003,Center,Center,PLP,0.0,7.0,Parliamentary,1.0
+BHS,Bahamas,2004,Center,Center,PLP,0.0,7.0,Parliamentary,2.0
+BHS,Bahamas,2005,Center,Center,PLP,0.0,7.0,Parliamentary,3.0
+BHS,Bahamas,2006,Center,Center,PLP,0.0,7.0,Parliamentary,4.0
+BHS,Bahamas,2007,Center,Center,PLP,0.0,7.0,Parliamentary,5.0
+BHS,Bahamas,2008,Right,Right,FNM,0.0,7.0,Parliamentary,1.0
+BHS,Bahamas,2009,Right,Right,FNM,0.0,7.0,Parliamentary,2.0
+BHS,Bahamas,2010,Right,Right,FNM,0.0,7.0,Parliamentary,3.0
+BHS,Bahamas,2011,Right,Right,FNM,0.0,7.0,Parliamentary,4.0
+BHS,Bahamas,2012,Right,Right,FNM,0.0,7.0,Parliamentary,5.0
+BHS,Bahamas,2013,Center,Center,PLP,0.0,7.0,Parliamentary,1.0
+BHS,Bahamas,2014,Center,Center,PLP,0.0,7.0,Parliamentary,2.0
+BHS,Bahamas,2015,Center,Center,PLP,0.0,7.0,Parliamentary,3.0
+BHS,Bahamas,2016,Center,Center,PLP,0.0,7.0,Parliamentary,4.0
+BHS,Bahamas,2017,Center,Center,PLP,0.0,7.0,Parliamentary,5.0
+BHS,Bahamas,2018,Right,Right,FNM,0.0,7.0,Parliamentary,1.0
+BHS,Bahamas,2019,Right,Right,FNM,0.0,7.0,Parliamentary,2.0
+BHS,Bahamas,2020,Right,Right,FNM,0.0,7.0,Parliamentary,3.0
+BHS,Bahamas,2021,Right,Right,FNM,0.0,6.0,Parliamentary,4.0
+BHS,Bahamas,2022,Center,Center,PLP,0.0,6.0,Parliamentary,1.0
+BHS,Bahamas,2023,Center,Center,PLP,0.0,6.0,Parliamentary,2.0
+BLZ,Belize,1975,,-999,,,,,
+BLZ,Belize,1976,,-999,,,,,
+BLZ,Belize,1977,,-999,,,,,
+BLZ,Belize,1978,,-999,,,,,
+BLZ,Belize,1979,,-999,,,,,
+BLZ,Belize,1980,,-999,,,,,
+BLZ,Belize,1981,,-999,,,,,
+BLZ,Belize,1982,Right,Right,PUP,0.0,7.0,Parliamentary,3.0
+BLZ,Belize,1983,Right,Right,PUP,0.0,7.0,Parliamentary,4.0
+BLZ,Belize,1984,Right,Right,PUP,0.0,7.0,Parliamentary,5.0
+BLZ,Belize,1985,Right,Right,UDP,0.0,6.0,Parliamentary,1.0
+BLZ,Belize,1986,Right,Right,UDP,0.0,6.0,Parliamentary,2.0
+BLZ,Belize,1987,Right,Right,UDP,0.0,6.0,Parliamentary,3.0
+BLZ,Belize,1988,Right,Right,UDP,0.0,6.0,Parliamentary,4.0
+BLZ,Belize,1989,Right,Right,UDP,0.0,6.0,Parliamentary,5.0
+BLZ,Belize,1990,Right,Right,PUP,0.0,7.0,Parliamentary,1.0
+BLZ,Belize,1991,Right,Right,PUP,0.0,7.0,Parliamentary,2.0
+BLZ,Belize,1992,Right,Right,PUP,0.0,7.0,Parliamentary,3.0
+BLZ,Belize,1993,Right,Right,PUP,0.0,7.0,Parliamentary,4.0
+BLZ,Belize,1994,Right,Right,UDP,0.0,7.0,Parliamentary,1.0
+BLZ,Belize,1995,Right,Right,UDP,0.0,7.0,Parliamentary,2.0
+BLZ,Belize,1996,Right,Right,UDP,0.0,7.0,Parliamentary,3.0
+BLZ,Belize,1997,Right,Right,UDP,0.0,7.0,Parliamentary,4.0
+BLZ,Belize,1998,Right,Right,UDP,0.0,7.0,Parliamentary,5.0
+BLZ,Belize,1999,Right,Right,PUP,0.0,7.0,Parliamentary,1.0
+BLZ,Belize,2000,Right,Right,PUP,0.0,7.0,Parliamentary,2.0
+BLZ,Belize,2001,Right,Right,PUP,0.0,7.0,Parliamentary,3.0
+BLZ,Belize,2002,Right,Right,PUP,0.0,7.0,Parliamentary,4.0
+BLZ,Belize,2003,Right,Right,PUP,0.0,7.0,Parliamentary,5.0
+BLZ,Belize,2004,Right,Right,PUP,0.0,7.0,Parliamentary,6.0
+BLZ,Belize,2005,Right,Right,PUP,0.0,7.0,Parliamentary,7.0
+BLZ,Belize,2006,Right,Right,PUP,0.0,7.0,Parliamentary,8.0
+BLZ,Belize,2007,Right,Right,PUP,0.0,7.0,Parliamentary,9.0
+BLZ,Belize,2008,Right,Right,PUP,0.0,7.0,Parliamentary,10.0
+BLZ,Belize,2009,Right,Right,UDP,0.0,7.0,Parliamentary,1.0
+BLZ,Belize,2010,Right,Right,UDP,0.0,7.0,Parliamentary,2.0
+BLZ,Belize,2011,Right,Right,UDP,0.0,7.0,Parliamentary,3.0
+BLZ,Belize,2012,Right,Right,UDP,0.0,7.0,Parliamentary,4.0
+BLZ,Belize,2013,Right,Right,UDP,0.0,7.0,Parliamentary,5.0
+BLZ,Belize,2014,Right,Right,UDP,0.0,7.0,Parliamentary,6.0
+BLZ,Belize,2015,Right,Right,UDP,0.0,7.0,Parliamentary,7.0
+BLZ,Belize,2016,Right,Right,UDP,0.0,7.0,Parliamentary,8.0
+BLZ,Belize,2017,Right,Right,UDP,0.0,7.0,Parliamentary,9.0
+BLZ,Belize,2018,Right,Right,UDP,0.0,7.0,Parliamentary,10.0
+BLZ,Belize,2019,Right,Right,UDP,0.0,7.0,Parliamentary,11.0
+BLZ,Belize,2020,Right,Right,UDP,0.0,7.0,Parliamentary,12.0
+BLZ,Belize,2021,Right,Right,UDP,0.0,6.0,Parliamentary,1.0
+BLZ,Belize,2022,Right,Right,PUP,0.0,6.0,Parliamentary,2.0
+BLZ,Belize,2023,Right,Right,PUP,0.0,6.0,Parliamentary,3.0
+BOL,Bolivia,1975,Right,Right,independent,0.0,2.0,Presidential,4.0
+BOL,Bolivia,1976,Right,Right,independent,0.0,2.0,Presidential,5.0
+BOL,Bolivia,1977,Right,Right,independent,0.0,2.0,Presidential,6.0
+BOL,Bolivia,1978,Right,Right,independent,0.0,2.0,Presidential,7.0
+BOL,Bolivia,1979,Left,Left,independent,1.0,2.0,Presidential,1.0
+BOL,Bolivia,1980,,0,independent,0.0,2.0,Presidential,1.0
+BOL,Bolivia,1981,,0,independent,0.0,2.0,Presidential,1.0
+BOL,Bolivia,1982,,0,independent,0.0,2.0,Presidential,1.0
+BOL,Bolivia,1983,Left,Left,UDP,0.0,2.0,Presidential,1.0
+BOL,Bolivia,1984,Left,Left,UDP,0.0,2.0,Presidential,2.0
+BOL,Bolivia,1985,Left,Left,UDP,1.0,2.0,Presidential,3.0
+BOL,Bolivia,1986,Right,Right,MNRH,0.0,6.5,Presidential,1.0
+BOL,Bolivia,1987,Right,Right,MNRH,0.0,6.5,Presidential,2.0
+BOL,Bolivia,1988,Right,Right,MNRH,0.0,6.5,Presidential,3.0
+BOL,Bolivia,1989,Right,Right,MNRH,1.0,6.5,Presidential,4.0
+BOL,Bolivia,1990,Left,Left,MIR,0.0,7.0,Presidential,1.0
+BOL,Bolivia,1991,Left,Left,MIR,0.0,7.0,Presidential,2.0
+BOL,Bolivia,1992,Left,Left,MIR,0.0,7.0,Presidential,3.0
+BOL,Bolivia,1993,Left,Left,MIR,1.0,7.0,Presidential,4.0
+BOL,Bolivia,1994,Center,Center,MNR,0.0,7.0,Presidential,1.0
+BOL,Bolivia,1995,Center,Center,MNR,0.0,7.0,Presidential,2.0
+BOL,Bolivia,1996,Center,Center,MNR,0.0,7.0,Presidential,3.0
+BOL,Bolivia,1997,Center,Center,MNR,1.0,7.0,Presidential,4.0
+BOL,Bolivia,1998,Right,Right,ADN,0.0,7.0,Presidential,1.0
+BOL,Bolivia,1999,Right,Right,ADN,0.0,7.0,Presidential,2.0
+BOL,Bolivia,2000,Right,Right,ADN,0.0,7.0,Presidential,3.0
+BOL,Bolivia,2001,Right,Right,ADN,0.0,7.0,Presidential,4.0
+BOL,Bolivia,2002,Right,Right,ADN,1.0,7.0,Presidential,1.0
+BOL,Bolivia,2003,Center,Center,MNR,0.0,7.0,Presidential,1.0
+BOL,Bolivia,2004,Center,Center,MNR,0.0,7.0,Presidential,1.0
+BOL,Bolivia,2005,Center,Center,MNR,1.0,7.0,Presidential,2.0
+BOL,Bolivia,2006,Left,Left,MAS,0.0,7.0,Presidential,1.0
+BOL,Bolivia,2007,Left,Left,MAS,0.0,7.0,Presidential,2.0
+BOL,Bolivia,2008,Left,Left,MAS,0.0,7.0,Presidential,3.0
+BOL,Bolivia,2009,Left,Left,MAS,1.0,7.0,Presidential,4.0
+BOL,Bolivia,2010,Left,Left,MAS,0.0,7.0,Presidential,5.0
+BOL,Bolivia,2011,Left,Left,MAS,0.0,7.0,Presidential,6.0
+BOL,Bolivia,2012,Left,Left,MAS,0.0,7.0,Presidential,7.0
+BOL,Bolivia,2013,Left,Left,MAS,0.0,7.0,Presidential,8.0
+BOL,Bolivia,2014,Left,Left,MAS,1.0,7.0,Presidential,9.0
+BOL,Bolivia,2015,Left,Left,MAS,0.0,7.0,Presidential,10.0
+BOL,Bolivia,2016,Left,Left,MAS,0.0,7.0,Presidential,11.0
+BOL,Bolivia,2017,Left,Left,MAS,0.0,7.0,Presidential,12.0
+BOL,Bolivia,2018,Left,Left,MAS,0.0,7.0,Presidential,13.0
+BOL,Bolivia,2019,Left,Left,MAS,0.0,7.0,Presidential,14.0
+BOL,Bolivia,2020,Left,Left,MAS,0.0,7.0,Presidential,
+BOL,Bolivia,2021,Left,Left,MAS,0.0,7.0,Presidential,1.0
+BOL,Bolivia,2022,Left,Left,MAS,0.0,7.0,Presidential,2.0
+BOL,Bolivia,2023,Left,Left,MAS,0.0,7.0,Presidential,3.0
+BRA,Brazil,1975,Right,Right,ARENA,0.0,3.0,Assembly-Elected President,1.0
+BRA,Brazil,1976,Right,Right,ARENA,0.0,3.0,Assembly-Elected President,2.0
+BRA,Brazil,1977,Right,Right,ARENA,0.0,3.0,Assembly-Elected President,3.0
+BRA,Brazil,1978,Right,Right,ARENA,0.0,3.0,Assembly-Elected President,4.0
+BRA,Brazil,1979,Right,Right,ARENA,0.0,3.0,Assembly-Elected President,5.0
+BRA,Brazil,1980,Right,Right,ARENA,0.0,3.0,Assembly-Elected President,1.0
+BRA,Brazil,1981,Right,Right,ARENA,0.0,3.0,Assembly-Elected President,2.0
+BRA,Brazil,1982,Right,Right,ARENA,0.0,3.0,Assembly-Elected President,3.0
+BRA,Brazil,1983,Right,Right,PDS,0.0,3.0,Assembly-Elected President,4.0
+BRA,Brazil,1984,Right,Right,PDS,0.0,3.0,Assembly-Elected President,5.0
+BRA,Brazil,1985,Right,Right,PDS,1.0,3.0,Assembly-Elected President,6.0
+BRA,Brazil,1986,Right,Right,PFL,0.0,6.5,Presidential,1.0
+BRA,Brazil,1987,Right,Right,PFL,0.0,6.5,Presidential,2.0
+BRA,Brazil,1988,Right,Right,PFL,0.0,6.5,Presidential,3.0
+BRA,Brazil,1989,Right,Right,PFL,1.0,6.5,Presidential,4.0
+BRA,Brazil,1990,Right,Right,PRN,0.0,7.0,Presidential,1.0
+BRA,Brazil,1991,Right,Right,PRN,0.0,7.0,Presidential,2.0
+BRA,Brazil,1992,Right,Right,PRN,0.0,7.0,Presidential,3.0
+BRA,Brazil,1993,Right,Right,independent,0.0,7.0,Presidential,1.0
+BRA,Brazil,1994,Right,Right,independent,1.0,7.0,Presidential,2.0
+BRA,Brazil,1995,Left,Left,PSDB,0.0,7.0,Presidential,1.0
+BRA,Brazil,1996,Left,Left,PSDB,0.0,7.0,Presidential,2.0
+BRA,Brazil,1997,Left,Left,PSDB,0.0,7.0,Presidential,3.0
+BRA,Brazil,1998,Left,Left,PSDB,1.0,7.0,Presidential,4.0
+BRA,Brazil,1999,Left,Left,PSDB,0.0,7.0,Presidential,5.0
+BRA,Brazil,2000,Left,Left,PSDB,0.0,7.0,Presidential,6.0
+BRA,Brazil,2001,Left,Left,PSDB,0.0,7.0,Presidential,7.0
+BRA,Brazil,2002,Left,Left,PSDB,1.0,7.0,Presidential,8.0
+BRA,Brazil,2003,Left,Left,PT,0.0,7.0,Presidential,1.0
+BRA,Brazil,2004,Left,Left,PT,0.0,7.0,Presidential,2.0
+BRA,Brazil,2005,Left,Left,PT,0.0,7.0,Presidential,3.0
+BRA,Brazil,2006,Left,Left,PT,1.0,7.0,Presidential,4.0
+BRA,Brazil,2007,Left,Left,PT,0.0,7.0,Presidential,5.0
+BRA,Brazil,2008,Left,Left,PT,0.0,7.0,Presidential,6.0
+BRA,Brazil,2009,Left,Left,PT,0.0,7.0,Presidential,7.0
+BRA,Brazil,2010,Left,Left,PT,1.0,7.0,Presidential,8.0
+BRA,Brazil,2011,Left,Left,PT,0.0,7.0,Presidential,1.0
+BRA,Brazil,2012,Left,Left,PT,0.0,7.0,Presidential,2.0
+BRA,Brazil,2013,Left,Left,PT,0.0,7.0,Presidential,3.0
+BRA,Brazil,2014,Left,Left,PT,1.0,7.0,Presidential,4.0
+BRA,Brazil,2015,Left,Left,PT,0.0,7.0,Presidential,5.0
+BRA,Brazil,2016,Left,Left,PT,0.0,7.0,Presidential,6.0
+BRA,Brazil,2017,Center,Center,PMDB,0.0,7.0,Presidential,1.0
+BRA,Brazil,2018,Center,Center,PMDB,1.0,7.0,Presidential,2.0
+BRA,Brazil,2019,Right,Right,PSL,0.0,7.0,Presidential,1.0
+BRA,Brazil,2020,Right,Right,PSL,0.0,7.0,Presidential,2.0
+BRA,Brazil,2021,Right,Right,PSL,0.0,7.0,Presidential,3.0
+BRA,Brazil,2022,Right,Right,PSL,1.0,7.0,Presidential,4.0
+BRA,Brazil,2023,Left,Left,PT,0.0,7.0,Presidential,1.0
+BRB,Barbados,1975,Left,Left,DLP,0.0,6.5,Parliamentary,14.0
+BRB,Barbados,1976,Left,Left,DLP,0.0,6.5,Parliamentary,15.0
+BRB,Barbados,1977,Left,Left,BLP,0.0,7.0,Parliamentary,1.0
+BRB,Barbados,1978,Left,Left,BLP,0.0,7.0,Parliamentary,2.0
+BRB,Barbados,1979,Left,Left,BLP,0.0,7.0,Parliamentary,3.0
+BRB,Barbados,1980,Left,Left,BLP,0.0,7.0,Parliamentary,4.0
+BRB,Barbados,1981,Left,Left,BLP,0.0,7.0,Parliamentary,5.0
+BRB,Barbados,1982,Left,Left,BLP,0.0,7.0,Parliamentary,6.0
+BRB,Barbados,1983,Left,Left,BLP,0.0,7.0,Parliamentary,7.0
+BRB,Barbados,1984,Left,Left,BLP,0.0,7.0,Parliamentary,8.0
+BRB,Barbados,1985,Left,Left,BLP,0.0,7.0,Parliamentary,9.0
+BRB,Barbados,1986,Left,Left,BLP,0.0,7.0,Parliamentary,1.0
+BRB,Barbados,1987,Right,Right,DLP,0.0,6.0,Parliamentary,1.0
+BRB,Barbados,1988,Right,Right,DLP,0.0,6.0,Parliamentary,1.0
+BRB,Barbados,1989,Right,Right,DLP,0.0,6.0,Parliamentary,2.0
+BRB,Barbados,1990,Right,Right,DLP,0.0,6.0,Parliamentary,3.0
+BRB,Barbados,1991,Right,Right,DLP,0.0,6.0,Parliamentary,4.0
+BRB,Barbados,1992,Right,Right,DLP,0.0,7.0,Parliamentary,5.0
+BRB,Barbados,1993,Right,Right,DLP,0.0,7.0,Parliamentary,6.0
+BRB,Barbados,1994,Right,Right,DLP,0.0,7.0,Parliamentary,7.0
+BRB,Barbados,1995,Left,Left,BLP,0.0,7.0,Parliamentary,1.0
+BRB,Barbados,1996,Left,Left,BLP,0.0,7.0,Parliamentary,2.0
+BRB,Barbados,1997,Left,Left,BLP,0.0,7.0,Parliamentary,3.0
+BRB,Barbados,1998,Left,Left,BLP,0.0,7.0,Parliamentary,4.0
+BRB,Barbados,1999,Left,Left,BLP,0.0,7.0,Parliamentary,5.0
+BRB,Barbados,2000,Left,Left,BLP,0.0,6.0,Parliamentary,6.0
+BRB,Barbados,2001,Left,Left,BLP,0.0,6.0,Parliamentary,7.0
+BRB,Barbados,2002,Left,Left,BLP,0.0,6.0,Parliamentary,8.0
+BRB,Barbados,2003,Left,Left,BLP,0.0,6.0,Parliamentary,9.0
+BRB,Barbados,2004,Left,Left,BLP,0.0,6.0,Parliamentary,10.0
+BRB,Barbados,2005,Left,Left,BLP,0.0,6.0,Parliamentary,11.0
+BRB,Barbados,2006,Left,Left,BLP,0.0,6.0,Parliamentary,12.0
+BRB,Barbados,2007,Left,Left,BLP,0.0,6.0,Parliamentary,13.0
+BRB,Barbados,2008,Left,Left,BLP,0.0,6.0,Parliamentary,14.0
+BRB,Barbados,2009,Right,Right,DLP,0.0,7.0,Parliamentary,1.0
+BRB,Barbados,2010,Right,Right,DLP,0.0,7.0,Parliamentary,2.0
+BRB,Barbados,2011,Right,Right,DLP,0.0,7.0,Parliamentary,1.0
+BRB,Barbados,2012,Right,Right,DLP,0.0,7.0,Parliamentary,2.0
+BRB,Barbados,2013,Right,Right,DLP,0.0,7.0,Parliamentary,3.0
+BRB,Barbados,2014,Right,Right,DLP,0.0,7.0,Parliamentary,4.0
+BRB,Barbados,2015,Right,Right,DLP,0.0,7.0,Parliamentary,5.0
+BRB,Barbados,2016,Right,Right,DLP,0.0,7.0,Parliamentary,6.0
+BRB,Barbados,2017,Right,Right,DLP,0.0,7.0,Parliamentary,7.0
+BRB,Barbados,2018,Right,Right,DLP,0.0,7.0,Parliamentary,7.0
+BRB,Barbados,2019,Left,Left,BLP,0.0,6.0,Parliamentary,7.0
+BRB,Barbados,2020,Left,Left,BLP,0.0,6.0,Parliamentary,7.0
+BRB,Barbados,2021,Left,Left,BLP,0.0,6.0,Parliamentary,1.0
+BRB,Barbados,2022,Left,Left,BLP,0.0,6.0,Parliamentary,2.0
+BRB,Barbados,2023,Left,Left,BLP,0.0,6.0,Parliamentary,3.0
+CAN,Canada,1975,Left,Left,LPC,0.0,7.0,Parliamentary,7.0
+CAN,Canada,1976,Left,Left,LPC,0.0,7.0,Parliamentary,8.0
+CAN,Canada,1977,Left,Left,LPC,0.0,7.0,Parliamentary,9.0
+CAN,Canada,1978,Left,Left,LPC,0.0,7.0,Parliamentary,10.0
+CAN,Canada,1979,Left,Left,LPC,0.0,7.0,Parliamentary,11.0
+CAN,Canada,1980,Right,Right,PCP,0.0,7.0,Parliamentary,1.0
+CAN,Canada,1981,Left,Left,LPC,0.0,7.0,Parliamentary,1.0
+CAN,Canada,1982,Left,Left,LPC,0.0,7.0,Parliamentary,2.0
+CAN,Canada,1983,Left,Left,LPC,0.0,7.0,Parliamentary,3.0
+CAN,Canada,1984,Left,Left,LPC,0.0,7.0,Parliamentary,4.0
+CAN,Canada,1985,Right,Right,PCP,0.0,7.0,Parliamentary,1.0
+CAN,Canada,1986,Right,Right,PCP,0.0,7.0,Parliamentary,2.0
+CAN,Canada,1987,Right,Right,PCP,0.0,7.0,Parliamentary,3.0
+CAN,Canada,1988,Right,Right,PCP,0.0,7.0,Parliamentary,4.0
+CAN,Canada,1989,Right,Right,PCP,0.0,7.0,Parliamentary,5.0
+CAN,Canada,1990,Right,Right,PCP,0.0,7.0,Parliamentary,6.0
+CAN,Canada,1991,Right,Right,PCP,0.0,7.0,Parliamentary,7.0
+CAN,Canada,1992,Right,Right,PCP,0.0,7.0,Parliamentary,8.0
+CAN,Canada,1993,Right,Right,PCP,0.0,7.0,Parliamentary,9.0
+CAN,Canada,1994,Left,Left,LPC,0.0,7.0,Parliamentary,1.0
+CAN,Canada,1995,Left,Left,LPC,0.0,7.0,Parliamentary,2.0
+CAN,Canada,1996,Left,Left,LPC,0.0,7.0,Parliamentary,3.0
+CAN,Canada,1997,Left,Left,LPC,0.0,7.0,Parliamentary,4.0
+CAN,Canada,1998,Left,Left,LPC,0.0,7.0,Parliamentary,5.0
+CAN,Canada,1999,Left,Left,LPC,0.0,7.0,Parliamentary,6.0
+CAN,Canada,2000,Left,Left,LPC,0.0,7.0,Parliamentary,7.0
+CAN,Canada,2001,Left,Left,LPC,0.0,7.0,Parliamentary,8.0
+CAN,Canada,2002,Left,Left,LPC,0.0,7.0,Parliamentary,9.0
+CAN,Canada,2003,Left,Left,LPC,0.0,7.0,Parliamentary,1.0
+CAN,Canada,2004,Left,Left,LPC,0.0,7.0,Parliamentary,2.0
+CAN,Canada,2005,Left,Left,LPC,0.0,7.0,Parliamentary,3.0
+CAN,Canada,2006,Left,Left,LPC,0.0,7.0,Parliamentary,4.0
+CAN,Canada,2007,Right,Right,CPC,0.0,7.0,Parliamentary,1.0
+CAN,Canada,2008,Right,Right,CPC,0.0,7.0,Parliamentary,2.0
+CAN,Canada,2009,Right,Right,CPC,0.0,7.0,Parliamentary,3.0
+CAN,Canada,2010,Right,Right,CPC,0.0,7.0,Parliamentary,4.0
+CAN,Canada,2011,Right,Right,CPC,0.0,7.0,Parliamentary,5.0
+CAN,Canada,2012,Right,Right,CPC,0.0,7.0,Parliamentary,6.0
+CAN,Canada,2013,Right,Right,CPC,0.0,7.0,Parliamentary,7.0
+CAN,Canada,2014,Right,Right,CPC,0.0,7.0,Parliamentary,8.0
+CAN,Canada,2015,Right,Right,CPC,0.0,7.0,Parliamentary,9.0
+CAN,Canada,2016,Left,Left,LPC,0.0,7.0,Parliamentary,1.0
+CAN,Canada,2017,Left,Left,LPC,0.0,7.0,Parliamentary,2.0
+CAN,Canada,2018,Left,Left,LPC,0.0,7.0,Parliamentary,3.0
+CAN,Canada,2019,Left,Left,LPC,0.0,7.0,Parliamentary,4.0
+CAN,Canada,2020,Left,Left,LPC,0.0,7.0,Parliamentary,1.0
+CAN,Canada,2021,Right,Right,LPC,0.0,7.0,Parliamentary,6.0
+CAN,Canada,2022,Right,Right,LPC,0.0,7.0,Parliamentary,7.0
+CAN,Canada,2023,Right,Right,LPC,0.0,7.0,Parliamentary,8.0
+CHL,Chile,1975,Right,Right,independent,0.0,2.0,Presidential,2.0
+CHL,Chile,1976,Right,Right,independent,0.0,2.0,Presidential,3.0
+CHL,Chile,1977,Right,Right,independent,0.0,2.0,Presidential,4.0
+CHL,Chile,1978,Right,Right,independent,0.0,2.0,Presidential,5.0
+CHL,Chile,1979,Right,Right,independent,0.0,2.0,Presidential,6.0
+CHL,Chile,1980,Right,Right,independent,0.0,2.0,Presidential,7.0
+CHL,Chile,1981,Right,Right,independent,0.0,2.0,Presidential,8.0
+CHL,Chile,1982,Right,Right,independent,0.0,2.0,Presidential,9.0
+CHL,Chile,1983,Right,Right,independent,0.0,2.0,Presidential,10.0
+CHL,Chile,1984,Right,Right,independent,0.0,2.0,Presidential,11.0
+CHL,Chile,1985,Right,Right,independent,0.0,2.0,Presidential,12.0
+CHL,Chile,1986,Right,Right,independent,0.0,2.0,Presidential,13.0
+CHL,Chile,1987,Right,Right,independent,0.0,2.0,Presidential,14.0
+CHL,Chile,1988,Right,Right,independent,0.0,2.0,Presidential,15.0
+CHL,Chile,1989,Right,Right,independent,1.0,2.0,Presidential,16.0
+CHL,Chile,1990,Center,Center,PDC,0.0,7.0,Presidential,1.0
+CHL,Chile,1991,Center,Center,PDC,0.0,7.0,Presidential,2.0
+CHL,Chile,1992,Center,Center,PDC,0.0,7.0,Presidential,3.0
+CHL,Chile,1993,Center,Center,PDC,1.0,7.0,Presidential,4.0
+CHL,Chile,1994,Left,Left,CPD,0.0,7.0,Presidential,1.0
+CHL,Chile,1995,Left,Left,CPD,0.0,7.0,Presidential,2.0
+CHL,Chile,1996,Left,Left,CPD,0.0,7.0,Presidential,3.0
+CHL,Chile,1997,Left,Left,CPD,0.0,7.0,Presidential,4.0
+CHL,Chile,1998,Left,Left,CPD,0.0,7.0,Presidential,5.0
+CHL,Chile,1999,Left,Left,CPD,0.0,7.0,Presidential,6.0
+CHL,Chile,2000,Left,Left,CPD,1.0,7.0,Presidential,1.0
+CHL,Chile,2001,Left,Left,CPD,0.0,7.0,Presidential,2.0
+CHL,Chile,2002,Left,Left,CPD,0.0,7.0,Presidential,3.0
+CHL,Chile,2003,Left,Left,CPD,0.0,7.0,Presidential,4.0
+CHL,Chile,2004,Left,Left,CPD,0.0,7.0,Presidential,5.0
+CHL,Chile,2005,Left,Left,CPD,1.0,7.0,Presidential,6.0
+CHL,Chile,2006,Left,Left,CPD,0.0,7.0,Presidential,1.0
+CHL,Chile,2007,Left,Left,CPD,0.0,7.0,Presidential,2.0
+CHL,Chile,2008,Left,Left,CPD,0.0,7.0,Presidential,3.0
+CHL,Chile,2009,Left,Left,CPD,1.0,7.0,Presidential,4.0
+CHL,Chile,2010,Left,Left,CPD,1.0,7.0,Presidential,1.0
+CHL,Chile,2011,Center,Center,CC,0.0,7.0,Presidential,2.0
+CHL,Chile,2012,Center,Center,CC,0.0,7.0,Presidential,3.0
+CHL,Chile,2013,Center,Center,CC,1.0,7.0,Presidential,4.0
+CHL,Chile,2014,,,New Majority,0.0,7.0,Presidential,1.0
+CHL,Chile,2015,,,New Majority,0.0,7.0,Presidential,2.0
+CHL,Chile,2016,,,New Majority,0.0,7.0,Presidential,3.0
+CHL,Chile,2017,,,New Majority,1.0,7.0,Presidential,4.0
+CHL,Chile,2018,,,Let’s Go Chile,1.0,7.0,Presidential,4.0
+CHL,Chile,2019,,,Let’s Go Chile ,1.0,7.0,Presidential,3.0
+CHL,Chile,2020,,,Let’s Go Chile,1.0,7.0,Presidential,2.0
+CHL,Chile,2021,Right,Right,Let’s Go Chile,1.0,7.0,Presidential,4.0
+CHL,Chile,2022,Left,Left,AD,0.0,7.0,Presidential,1.0
+CHL,Chile,2023,Left,Left,AD,0.0,7.0,Presidential,2.0
+COL,Colombia,1975,Center,Center,PL,0.0,7.0,Presidential,1.0
+COL,Colombia,1976,Center,Center,PL,0.0,7.0,Presidential,2.0
+COL,Colombia,1977,Center,Center,PL,0.0,7.0,Presidential,3.0
+COL,Colombia,1978,Center,Center,PL,1.0,7.0,Presidential,4.0
+COL,Colombia,1979,Center,Center,PL,0.0,7.0,Presidential,1.0
+COL,Colombia,1980,Center,Center,PL,0.0,7.0,Presidential,2.0
+COL,Colombia,1981,Center,Center,PL,0.0,7.0,Presidential,3.0
+COL,Colombia,1982,Center,Center,PL,1.0,7.0,Presidential,4.0
+COL,Colombia,1983,Right,Right,PCC,0.0,7.0,Presidential,1.0
+COL,Colombia,1984,Right,Right,PCC,0.0,7.0,Presidential,2.0
+COL,Colombia,1985,Right,Right,PCC,0.0,7.0,Presidential,3.0
+COL,Colombia,1986,Right,Right,PCC,1.0,7.0,Presidential,4.0
+COL,Colombia,1987,Center,Center,PL,0.0,7.0,Presidential,1.0
+COL,Colombia,1988,Center,Center,PL,0.0,7.0,Presidential,2.0
+COL,Colombia,1989,Center,Center,PL,0.0,7.0,Presidential,3.0
+COL,Colombia,1990,Center,Center,PL,1.0,7.0,Presidential,4.0
+COL,Colombia,1991,Center,Center,PL,0.0,7.0,Presidential,1.0
+COL,Colombia,1992,Center,Center,PL,0.0,7.0,Presidential,2.0
+COL,Colombia,1993,Center,Center,PL,0.0,7.0,Presidential,3.0
+COL,Colombia,1994,Center,Center,PL,1.0,7.0,Presidential,4.0
+COL,Colombia,1995,Center,Center,PL,0.0,7.0,Presidential,1.0
+COL,Colombia,1996,Center,Center,PL,0.0,7.0,Presidential,2.0
+COL,Colombia,1997,Center,Center,PL,0.0,7.0,Presidential,3.0
+COL,Colombia,1998,Center,Center,PL,0.0,7.0,Presidential,4.0
+COL,Colombia,1999,Right,Right,PCC,1.0,7.0,Presidential,1.0
+COL,Colombia,2000,Right,Right,PCC,0.0,7.0,Presidential,2.0
+COL,Colombia,2001,Right,Right,PCC,0.0,7.0,Presidential,3.0
+COL,Colombia,2002,Right,Right,PCC,1.0,7.0,Presidential,4.0
+COL,Colombia,2003,,0,independent,0.0,7.0,Presidential,1.0
+COL,Colombia,2004,,0,independent,0.0,7.0,Presidential,2.0
+COL,Colombia,2005,,0,independent,0.0,7.0,Presidential,3.0
+COL,Colombia,2006,,0,independent,1.0,7.0,Presidential,4.0
+COL,Colombia,2007,,0,independent,0.0,7.0,Presidential,5.0
+COL,Colombia,2008,,0,independent,0.0,7.0,Presidential,6.0
+COL,Colombia,2009,,0,independent,0.0,7.0,Presidential,7.0
+COL,Colombia,2010,,0,independent,1.0,7.0,Presidential,8.0
+COL,Colombia,2011,,0,PSUN,0.0,7.0,Presidential,1.0
+COL,Colombia,2012,,0,PSUN,0.0,7.0,Presidential,2.0
+COL,Colombia,2013,,0,PSUN,0.0,7.0,Presidential,3.0
+COL,Colombia,2014,,0,PSUN,1.0,7.0,Presidential,4.0
+COL,Colombia,2015,,0,PSUN,0.0,7.0,Presidential,5.0
+COL,Colombia,2016,,0,PSUN,0.0,7.0,Presidential,6.0
+COL,Colombia,2017,,0,PSUN,0.0,7.0,Presidential,7.0
+COL,Colombia,2018,,0,PSUN,1.0,7.0,Presidential,8.0
+COL,Colombia,2019,Right,Right,DC,0.0,7.0,Presidential,1.0
+COL,Colombia,2020,Right,Right,DC,0.0,7.0,Presidential,2.0
+COL,Colombia,2021,Right,Right,DC,0.0,7.0,Presidential,3.0
+COL,Colombia,2022,Right,Right,DC,1.0,7.0,Presidential,4.0
+COL,Colombia,2023,Left,Left,PHxC,0.0,7.0,Presidential,1.0
+CRI,Costa Rica,1975,Left,Left,PLN,0.0,7.0,Presidential,1.0
+CRI,Costa Rica,1976,Left,Left,PLN,0.0,7.0,Presidential,2.0
+CRI,Costa Rica,1977,Left,Left,PLN,0.0,7.0,Presidential,3.0
+CRI,Costa Rica,1978,Left,Left,PLN,1.0,7.0,Presidential,4.0
+CRI,Costa Rica,1979,Right,Right,PUO,0.0,7.0,Presidential,1.0
+CRI,Costa Rica,1980,Right,Right,PUO,0.0,7.0,Presidential,2.0
+CRI,Costa Rica,1981,Right,Right,PUO,0.0,7.0,Presidential,3.0
+CRI,Costa Rica,1982,Right,Right,PUO,1.0,7.0,Presidential,4.0
+CRI,Costa Rica,1983,Left,Left,PLN,0.0,7.0,Presidential,1.0
+CRI,Costa Rica,1984,Left,Left,PLN,0.0,7.0,Presidential,2.0
+CRI,Costa Rica,1985,Left,Left,PLN,0.0,7.0,Presidential,3.0
+CRI,Costa Rica,1986,Left,Left,PLN,1.0,7.0,Presidential,4.0
+CRI,Costa Rica,1987,Left,Left,PLN,0.0,7.0,Presidential,1.0
+CRI,Costa Rica,1988,Left,Left,PLN,0.0,7.0,Presidential,2.0
+CRI,Costa Rica,1989,Left,Left,PLN,0.0,7.0,Presidential,3.0
+CRI,Costa Rica,1990,Left,Left,PLN,1.0,7.0,Presidential,4.0
+CRI,Costa Rica,1991,Right,Right,PUSC,0.0,7.0,Presidential,1.0
+CRI,Costa Rica,1992,Right,Right,PUSC,0.0,7.0,Presidential,2.0
+CRI,Costa Rica,1993,Right,Right,PUSC,0.0,7.0,Presidential,3.0
+CRI,Costa Rica,1994,Right,Right,PUSC,1.0,7.0,Presidential,4.0
+CRI,Costa Rica,1995,Left,Left,PLN,0.0,7.0,Presidential,1.0
+CRI,Costa Rica,1996,Left,Left,PLN,0.0,7.0,Presidential,2.0
+CRI,Costa Rica,1997,Left,Left,PLN,0.0,7.0,Presidential,3.0
+CRI,Costa Rica,1998,Left,Left,PLN,1.0,7.0,Presidential,4.0
+CRI,Costa Rica,1999,Right,Right,PUSC,0.0,7.0,Presidential,1.0
+CRI,Costa Rica,2000,Right,Right,PUSC,0.0,7.0,Presidential,2.0
+CRI,Costa Rica,2001,Right,Right,PUSC,0.0,7.0,Presidential,3.0
+CRI,Costa Rica,2002,Right,Right,PUSC,1.0,7.0,Presidential,4.0
+CRI,Costa Rica,2003,Right,Right,PUSC,0.0,7.0,Presidential,1.0
+CRI,Costa Rica,2004,Right,Right,PUSC,0.0,7.0,Presidential,2.0
+CRI,Costa Rica,2005,Right,Right,PUSC,0.0,7.0,Presidential,3.0
+CRI,Costa Rica,2006,Right,Right,PUSC,1.0,7.0,Presidential,4.0
+CRI,Costa Rica,2007,Left,Left,PLN,0.0,7.0,Presidential,1.0
+CRI,Costa Rica,2008,Left,Left,PLN,0.0,7.0,Presidential,2.0
+CRI,Costa Rica,2009,Left,Left,PLN,0.0,7.0,Presidential,3.0
+CRI,Costa Rica,2010,Left,Left,PLN,1.0,7.0,Presidential,4.0
+CRI,Costa Rica,2011,Left,Left,PLN,0.0,7.0,Presidential,1.0
+CRI,Costa Rica,2012,Left,Left,PLN,0.0,7.0,Presidential,2.0
+CRI,Costa Rica,2013,Left,Left,PLN,0.0,7.0,Presidential,3.0
+CRI,Costa Rica,2014,Left,Left,PLN,1.0,7.0,Presidential,4.0
+CRI,Costa Rica,2015,Left,Left,PAC,0.0,6.0,Presidential,1.0
+CRI,Costa Rica,2016,Left,Left,PAC,0.0,6.0,Presidential,2.0
+CRI,Costa Rica,2017,Left,Left,PAC,0.0,6.0,Presidential,3.0
+CRI,Costa Rica,2018,Left,Left,PAC,0.0,6.0,Presidential,4.0
+CRI,Costa Rica,2019,Left,Left,PAC,0.0,7.0,Presidential,1.0
+CRI,Costa Rica,2020,Left,Left,PAC,0.0,7.0,Presidential,2.0
+CRI,Costa Rica,2021,Left,Left,PAC,0.0,7.0,Presidential,3.0
+CRI,Costa Rica,2022,Left,Left,PAC,1.0,7.0,Presidential,4.0
+CRI,Costa Rica,2023,Left,Left,PPSD,0.0,7.0,Presidential,1.0
+CUB,Cuba,1975,Left,Left,PCC,0.0,3.0,Assembly-Elected President,0.0
+CUB,Cuba,1976,Left,Left,PCC,0.0,3.0,Assembly-Elected President,17.0
+CUB,Cuba,1977,Left,Left,PCC,0.0,3.0,Assembly-Elected President,18.0
+CUB,Cuba,1978,Left,Left,PCC,0.0,3.0,Assembly-Elected President,19.0
+CUB,Cuba,1979,Left,Left,PCC,0.0,3.0,Assembly-Elected President,20.0
+CUB,Cuba,1980,Left,Left,PCC,0.0,3.0,Assembly-Elected President,21.0
+CUB,Cuba,1981,Left,Left,PCC,0.0,3.0,Assembly-Elected President,22.0
+CUB,Cuba,1982,Left,Left,PCC,0.0,3.0,Assembly-Elected President,23.0
+CUB,Cuba,1983,Left,Left,PCC,0.0,3.0,Assembly-Elected President,24.0
+CUB,Cuba,1984,Left,Left,PCC,0.0,3.0,Assembly-Elected President,25.0
+CUB,Cuba,1985,Left,Left,PCC,0.0,3.0,Assembly-Elected President,26.0
+CUB,Cuba,1986,Left,Left,PCC,0.0,3.0,Assembly-Elected President,27.0
+CUB,Cuba,1987,Left,Left,PCC,0.0,3.0,Assembly-Elected President,28.0
+CUB,Cuba,1988,Left,Left,PCC,0.0,3.0,Assembly-Elected President,29.0
+CUB,Cuba,1989,Left,Left,PCC,0.0,3.0,Assembly-Elected President,30.0
+CUB,Cuba,1990,Left,Left,PCC,0.0,3.0,Assembly-Elected President,31.0
+CUB,Cuba,1991,Left,Left,PCC,0.0,3.0,Assembly-Elected President,32.0
+CUB,Cuba,1992,Left,Left,PCC,0.0,3.0,Assembly-Elected President,33.0
+CUB,Cuba,1993,Left,Left,PCC,0.0,3.0,Assembly-Elected President,34.0
+CUB,Cuba,1994,Left,Left,PCC,0.0,3.0,Assembly-Elected President,35.0
+CUB,Cuba,1995,Left,Left,PCC,0.0,3.0,Assembly-Elected President,36.0
+CUB,Cuba,1996,Left,Left,PCC,0.0,3.0,Assembly-Elected President,37.0
+CUB,Cuba,1997,Left,Left,PCC,0.0,3.0,Assembly-Elected President,38.0
+CUB,Cuba,1998,Left,Left,PCC,0.0,3.0,Assembly-Elected President,39.0
+CUB,Cuba,1999,Left,Left,PCC,0.0,3.0,Assembly-Elected President,40.0
+CUB,Cuba,2000,Left,Left,PCC,0.0,3.0,Assembly-Elected President,41.0
+CUB,Cuba,2001,Left,Left,PCC,0.0,3.0,Assembly-Elected President,42.0
+CUB,Cuba,2002,Left,Left,PCC,0.0,3.0,Assembly-Elected President,43.0
+CUB,Cuba,2003,Left,Left,PCC,0.0,3.0,Assembly-Elected President,44.0
+CUB,Cuba,2004,Left,Left,PCC,0.0,3.0,Assembly-Elected President,45.0
+CUB,Cuba,2005,Left,Left,PCC,0.0,3.0,Assembly-Elected President,46.0
+CUB,Cuba,2006,Left,Left,PCC,0.0,3.0,Assembly-Elected President,47.0
+CUB,Cuba,2007,Left,Left,PCC,0.0,3.0,Assembly-Elected President,1.0
+CUB,Cuba,2008,Left,Left,PCC,1.0,3.0,Assembly-Elected President,2.0
+CUB,Cuba,2009,Left,Left,PCC,0.0,3.0,Assembly-Elected President,3.0
+CUB,Cuba,2010,Left,Left,PCC,0.0,3.0,Assembly-Elected President,4.0
+CUB,Cuba,2011,Left,Left,PCC,0.0,3.0,Assembly-Elected President,5.0
+CUB,Cuba,2012,Left,Left,PCC,0.0,3.0,Assembly-Elected President,6.0
+CUB,Cuba,2013,Left,Left,PCC,1.0,3.0,Assembly-Elected President,7.0
+CUB,Cuba,2014,Left,Left,PCC,0.0,3.0,Assembly-Elected President,8.0
+CUB,Cuba,2015,Left,Left,PCC,0.0,3.0,Assembly-Elected President,9.0
+CUB,Cuba,2016,Left,Left,PCC,0.0,3.0,Assembly-Elected President,10.0
+CUB,Cuba,2017,Left,Left,PCC,0.0,3.0,Assembly-Elected President,11.0
+CUB,Cuba,2018,Left,Left,PCC,0.0,3.0,Assembly-Elected President,12.0
+CUB,Cuba,2019,Left,Left,PCC,0.0,3.0,Assembly-Elected President,1.0
+CUB,Cuba,2020,Left,Left,PCC,0.0,3.0,Assembly-Elected President,2.0
+CUB,Cuba,2021,Left,Left,PCC,0.0,3.0,Assembly-Elected President,3.0
+CUB,Cuba,2022,Left,Left,PCC,0.0,3.0,Assembly-Elected President,4.0
+CUB,Cuba,2023,Left,Left,PCC,1.0,3.0,Assembly-Elected President,5.0
+DOM,Dom. Rep.,1975,Right,Right,PR,0.0,6.0,Presidential,9.0
+DOM,Dom. Rep.,1976,Right,Right,PR,0.0,6.0,Presidential,10.0
+DOM,Dom. Rep.,1977,Right,Right,PR,0.0,6.0,Presidential,11.0
+DOM,Dom. Rep.,1978,Right,Right,PR,1.0,6.0,Presidential,12.0
+DOM,Dom. Rep.,1979,Left,Left,PRD,0.0,6.0,Presidential,1.0
+DOM,Dom. Rep.,1980,Left,Left,PRD,0.0,6.0,Presidential,2.0
+DOM,Dom. Rep.,1981,Left,Left,PRD,0.0,6.0,Presidential,3.0
+DOM,Dom. Rep.,1982,Left,Left,PRD,1.0,6.0,Presidential,4.0
+DOM,Dom. Rep.,1983,Left,Left,PRD,0.0,6.0,Presidential,1.0
+DOM,Dom. Rep.,1984,Left,Left,PRD,0.0,6.0,Presidential,2.0
+DOM,Dom. Rep.,1985,Left,Left,PRD,0.0,6.0,Presidential,3.0
+DOM,Dom. Rep.,1986,Left,Left,PRD,1.0,6.0,Presidential,4.0
+DOM,Dom. Rep.,1987,Right,Right,PRSC,0.0,6.5,Presidential,1.0
+DOM,Dom. Rep.,1988,Right,Right,PRSC,0.0,6.5,Presidential,2.0
+DOM,Dom. Rep.,1989,Right,Right,PRSC,0.0,6.5,Presidential,3.0
+DOM,Dom. Rep.,1990,Right,Right,PRSC,1.0,6.5,Presidential,4.0
+DOM,Dom. Rep.,1991,Right,Right,PRSC,0.0,6.5,Presidential,5.0
+DOM,Dom. Rep.,1992,Right,Right,PRSC,0.0,6.5,Presidential,6.0
+DOM,Dom. Rep.,1993,Right,Right,PRSC,0.0,6.5,Presidential,7.0
+DOM,Dom. Rep.,1994,Right,Right,PRSC,1.0,6.5,Presidential,8.0
+DOM,Dom. Rep.,1995,Right,Right,PRSC,0.0,6.5,Presidential,9.0
+DOM,Dom. Rep.,1996,Right,Right,PRSC,1.0,6.5,Presidential,10.0
+DOM,Dom. Rep.,1997,Center,Center,PLD,0.0,7.0,Presidential,1.0
+DOM,Dom. Rep.,1998,Center,Center,PLD,0.0,7.0,Presidential,2.0
+DOM,Dom. Rep.,1999,Center,Center,PLD,0.0,7.0,Presidential,3.0
+DOM,Dom. Rep.,2000,Center,Center,PLD,1.0,7.0,Presidential,4.0
+DOM,Dom. Rep.,2001,Left,Left,PRD,0.0,7.0,Presidential,1.0
+DOM,Dom. Rep.,2002,Left,Left,PRD,0.0,7.0,Presidential,2.0
+DOM,Dom. Rep.,2003,Left,Left,PRD,0.0,7.0,Presidential,3.0
+DOM,Dom. Rep.,2004,Left,Left,PRD,1.0,7.0,Presidential,4.0
+DOM,Dom. Rep.,2005,Center,Center,PLD,0.0,7.0,Presidential,1.0
+DOM,Dom. Rep.,2006,Center,Center,PLD,0.0,7.0,Presidential,2.0
+DOM,Dom. Rep.,2007,Center,Center,PLD,0.0,7.0,Presidential,3.0
+DOM,Dom. Rep.,2008,Center,Center,PLD,1.0,7.0,Presidential,4.0
+DOM,Dom. Rep.,2009,Center,Center,PLD,0.0,7.0,Presidential,5.0
+DOM,Dom. Rep.,2010,Center,Center,PLD,0.0,7.0,Presidential,6.0
+DOM,Dom. Rep.,2011,Center,Center,PLD,0.0,7.0,Presidential,7.0
+DOM,Dom. Rep.,2012,Center,Center,PLD,1.0,7.0,Presidential,8.0
+DOM,Dom. Rep.,2013,Center,Center,PLD,0.0,7.0,Presidential,1.0
+DOM,Dom. Rep.,2014,Center,Center,PLD,0.0,7.0,Presidential,2.0
+DOM,Dom. Rep.,2015,Center,Center,PLD,0.0,7.0,Presidential,3.0
+DOM,Dom. Rep.,2016,Center,Center,PLD,1.0,7.0,Presidential,4.0
+DOM,Dom. Rep.,2017,Center,Center,PLD,0.0,7.0,Presidential,5.0
+DOM,Dom. Rep.,2018,Center,Center,PLD,0.0,7.0,Presidential,6.0
+DOM,Dom. Rep.,2019,Center,Center,PLD,0.0,7.0,Presidential,7.0
+DOM,Dom. Rep.,2020,Center,Center,PLD,1.0,7.0,Presidential,8.0
+DOM,Dom. Rep.,2021,Left,Left,PRM,0.0,7.0,Presidential,1.0
+DOM,Dom. Rep.,2022,Left,Left,PRM,0.0,7.0,Presidential,2.0
+DOM,Dom. Rep.,2023,Left,Left,PRM,0.0,7.0,Presidential,3.0
+ECU,Ecuador,1975,,0,independent,0.0,2.0,Presidential,3.0
+ECU,Ecuador,1976,,0,independent,0.0,2.0,Presidential,4.0
+ECU,Ecuador,1977,,0,independent,0.0,2.0,Presidential,1.0
+ECU,Ecuador,1978,,0,independent,0.0,2.0,Presidential,2.0
+ECU,Ecuador,1979,,0,independent,1.0,2.0,Presidential,3.0
+ECU,Ecuador,1980,Center,Center,CFP,0.0,7.0,Presidential,1.0
+ECU,Ecuador,1981,,,,0.0,7.0,Presidential,2.0
+ECU,Ecuador,1982,Left,Left,DP,0.0,7.0,Presidential,1.0
+ECU,Ecuador,1983,Left,Left,DP,0.0,7.0,Presidential,2.0
+ECU,Ecuador,1984,Left,Left,DP,1.0,7.0,Presidential,3.0
+ECU,Ecuador,1985,Right,Right,PSC,0.0,7.0,Presidential,1.0
+ECU,Ecuador,1986,Right,Right,PSC,0.0,7.0,Presidential,2.0
+ECU,Ecuador,1987,Right,Right,PSC,0.0,7.0,Presidential,3.0
+ECU,Ecuador,1988,Right,Right,PSC,1.0,7.0,Presidential,4.0
+ECU,Ecuador,1989,Left,Left,ID,0.0,7.0,Presidential,1.0
+ECU,Ecuador,1990,Left,Left,ID,0.0,7.0,Presidential,2.0
+ECU,Ecuador,1991,Left,Left,ID,0.0,7.0,Presidential,3.0
+ECU,Ecuador,1992,Left,Left,ID,1.0,7.0,Presidential,4.0
+ECU,Ecuador,1993,Left,Left,PUR,0.0,7.0,Presidential,1.0
+ECU,Ecuador,1994,Left,Left,PUR,0.0,7.0,Presidential,2.0
+ECU,Ecuador,1995,Left,Left,PUR,0.0,7.0,Presidential,3.0
+ECU,Ecuador,1996,Left,Left,PUR,1.0,7.0,Presidential,4.0
+ECU,Ecuador,1997,,0,PRE,0.0,7.0,Presidential,1.0
+ECU,Ecuador,1998,Left,Left,DP,1.0,7.0,Presidential,1.0
+ECU,Ecuador,1999,Left,Left,DP,0.0,7.0,Presidential,2.0
+ECU,Ecuador,2000,Left,Left,DP,0.0,7.0,Presidential,3.0
+ECU,Ecuador,2001,Left,Left,DP,0.0,7.0,Presidential,4.0
+ECU,Ecuador,2002,Left,Left,DP,1.0,7.0,Presidential,5.0
+ECU,Ecuador,2003,,0,PSP,0.0,7.0,Presidential,1.0
+ECU,Ecuador,2004,,0,PSP,0.0,7.0,Presidential,2.0
+ECU,Ecuador,2005,,0,PSP,0.0,7.0,Presidential,3.0
+ECU,Ecuador,2006,,-999,independent,1.0,7.0,Presidential,1.0
+ECU,Ecuador,2007,Left,Left,PAIS,0.0,7.0,Presidential,1.0
+ECU,Ecuador,2008,Left,Left,PAIS,0.0,7.0,Presidential,2.0
+ECU,Ecuador,2009,Left,Left,PAIS,1.0,7.0,Presidential,3.0
+ECU,Ecuador,2010,Left,Left,PAIS,0.0,7.0,Presidential,4.0
+ECU,Ecuador,2011,Left,Left,PAIS,0.0,7.0,Presidential,5.0
+ECU,Ecuador,2012,Left,Left,PAIS,0.0,7.0,Presidential,6.0
+ECU,Ecuador,2013,Left,Left,PAIS,1.0,7.0,Presidential,7.0
+ECU,Ecuador,2014,Left,Left,PAIS,0.0,7.0,Presidential,8.0
+ECU,Ecuador,2015,Left,Left,PAIS,0.0,7.0,Presidential,9.0
+ECU,Ecuador,2016,Left,Left,PAIS,0.0,7.0,Presidential,10.0
+ECU,Ecuador,2017,Left,Left,PAIS,1.0,7.0,Presidential,11.0
+ECU,Ecuador,2018,Left,Left,PAIS,0.0,7.0,Presidential,1.0
+ECU,Ecuador,2019,Left,Left,PAIS,0.0,7.0,Presidential,2.0
+ECU,Ecuador,2020,Left,Left,PAIS,0.0,7.0,Presidential,3.0
+ECU,Ecuador,2021,Left,Left,PAIS,1.0,7.0,Presidential,4.0
+ECU,Ecuador,2022,Right,Right,CREO,0.0,7.0,Presidential,1.0
+ECU,Ecuador,2023,Right,Right,CREO,1.0,7.0,Presidential,2.0
+GRD,Grenada,1975,,0,GULP,0.0,6.0,Parliamentary,1.0
+GRD,Grenada,1976,,0,GULP,0.0,6.0,Parliamentary,2.0
+GRD,Grenada,1977,,0,GULP,0.0,7.0,Parliamentary,3.0
+GRD,Grenada,1978,Left,Left,NJM,0.0,2.0,Presidential,1.0
+GRD,Grenada,1979,Left,Left,NJM,0.0,2.0,Presidential,2.0
+GRD,Grenada,1980,Left,Left,NJM,0.0,2.0,Presidential,3.0
+GRD,Grenada,1981,Left,Left,NJM,0.0,2.0,Presidential,4.0
+GRD,Grenada,1982,Left,Left,NJM,0.0,2.0,Presidential,5.0
+GRD,Grenada,1983,Left,Left,NJM,0.0,2.0,Presidential,6.0
+GRD,Grenada,1984,,,independent,0.0,2.0,Presidential,1.0
+GRD,Grenada,1985,Right,Right,NNP,0.0,6.0,Parliamentary,1.0
+GRD,Grenada,1986,Right,Right,NNP,0.0,6.0,Parliamentary,2.0
+GRD,Grenada,1987,Right,Right,NNP,0.0,6.0,Parliamentary,3.0
+GRD,Grenada,1988,Right,Right,NNP,0.0,6.0,Parliamentary,4.0
+GRD,Grenada,1989,Right,Right,NNP,0.0,6.0,Parliamentary,5.0
+GRD,Grenada,1990,Right,Right,NNP,0.0,6.0,Parliamentary,6.0
+GRD,Grenada,1991,Left,Left,NDC,0.0,7.0,Parliamentary,1.0
+GRD,Grenada,1992,Left,Left,NDC,0.0,7.0,Parliamentary,2.0
+GRD,Grenada,1993,Left,Left,NDC,0.0,7.0,Parliamentary,3.0
+GRD,Grenada,1994,Left,Left,NDC,0.0,7.0,Parliamentary,4.0
+GRD,Grenada,1995,Left,Left,NDC,0.0,7.0,Parliamentary,5.0
+GRD,Grenada,1996,Right,Right,NNP,0.0,7.0,Parliamentary,1.0
+GRD,Grenada,1997,Right,Right,NNP,0.0,7.0,Parliamentary,2.0
+GRD,Grenada,1998,Right,Right,NNP,0.0,7.0,Parliamentary,3.0
+GRD,Grenada,1999,Right,Right,NNP,0.0,7.0,Parliamentary,4.0
+GRD,Grenada,2000,Right,Right,NNP,0.0,7.0,Parliamentary,5.0
+GRD,Grenada,2001,Right,Right,NNP,0.0,7.0,Parliamentary,6.0
+GRD,Grenada,2002,Right,Right,NNP,0.0,7.0,Parliamentary,7.0
+GRD,Grenada,2003,Right,Right,NNP,0.0,7.0,Parliamentary,8.0
+GRD,Grenada,2004,Right,Right,NNP,0.0,7.0,Parliamentary,9.0
+GRD,Grenada,2005,Right,Right,NNP,0.0,7.0,Parliamentary,10.0
+GRD,Grenada,2006,Right,Right,NNP,0.0,7.0,Parliamentary,11.0
+GRD,Grenada,2007,Right,Right,NNP,0.0,7.0,Parliamentary,12.0
+GRD,Grenada,2008,Right,Right,NNP,0.0,7.0,Parliamentary,13.0
+GRD,Grenada,2009,Left,Left,NDC,0.0,7.0,Parliamentary,1.0
+GRD,Grenada,2010,Left,Left,NDC,0.0,7.0,Parliamentary,2.0
+GRD,Grenada,2011,Left,Left,NDC,0.0,7.0,Parliamentary,3.0
+GRD,Grenada,2012,Left,Left,NDC,0.0,7.0,Parliamentary,4.0
+GRD,Grenada,2013,Left,Left,NDC,0.0,7.0,Parliamentary,5.0
+GRD,Grenada,2014,Right,Right,NNP,0.0,7.0,Parliamentary,1.0
+GRD,Grenada,2015,Right,Right,NNP,0.0,7.0,Parliamentary,2.0
+GRD,Grenada,2016,Right,Right,NNP,0.0,7.0,Parliamentary,3.0
+GRD,Grenada,2017,Right,Right,NNP,0.0,7.0,Parliamentary,4.0
+GRD,Grenada,2018,Right,Right,NNP,0.0,7.0,,5.0
+GRD,Grenada,2019,Right,Right,NNP,0.0,7.0,Parliamentary,6.0
+GRD,Grenada,2020,Right,Right,NNP,0.0,7.0,Parliamentary,7.0
+GRD,Grenada,2021,Right,Right,NNP,0.0,6.0,Parliamentary,8.0
+GRD,Grenada,2022,Right,Right,NNP,0.0,6.0,Parliamentary,9.0
+GRD,Grenada,2023,Right,Right,NDC,0.0,7.0,Parliamentary,1.0
+GTM,Guatemala,1975,,0,MLN,0.0,7.0,Presidential,1.0
+GTM,Guatemala,1976,,0,MLN,0.0,7.0,Presidential,2.0
+GTM,Guatemala,1977,,0,MLN,0.0,7.0,Presidential,3.0
+GTM,Guatemala,1978,,0,MLN,1.0,7.0,Presidential,4.0
+GTM,Guatemala,1979,,0,Coalition,0.0,7.0,Presidential,1.0
+GTM,Guatemala,1980,,0,Coalition,0.0,7.0,Presidential,2.0
+GTM,Guatemala,1981,,0,Coalition,0.0,7.0,Presidential,3.0
+GTM,Guatemala,1982,,0,Coalition,1.0,7.0,Presidential,4.0
+GTM,Guatemala,1983,,0,independent,0.0,2.0,Presidential,1.0
+GTM,Guatemala,1984,,0,independent,0.0,2.0,Presidential,1.0
+GTM,Guatemala,1985,,0,independent,1.0,2.0,Presidential,2.0
+GTM,Guatemala,1986,Right,Right,PDCG,0.0,7.0,Presidential,1.0
+GTM,Guatemala,1987,Right,Right,PDCG,0.0,7.0,Presidential,2.0
+GTM,Guatemala,1988,Right,Right,PDCG,0.0,7.0,Presidential,3.0
+GTM,Guatemala,1989,Right,Right,PDCG,0.0,7.0,Presidential,4.0
+GTM,Guatemala,1990,Right,Right,PDCG,1.0,7.0,Presidential,5.0
+GTM,Guatemala,1991,Right,Right,PDCG,0.0,7.0,Presidential,6.0
+GTM,Guatemala,1992,,0,MAS,0.0,7.0,Presidential,1.0
+GTM,Guatemala,1993,,0,MAS,0.0,7.0,Presidential,2.0
+GTM,Guatemala,1994,,0,independent,0.0,7.0,Assembly-Elected President,1.0
+GTM,Guatemala,1995,,0,independent,1.0,7.0,Assembly-Elected President,2.0
+GTM,Guatemala,1996,Right,Right,PAN,0.0,7.0,Presidential,1.0
+GTM,Guatemala,1997,Right,Right,PAN,0.0,7.0,Presidential,2.0
+GTM,Guatemala,1998,Right,Right,PAN,0.0,7.0,Presidential,3.0
+GTM,Guatemala,1999,Right,Right,PAN,1.0,7.0,Presidential,4.0
+GTM,Guatemala,2000,Right,Right,FRG,0.0,7.0,Presidential,1.0
+GTM,Guatemala,2001,Right,Right,FRG,0.0,7.0,Presidential,2.0
+GTM,Guatemala,2002,Right,Right,FRG,0.0,7.0,Presidential,3.0
+GTM,Guatemala,2003,Right,Right,FRG,1.0,7.0,Presidential,4.0
+GTM,Guatemala,2004,Right,Right,GANA,0.0,7.0,Presidential,1.0
+GTM,Guatemala,2005,Right,Right,GANA,0.0,7.0,Presidential,2.0
+GTM,Guatemala,2006,Right,Right,GANA,0.0,7.0,Presidential,3.0
+GTM,Guatemala,2007,Right,Right,GANA,1.0,7.0,Presidential,4.0
+GTM,Guatemala,2008,Left,Left,UNE,0.0,7.0,Presidential,1.0
+GTM,Guatemala,2009,Left,Left,UNE,0.0,7.0,Presidential,2.0
+GTM,Guatemala,2010,Left,Left,UNE,0.0,7.0,Presidential,3.0
+GTM,Guatemala,2011,Left,Left,UNE,1.0,7.0,Presidential,4.0
+GTM,Guatemala,2012,Right,Right,PP,0.0,7.0,Presidential,1.0
+GTM,Guatemala,2013,Right,Right,PP,0.0,7.0,Presidential,2.0
+GTM,Guatemala,2014,Right,Right,PP,0.0,7.0,Presidential,3.0
+GTM,Guatemala,2015,Right,Right,PP,1.0,7.0,Presidential,4.0
+GTM,Guatemala,2016,Right,Right,FCN Nacion,0.0,7.0,Presidential,1.0
+GTM,Guatemala,2017,Right,Right,FCN Nacion,0.0,7.0,Presidential,2.0
+GTM,Guatemala,2018,Right,Right,FCN Nacion,0.0,7.0,Presidential,3.0
+GTM,Guatemala,2019,Right,Right,FCN Nacion,1.0,7.0,Presidential,4.0
+GTM,Guatemala,2020,Right,Right,Vamos,0.0,7.0,Presidential,1.0
+GTM,Guatemala,2021,Right,Right,Vamos,0.0,7.0,Presidential,2.0
+GTM,Guatemala,2022,Right,Right,Vamos,0.0,7.0,Presidential,3.0
+GTM,Guatemala,2023,Right,Right,Vamos,1.0,7.0,Presidential,4.0
+GUY,Guyana,1975,Left,Left,PNC,0.0,7.0,Parliamentary,9.0
+GUY,Guyana,1976,Left,Left,PNC,0.0,7.0,Parliamentary,10.0
+GUY,Guyana,1977,Left,Left,PNC,0.0,7.0,Parliamentary,11.0
+GUY,Guyana,1978,Left,Left,PNC,0.0,7.0,Parliamentary,12.0
+GUY,Guyana,1979,Left,Left,PNC,0.0,7.0,Parliamentary,13.0
+GUY,Guyana,1980,Left,Left,PNC,0.0,7.0,Parliamentary,14.0
+GUY,Guyana,1981,Left,Left,PNC,0.0,6.0,Assembly-Elected President,15.0
+GUY,Guyana,1982,Left,Left,PNC,0.0,6.0,Assembly-Elected President,16.0
+GUY,Guyana,1983,Left,Left,PNC,0.0,6.0,Assembly-Elected President,17.0
+GUY,Guyana,1984,Left,Left,PNC,0.0,6.0,Assembly-Elected President,18.0
+GUY,Guyana,1985,Left,Left,PNC,0.0,6.0,Assembly-Elected President,19.0
+GUY,Guyana,1986,Left,Left,PNC,0.0,6.0,Assembly-Elected President,1.0
+GUY,Guyana,1987,Left,Left,PNC,0.0,6.0,Assembly-Elected President,2.0
+GUY,Guyana,1988,Left,Left,PNC,0.0,6.0,Assembly-Elected President,3.0
+GUY,Guyana,1989,Left,Left,PNC,0.0,6.0,Assembly-Elected President,4.0
+GUY,Guyana,1990,Left,Left,PNC,0.0,6.0,Assembly-Elected President,5.0
+GUY,Guyana,1991,Left,Left,PNC,0.0,6.0,Assembly-Elected President,6.0
+GUY,Guyana,1992,Left,Left,PNC,0.0,6.0,Assembly-Elected President,7.0
+GUY,Guyana,1993,Left,Left,PPP,0.0,7.0,Assembly-Elected President,1.0
+GUY,Guyana,1994,Left,Left,PPP,0.0,7.0,Assembly-Elected President,2.0
+GUY,Guyana,1995,Left,Left,PPP,0.0,7.0,Assembly-Elected President,3.0
+GUY,Guyana,1996,Left,Left,PPP,0.0,7.0,Assembly-Elected President,4.0
+GUY,Guyana,1997,Left,Left,PPP,0.0,7.0,Assembly-Elected President,5.0
+GUY,Guyana,1998,Left,Left,PPP,0.0,7.0,Assembly-Elected President,1.0
+GUY,Guyana,1999,Left,Left,PPP,0.0,7.0,Assembly-Elected President,2.0
+GUY,Guyana,2000,Left,Left,PPP,0.0,7.0,Assembly-Elected President,1.0
+GUY,Guyana,2001,Left,Left,PPP,0.0,7.0,Assembly-Elected President,2.0
+GUY,Guyana,2002,Left,Left,PPP,0.0,7.0,Assembly-Elected President,3.0
+GUY,Guyana,2003,Left,Left,PPP,0.0,7.0,Assembly-Elected President,4.0
+GUY,Guyana,2004,Left,Left,PPP,0.0,7.0,Assembly-Elected President,5.0
+GUY,Guyana,2005,Left,Left,PPP,0.0,7.0,Assembly-Elected President,6.0
+GUY,Guyana,2006,Left,Left,PPP,0.0,7.0,Assembly-Elected President,7.0
+GUY,Guyana,2007,Left,Left,PPP,0.0,7.0,Assembly-Elected President,8.0
+GUY,Guyana,2008,Left,Left,PPP,0.0,7.0,Assembly-Elected President,9.0
+GUY,Guyana,2009,Left,Left,PPP,0.0,7.0,Assembly-Elected President,10.0
+GUY,Guyana,2010,Left,Left,PPP,0.0,7.0,Assembly-Elected President,11.0
+GUY,Guyana,2011,Left,Left,PPP,0.0,7.0,Assembly-Elected President,12.0
+GUY,Guyana,2012,Left,Left,PPP,0.0,7.0,Assembly-Elected President,1.0
+GUY,Guyana,2013,Left,Left,PPP,0.0,7.0,Assembly-Elected President,2.0
+GUY,Guyana,2014,Left,Left,PPP,0.0,7.0,Assembly-Elected President,3.0
+GUY,Guyana,2015,Left,Left,PPP,0.0,7.0,Assembly-Elected President,4.0
+GUY,Guyana,2016,Left,Left,PNCR-G,0.0,7.0,Assembly-Elected President,1.0
+GUY,Guyana,2017,Left,Left,PNCR-G,0.0,7.0,Assembly-Elected President,2.0
+GUY,Guyana,2018,Left,Left,PNCR-G,0.0,7.0,Assembly-Elected President,2.0
+GUY,Guyana,2019,Left,Left,PNCR-G,0.0,7.0,Assembly-Elected President,2.0
+GUY,Guyana,2020,Left,Left,PNCR-G,0.0,7.0,Assembly-Elected President,2.0
+GUY,Guyana,2021,Left,Left,PPP,0.0,7.0,Parliamentary,1.0
+GUY,Guyana,2022,Left,Left,PPP,0.0,7.0,Parliamentary,2.0
+GUY,Guyana,2023,Left,Left,PPP,0.0,7.0,Parliamentary,3.0
+HND,Honduras,1975,,0,independent,0.0,2.0,Presidential,3.0
+HND,Honduras,1976,,0,independent,0.0,2.0,Presidential,1.0
+HND,Honduras,1977,,0,independent,0.0,2.0,Presidential,2.0
+HND,Honduras,1978,,0,independent,0.0,2.0,Presidential,3.0
+HND,Honduras,1979,,0,independent,0.0,2.0,Presidential,1.0
+HND,Honduras,1980,,0,independent,0.0,2.0,Presidential,2.0
+HND,Honduras,1981,,0,independent,0.0,2.0,Presidential,3.0
+HND,Honduras,1982,Right,Right,PL,0.0,7.0,Assembly-Elected President,1.0
+HND,Honduras,1983,Right,Right,PL,0.0,7.0,Assembly-Elected President,2.0
+HND,Honduras,1984,Right,Right,PL,0.0,7.0,Assembly-Elected President,3.0
+HND,Honduras,1985,Right,Right,PL,0.0,7.0,Assembly-Elected President,4.0
+HND,Honduras,1986,Right,Right,PL,0.0,7.0,Assembly-Elected President,1.0
+HND,Honduras,1987,Right,Right,PL,0.0,7.0,Assembly-Elected President,2.0
+HND,Honduras,1988,Right,Right,PL,0.0,7.0,Assembly-Elected President,3.0
+HND,Honduras,1989,Right,Right,PL,1.0,7.0,Assembly-Elected President,4.0
+HND,Honduras,1990,Right,Right,PN,0.0,7.0,Presidential,1.0
+HND,Honduras,1991,Right,Right,PN,0.0,7.0,Presidential,2.0
+HND,Honduras,1992,Right,Right,PN,0.0,7.0,Presidential,3.0
+HND,Honduras,1993,Right,Right,PN,1.0,7.0,Presidential,4.0
+HND,Honduras,1994,Right,Right,PL,0.0,7.0,Presidential,1.0
+HND,Honduras,1995,Right,Right,PL,0.0,7.0,Presidential,2.0
+HND,Honduras,1996,Right,Right,PL,0.0,7.0,Presidential,3.0
+HND,Honduras,1997,Right,Right,PL,1.0,7.0,Presidential,4.0
+HND,Honduras,1998,Right,Right,PL,0.0,7.0,Presidential,1.0
+HND,Honduras,1999,Right,Right,PL,0.0,7.0,Presidential,2.0
+HND,Honduras,2000,Right,Right,PL,0.0,7.0,Presidential,3.0
+HND,Honduras,2001,Right,Right,PL,1.0,7.0,Presidential,4.0
+HND,Honduras,2002,Right,Right,PN,0.0,7.0,Presidential,1.0
+HND,Honduras,2003,Right,Right,PN,0.0,7.0,Presidential,2.0
+HND,Honduras,2004,Right,Right,PN,0.0,7.0,Presidential,3.0
+HND,Honduras,2005,Right,Right,PN,1.0,7.0,Presidential,4.0
+HND,Honduras,2006,Right,Right,PL,0.0,7.0,Presidential,1.0
+HND,Honduras,2007,Right,Right,PL,0.0,7.0,Presidential,2.0
+HND,Honduras,2008,Right,Right,PL,0.0,7.0,Presidential,3.0
+HND,Honduras,2009,Right,Right,PL,1.0,7.0,Presidential,4.0
+HND,Honduras,2010,Right,Right,PN,0.0,7.0,Presidential,1.0
+HND,Honduras,2011,Right,Right,PN,0.0,7.0,Presidential,2.0
+HND,Honduras,2012,Right,Right,PN,0.0,7.0,Presidential,3.0
+HND,Honduras,2013,Right,Right,PN,1.0,7.0,Presidential,4.0
+HND,Honduras,2014,Right,Right,PN,0.0,7.0,Presidential,1.0
+HND,Honduras,2015,Right,Right,PN,0.0,7.0,Presidential,2.0
+HND,Honduras,2016,Right,Right,PN,0.0,7.0,Presidential,3.0
+HND,Honduras,2017,Right,Right,PN,1.0,7.0,Presidential,4.0
+HND,Honduras,2018,Right,Right,PN,0.0,7.0,Presidential,5.0
+HND,Honduras,2019,Right,Right,PN,0.0,7.0,Presidential,6.0
+HND,Honduras,2020,Right,Right,PN,0.0,7.0,Presidential,7.0
+HND,Honduras,2021,Right,Right,PN,1.0,7.0,Presidential,8.0
+HND,Honduras,2022,Left,Left,Libre,0.0,7.0,Presidential,1.0
+HND,Honduras,2023,Left,Left,Libre,0.0,7.0,Presidential,2.0
+HTI,Haiti,1975,,0,PUN,0.0,2.0,Presidential,4.0
+HTI,Haiti,1976,,0,PUN,0.0,2.0,Presidential,5.0
+HTI,Haiti,1977,,0,PUN,0.0,2.0,Presidential,6.0
+HTI,Haiti,1978,,0,PUN,0.0,2.0,Presidential,7.0
+HTI,Haiti,1979,,0,PUN,0.0,2.0,Presidential,8.0
+HTI,Haiti,1980,,0,PUN,0.0,2.0,Presidential,9.0
+HTI,Haiti,1981,,0,PUN,0.0,2.0,Presidential,10.0
+HTI,Haiti,1982,,0,PUN,0.0,2.0,Presidential,11.0
+HTI,Haiti,1983,,0,PUN,0.0,2.0,Presidential,12.0
+HTI,Haiti,1984,,0,PUN,0.0,2.0,Presidential,13.0
+HTI,Haiti,1985,,0,PUN,0.0,2.0,Presidential,14.0
+HTI,Haiti,1986,,0,PUN,0.0,2.0,Presidential,15.0
+HTI,Haiti,1987,,0,independent,0.0,2.0,Presidential,1.0
+HTI,Haiti,1988,,0,independent,0.0,2.0,Presidential,2.0
+HTI,Haiti,1989,,0,independent,0.0,2.0,Presidential,3.0
+HTI,Haiti,1990,,0,independent,1.0,2.0,Presidential,1.0
+HTI,Haiti,1991,,0,FNCD,0.0,7.0,Presidential,1.0
+HTI,Haiti,1992,,0,independent,0.0,2.0,Presidential,1.0
+HTI,Haiti,1993,,0,independent,0.0,2.0,Presidential,2.0
+HTI,Haiti,1994,,0,independent,0.0,2.0,Presidential,3.0
+HTI,Haiti,1995,,0,independent,1.0,7.0,Presidential,1.0
+HTI,Haiti,1996,,0,OPL,0.0,6.0,Presidential,2.0
+HTI,Haiti,1997,,0,OPL,0.0,6.0,Presidential,1.0
+HTI,Haiti,1998,,0,OPL,0.0,6.0,Presidential,2.0
+HTI,Haiti,1999,,0,OPL,0.0,6.0,Presidential,3.0
+HTI,Haiti,2000,,0,OPL,1.0,6.0,Presidential,4.0
+HTI,Haiti,2001,,0,FL,0.0,6.0,Presidential,1.0
+HTI,Haiti,2002,,0,FL,0.0,6.0,Presidential,2.0
+HTI,Haiti,2003,,0,FL,0.0,6.0,Presidential,3.0
+HTI,Haiti,2004,,0,FL,0.0,6.0,Presidential,4.0
+HTI,Haiti,2005,,0,independent,0.0,6.0,Presidential,1.0
+HTI,Haiti,2006,,0,independent,1.0,6.0,Presidential,2.0
+HTI,Haiti,2007,,0,Lespwa,0.0,7.0,Presidential,1.0
+HTI,Haiti,2008,,0,Lespwa,0.0,7.0,Presidential,2.0
+HTI,Haiti,2009,,0,Lespwa,0.0,7.0,Presidential,3.0
+HTI,Haiti,2010,,0,Lespwa,0.0,7.0,Presidential,4.0
+HTI,Haiti,2011,,0,Lespwa,1.0,7.0,Presidential,5.0
+HTI,Haiti,2012,Right,Right,RP,0.0,7.0,Presidential,1.0
+HTI,Haiti,2013,Right,Right,RP,0.0,7.0,Presidential,2.0
+HTI,Haiti,2014,Right,Right,RP,0.0,7.0,Presidential,3.0
+HTI,Haiti,2015,Right,Right,RP,1.0,7.0,Presidential,4.0
+HTI,Haiti,2016,Right,Right,RP,1.0,7.0,Presidential,5.0
+HTI,Haiti,2017,Center,Center,PHTK,0.0,7.0,Presidential,1.0
+HTI,Haiti,2018,Center,Center,PHTK,0.0,7.0,Presidential,2.0
+HTI,Haiti,2019,Center,Center,PHTK,0.0,7.0,Presidential,3.0
+HTI,Haiti,2020,Center,Center,PHTK,0.0,7.0,Presidential,4.0
+HTI,Haiti,2021,Center,Center,PHTK,0.0,7.0,Presidential,5.0
+HTI,Haiti,2022,Center,Center,PHTK,0.0,7.0,Presidential,1.0
+HTI,Haiti,2023,Center,Center,PHTK,0.0,7.0,Presidential,2.0
+JAM,Jamaica,1975,Left,Left,PNP,0.0,6.5,Parliamentary,3.0
+JAM,Jamaica,1976,Left,Left,PNP,0.0,6.0,Parliamentary,4.0
+JAM,Jamaica,1977,Left,Left,PNP,0.0,6.0,Parliamentary,5.0
+JAM,Jamaica,1978,Left,Left,PNP,0.0,6.0,Parliamentary,6.0
+JAM,Jamaica,1979,Left,Left,PNP,0.0,6.0,Parliamentary,7.0
+JAM,Jamaica,1980,Left,Left,PNP,0.0,6.0,Parliamentary,8.0
+JAM,Jamaica,1981,Right,Right,JLP,0.0,6.0,Parliamentary,1.0
+JAM,Jamaica,1982,Right,Right,JLP,0.0,6.0,Parliamentary,2.0
+JAM,Jamaica,1983,Right,Right,JLP,0.0,6.0,Parliamentary,3.0
+JAM,Jamaica,1984,Right,Right,JLP,0.0,5.0,Parliamentary,4.0
+JAM,Jamaica,1985,Right,Right,JLP,0.0,5.0,Parliamentary,5.0
+JAM,Jamaica,1986,Right,Right,JLP,0.0,5.0,Parliamentary,6.0
+JAM,Jamaica,1987,Right,Right,JLP,0.0,6.0,Parliamentary,7.0
+JAM,Jamaica,1988,Right,Right,JLP,0.0,6.0,Parliamentary,8.0
+JAM,Jamaica,1989,Right,Right,JLP,0.0,6.0,Parliamentary,9.0
+JAM,Jamaica,1990,Left,Left,PNP,0.0,7.0,Parliamentary,1.0
+JAM,Jamaica,1991,Left,Left,PNP,0.0,7.0,Parliamentary,2.0
+JAM,Jamaica,1992,Left,Left,PNP,0.0,7.0,Parliamentary,3.0
+JAM,Jamaica,1993,Left,Left,PNP,0.0,7.0,Parliamentary,1.0
+JAM,Jamaica,1994,Left,Left,PNP,0.0,6.0,Parliamentary,2.0
+JAM,Jamaica,1995,Left,Left,PNP,0.0,6.0,Parliamentary,3.0
+JAM,Jamaica,1996,Left,Left,PNP,0.0,6.0,Parliamentary,4.0
+JAM,Jamaica,1997,Left,Left,PNP,0.0,6.0,Parliamentary,5.0
+JAM,Jamaica,1998,Left,Left,PNP,0.0,6.0,Parliamentary,6.0
+JAM,Jamaica,1999,Left,Left,PNP,0.0,6.0,Parliamentary,7.0
+JAM,Jamaica,2000,Left,Left,PNP,0.0,6.0,Parliamentary,8.0
+JAM,Jamaica,2001,Left,Left,PNP,0.0,6.0,Parliamentary,9.0
+JAM,Jamaica,2002,Left,Left,PNP,0.0,6.0,Parliamentary,10.0
+JAM,Jamaica,2003,Left,Left,PNP,0.0,7.0,Parliamentary,11.0
+JAM,Jamaica,2004,Left,Left,PNP,0.0,7.0,Parliamentary,12.0
+JAM,Jamaica,2005,Left,Left,PNP,0.0,7.0,Parliamentary,13.0
+JAM,Jamaica,2006,Left,Left,PNP,0.0,7.0,Parliamentary,14.0
+JAM,Jamaica,2007,Left,Left,PNP,0.0,7.0,Parliamentary,15.0
+JAM,Jamaica,2008,Right,Right,JLP,0.0,7.0,Parliamentary,1.0
+JAM,Jamaica,2009,Right,Right,JLP,0.0,7.0,Parliamentary,2.0
+JAM,Jamaica,2010,Right,Right,JLP,0.0,7.0,Parliamentary,3.0
+JAM,Jamaica,2011,Right,Right,JLP,0.0,7.0,Parliamentary,4.0
+JAM,Jamaica,2012,Left,Left,PNP,0.0,7.0,Parliamentary,1.0
+JAM,Jamaica,2013,Left,Left,PNP,0.0,7.0,Parliamentary,2.0
+JAM,Jamaica,2014,Left,Left,PNP,0.0,7.0,Parliamentary,3.0
+JAM,Jamaica,2015,Left,Left,PNP,0.0,7.0,Parliamentary,4.0
+JAM,Jamaica,2016,Left,Left,PNP,0.0,7.0,Parliamentary,5.0
+JAM,Jamaica,2017,Right,Right,JLP,0.0,7.0,Parliamentary,1.0
+JAM,Jamaica,2018,Right,Right,JLP,0.0,7.0,Parliamentary,2.0
+JAM,Jamaica,2019,Right,Right,JLP,0.0,7.0,Parliamentary,3.0
+JAM,Jamaica,2020,Right,Right,JLP,0.0,7.0,Parliamentary,4.0
+JAM,Jamaica,2021,Right,Right,JLP,0.0,6.0,Parliamentary,5.0
+JAM,Jamaica,2022,Right,Right,JLP,0.0,6.0,Parliamentary,6.0
+JAM,Jamaica,2023,Right,Right,JLP,0.0,6.0,Parliamentary,7.0
+LCA,St. Lucia,1975,,-999,,,,,
+LCA,St. Lucia,1976,,-999,,,,,
+LCA,St. Lucia,1977,,-999,,,,,
+LCA,St. Lucia,1978,,-999,,,,,
+LCA,St. Lucia,1979,,-999,,,,,
+LCA,St. Lucia,1980,Left,Left,Labour,0.0,7.0,Parliamentary,1.0
+LCA,St. Lucia,1981,Left,Left,Labour,0.0,7.0,Parliamentary,2.0
+LCA,St. Lucia,1982,Left,Left,Labour,0.0,7.0,Parliamentary,1.0
+LCA,St. Lucia,1983,Right,Right,UWP,0.0,6.0,Parliamentary,1.0
+LCA,St. Lucia,1984,Right,Right,UWP,0.0,6.0,Parliamentary,2.0
+LCA,St. Lucia,1985,Right,Right,UWP,0.0,6.0,Parliamentary,3.0
+LCA,St. Lucia,1986,Right,Right,UWP,0.0,6.0,Parliamentary,4.0
+LCA,St. Lucia,1987,Right,Right,UWP,0.0,7.0,Parliamentary,5.0
+LCA,St. Lucia,1988,Right,Right,UWP,0.0,7.0,Parliamentary,6.0
+LCA,St. Lucia,1989,Right,Right,UWP,0.0,7.0,Parliamentary,7.0
+LCA,St. Lucia,1990,Right,Right,UWP,0.0,7.0,Parliamentary,8.0
+LCA,St. Lucia,1991,Right,Right,UWP,0.0,7.0,Parliamentary,9.0
+LCA,St. Lucia,1992,Right,Right,UWP,0.0,7.0,Parliamentary,10.0
+LCA,St. Lucia,1993,Right,Right,UWP,0.0,7.0,Parliamentary,11.0
+LCA,St. Lucia,1994,Right,Right,UWP,0.0,7.0,Parliamentary,12.0
+LCA,St. Lucia,1995,Right,Right,UWP,0.0,7.0,Parliamentary,13.0
+LCA,St. Lucia,1996,Right,Right,UWP,0.0,7.0,Parliamentary,14.0
+LCA,St. Lucia,1997,Right,Right,UWP,0.0,7.0,Parliamentary,15.0
+LCA,St. Lucia,1998,Left,Left,SLP,0.0,7.0,Parliamentary,1.0
+LCA,St. Lucia,1999,Left,Left,SLP,0.0,7.0,Parliamentary,2.0
+LCA,St. Lucia,2000,Left,Left,SLP,0.0,7.0,Parliamentary,3.0
+LCA,St. Lucia,2001,Left,Left,SLP,0.0,7.0,Parliamentary,4.0
+LCA,St. Lucia,2002,Left,Left,SLP,0.0,7.0,Parliamentary,5.0
+LCA,St. Lucia,2003,Left,Left,SLP,0.0,7.0,Parliamentary,6.0
+LCA,St. Lucia,2004,Left,Left,SLP,0.0,7.0,Parliamentary,7.0
+LCA,St. Lucia,2005,Left,Left,SLP,0.0,7.0,Parliamentary,8.0
+LCA,St. Lucia,2006,Left,Left,SLP,0.0,7.0,Parliamentary,9.0
+LCA,St. Lucia,2007,Right,Right,UWP,0.0,7.0,Parliamentary,10.0
+LCA,St. Lucia,2008,Right,Right,UWP,0.0,7.0,Parliamentary,1.0
+LCA,St. Lucia,2009,Right,Right,UWP,0.0,7.0,Parliamentary,2.0
+LCA,St. Lucia,2010,Right,Right,UWP,0.0,7.0,Parliamentary,3.0
+LCA,St. Lucia,2011,Right,Right,UWP,0.0,7.0,Parliamentary,4.0
+LCA,St. Lucia,2012,Left,Left,SLP,0.0,7.0,Parliamentary,1.0
+LCA,St. Lucia,2013,Left,Left,SLP,0.0,7.0,Parliamentary,2.0
+LCA,St. Lucia,2014,Left,Left,SLP,0.0,7.0,Parliamentary,3.0
+LCA,St. Lucia,2015,Left,Left,SLP,0.0,7.0,Parliamentary,4.0
+LCA,St. Lucia,2016,Left,Left,SLP,0.0,7.0,Parliamentary,5.0
+LCA,St. Lucia,2017,Right,Right,UWP,0.0,7.0,Parliamentary,1.0
+LCA,St. Lucia,2018,Right,Right,UWP,0.0,7.0,Parliamentary,2.0
+LCA,St. Lucia,2019,Right,Right,UWP,0.0,7.0,Parliamentary,3.0
+LCA,St. Lucia,2020,Right,Right,UWP,0.0,7.0,Parliamentary,4.0
+LCA,St. Lucia,2021,Right,Right,UWP,0.0,7.0,Parliamentary,5.0
+LCA,St. Lucia,2022,Left,Left,SLP,0.0,7.0,Parliamentary,1.0
+LCA,St. Lucia,2023,Left,Left,SLP,0.0,7.0,Parliamentary,2.0
+MEX,Mexico,1975,Left,Left,PRI,0.0,6.0,Presidential,5.0
+MEX,Mexico,1976,Left,Left,PRI,1.0,6.0,Presidential,6.0
+MEX,Mexico,1977,Left,Left,PRI,0.0,6.0,Presidential,1.0
+MEX,Mexico,1978,Left,Left,PRI,0.0,6.0,Presidential,2.0
+MEX,Mexico,1979,Left,Left,PRI,0.0,6.0,Presidential,3.0
+MEX,Mexico,1980,Left,Left,PRI,0.0,6.0,Presidential,4.0
+MEX,Mexico,1981,Left,Left,PRI,0.0,6.0,Presidential,5.0
+MEX,Mexico,1982,Left,Left,PRI,1.0,6.0,Presidential,6.0
+MEX,Mexico,1983,Center,Center,PRI,0.0,7.0,Presidential,1.0
+MEX,Mexico,1984,Center,Center,PRI,0.0,7.0,Presidential,2.0
+MEX,Mexico,1985,Center,Center,PRI,0.0,7.0,Presidential,3.0
+MEX,Mexico,1986,Center,Center,PRI,0.0,7.0,Presidential,4.0
+MEX,Mexico,1987,Center,Center,PRI,0.0,7.0,Presidential,5.0
+MEX,Mexico,1988,Center,Center,PRI,1.0,7.0,Presidential,6.0
+MEX,Mexico,1989,Center,Center,PRI,0.0,7.0,Presidential,1.0
+MEX,Mexico,1990,Center,Center,PRI,0.0,7.0,Presidential,2.0
+MEX,Mexico,1991,Center,Center,PRI,0.0,7.0,Presidential,3.0
+MEX,Mexico,1992,Center,Center,PRI,0.0,7.0,Presidential,4.0
+MEX,Mexico,1993,Center,Center,PRI,0.0,7.0,Presidential,5.0
+MEX,Mexico,1994,Center,Center,PRI,1.0,7.0,Presidential,6.0
+MEX,Mexico,1995,Center,Center,PRI,0.0,7.0,Presidential,1.0
+MEX,Mexico,1996,Center,Center,PRI,0.0,7.0,Presidential,2.0
+MEX,Mexico,1997,Center,Center,PRI,1.0,7.0,Presidential,3.0
+MEX,Mexico,1998,Center,Center,PRI,0.0,7.0,Presidential,4.0
+MEX,Mexico,1999,Center,Center,PRI,0.0,7.0,Presidential,5.0
+MEX,Mexico,2000,Center,Center,PRI,1.0,7.0,Presidential,6.0
+MEX,Mexico,2001,Right,Right,PAN,0.0,7.0,Presidential,1.0
+MEX,Mexico,2002,Right,Right,PAN,0.0,7.0,Presidential,2.0
+MEX,Mexico,2003,Right,Right,PAN,0.0,7.0,Presidential,3.0
+MEX,Mexico,2004,Right,Right,PAN,0.0,7.0,Presidential,4.0
+MEX,Mexico,2005,Right,Right,PAN,0.0,7.0,Presidential,5.0
+MEX,Mexico,2006,Right,Right,PAN,1.0,7.0,Presidential,6.0
+MEX,Mexico,2007,Right,Right,PAN,0.0,7.0,Presidential,1.0
+MEX,Mexico,2008,Right,Right,PAN,0.0,7.0,Presidential,2.0
+MEX,Mexico,2009,Right,Right,PAN,0.0,7.0,Presidential,3.0
+MEX,Mexico,2010,Right,Right,PAN,0.0,7.0,Presidential,4.0
+MEX,Mexico,2011,Right,Right,PAN,0.0,7.0,Presidential,3.0
+MEX,Mexico,2012,Right,Right,PAN,1.0,7.0,Presidential,2.0
+MEX,Mexico,2013,Center,Center,PRI,0.0,7.0,Presidential,1.0
+MEX,Mexico,2014,Center,Center,PRI,0.0,7.0,Presidential,2.0
+MEX,Mexico,2015,Center,Center,PRI,0.0,7.0,Presidential,3.0
+MEX,Mexico,2016,Center,Center,PRI,0.0,7.0,Presidential,4.0
+MEX,Mexico,2017,Center,Center,PRI,0.0,7.0,Presidential,5.0
+MEX,Mexico,2018,Center,Center,PRI,1.0,7.0,Presidential,6.0
+MEX,Mexico,2019,Left,Left,Morena,0.0,7.0,Presidential,1.0
+MEX,Mexico,2020,Left,Left,Morena,0.0,7.0,Presidential,2.0
+MEX,Mexico,2021,Left,Left,Morena,0.0,7.0,Presidential,3.0
+MEX,Mexico,2022,Left,Left,Morena,0.0,7.0,Presidential,4.0
+MEX,Mexico,2023,Left,Left,Morena,0.0,7.0,Presidential,5.0
+NIC,Nicaragua,1975,Right,Right,Liberal,0.0,5.5,Presidential,1.0
+NIC,Nicaragua,1976,Right,Right,Liberal,0.0,5.5,Presidential,2.0
+NIC,Nicaragua,1977,Right,Right,Liberal,0.0,5.5,Presidential,3.0
+NIC,Nicaragua,1978,Right,Right,Liberal,0.0,5.5,Presidential,4.0
+NIC,Nicaragua,1979,Right,Right,Liberal,0.0,5.5,Presidential,5.0
+NIC,Nicaragua,1980,Left,Left,FSLN,0.0,2.0,Presidential,1.0
+NIC,Nicaragua,1981,Left,Left,FSLN,0.0,2.0,Presidential,2.0
+NIC,Nicaragua,1982,Left,Left,FSLN,0.0,2.0,Presidential,3.0
+NIC,Nicaragua,1983,Left,Left,FSLN,0.0,2.0,Presidential,4.0
+NIC,Nicaragua,1984,Left,Left,FSLN,1.0,2.0,Presidential,5.0
+NIC,Nicaragua,1985,Left,Left,FSLN,0.0,7.0,Presidential,6.0
+NIC,Nicaragua,1986,Left,Left,FSLN,0.0,7.0,Presidential,7.0
+NIC,Nicaragua,1987,Left,Left,FSLN,0.0,7.0,Presidential,8.0
+NIC,Nicaragua,1988,Left,Left,FSLN,0.0,7.0,Presidential,9.0
+NIC,Nicaragua,1989,Left,Left,FSLN,0.0,7.0,Presidential,10.0
+NIC,Nicaragua,1990,Left,Left,FSLN,1.0,7.0,Presidential,11.0
+NIC,Nicaragua,1991,,0,UNO,0.0,7.0,Presidential,1.0
+NIC,Nicaragua,1992,,0,UNO,0.0,7.0,Presidential,2.0
+NIC,Nicaragua,1993,,0,UNO,0.0,7.0,Presidential,3.0
+NIC,Nicaragua,1994,,0,independent,0.0,7.0,Presidential,4.0
+NIC,Nicaragua,1995,,0,independent,0.0,7.0,Presidential,5.0
+NIC,Nicaragua,1996,,0,independent,1.0,7.0,Presidential,6.0
+NIC,Nicaragua,1997,Right,Right,AL,0.0,7.0,Presidential,1.0
+NIC,Nicaragua,1998,Right,Right,AL,0.0,7.0,Presidential,2.0
+NIC,Nicaragua,1999,Right,Right,AL,0.0,7.0,Presidential,3.0
+NIC,Nicaragua,2000,Right,Right,AL,0.0,7.0,Presidential,4.0
+NIC,Nicaragua,2001,Right,Right,AL,1.0,7.0,Presidential,5.0
+NIC,Nicaragua,2002,,0,PLC,0.0,7.0,Presidential,1.0
+NIC,Nicaragua,2003,,0,PLC,0.0,7.0,Presidential,2.0
+NIC,Nicaragua,2004,,0,PLC,0.0,7.0,Presidential,3.0
+NIC,Nicaragua,2005,,0,PLC,0.0,7.0,Presidential,4.0
+NIC,Nicaragua,2006,,0,PLC,1.0,7.0,Presidential,5.0
+NIC,Nicaragua,2007,Left,Left,FSLN,0.0,7.0,Presidential,1.0
+NIC,Nicaragua,2008,Left,Left,FSLN,0.0,7.0,Presidential,2.0
+NIC,Nicaragua,2009,Left,Left,FSLN,0.0,7.0,Presidential,3.0
+NIC,Nicaragua,2010,Left,Left,FSLN,0.0,7.0,Presidential,4.0
+NIC,Nicaragua,2011,Left,Left,FSLN,1.0,7.0,Presidential,5.0
+NIC,Nicaragua,2012,Left,Left,FSLN,0.0,7.0,Presidential,6.0
+NIC,Nicaragua,2013,Left,Left,FSLN,0.0,7.0,Presidential,7.0
+NIC,Nicaragua,2014,Left,Left,FSLN,0.0,7.0,Presidential,8.0
+NIC,Nicaragua,2015,Left,Left,FSLN,0.0,7.0,Presidential,9.0
+NIC,Nicaragua,2016,Left,Left,FSLN,1.0,7.0,Presidential,10.0
+NIC,Nicaragua,2017,Left,Left,FSLN,0.0,7.0,Presidential,11.0
+NIC,Nicaragua,2018,Left,Left,FSLN,0.0,7.0,Presidential,12.0
+NIC,Nicaragua,2019,Left,Left,FSLN,0.0,7.0,Presidential,13.0
+NIC,Nicaragua,2020,Left,Left,FSLN,0.0,7.0,Presidential,14.0
+NIC,Nicaragua,2021,Left,Left,FSLN,1.0,7.0,Presidential,15.0
+NIC,Nicaragua,2022,Left,Left,FSLN,0.0,6.0,Presidential,16.0
+NIC,Nicaragua,2023,Left,Left,FSLN,0.0,6.0,Presidential,17.0
+PAN,Panama,1975,,0,independent,0.0,2.0,Presidential,7.0
+PAN,Panama,1976,,0,independent,0.0,2.0,Presidential,8.0
+PAN,Panama,1977,,0,independent,0.0,2.0,Presidential,9.0
+PAN,Panama,1978,,0,independent,0.0,2.0,Presidential,10.0
+PAN,Panama,1979,,0,independent,0.0,4.0,Parliamentary,1.0
+PAN,Panama,1980,,0,independent,0.0,4.0,Parliamentary,2.0
+PAN,Panama,1981,,0,independent,0.0,4.0,Parliamentary,3.0
+PAN,Panama,1982,,0,independent,0.0,4.0,Parliamentary,4.0
+PAN,Panama,1983,,0,independent,0.0,4.0,Parliamentary,1.0
+PAN,Panama,1984,,0,independent,1.0,4.0,Parliamentary,2.0
+PAN,Panama,1985,,0,PRD,0.0,7.0,Presidential,1.0
+PAN,Panama,1986,,0,PRD,0.0,7.0,Presidential,1.0
+PAN,Panama,1987,,0,PRD,0.0,7.0,Presidential,2.0
+PAN,Panama,1988,,0,PRD,0.0,7.0,Presidential,3.0
+PAN,Panama,1989,,0,PRD,1.0,7.0,Presidential,1.0
+PAN,Panama,1990,Right,Right,independent,0.0,7.0,Presidential,1.0
+PAN,Panama,1991,Right,Right,PA,0.0,7.0,Presidential,2.0
+PAN,Panama,1992,Right,Right,PA,0.0,7.0,Presidential,3.0
+PAN,Panama,1993,Right,Right,PA,0.0,7.0,Presidential,4.0
+PAN,Panama,1994,Right,Right,PA,1.0,7.0,Presidential,5.0
+PAN,Panama,1995,,0,PRD,0.0,7.0,Presidential,1.0
+PAN,Panama,1996,,0,PRD,0.0,7.0,Presidential,2.0
+PAN,Panama,1997,,0,PRD,0.0,7.0,Presidential,3.0
+PAN,Panama,1998,,0,PRD,0.0,7.0,Presidential,4.0
+PAN,Panama,1999,,0,PRD,1.0,7.0,Presidential,5.0
+PAN,Panama,2000,Right,Right,PA,0.0,7.0,Presidential,1.0
+PAN,Panama,2001,Right,Right,PA,0.0,7.0,Presidential,2.0
+PAN,Panama,2002,Right,Right,PA,0.0,7.0,Presidential,3.0
+PAN,Panama,2003,Right,Right,PA,0.0,7.0,Presidential,4.0
+PAN,Panama,2004,Right,Right,PA,1.0,7.0,Presidential,5.0
+PAN,Panama,2005,,0,PRD,0.0,7.0,Presidential,1.0
+PAN,Panama,2006,,0,PRD,0.0,7.0,Presidential,2.0
+PAN,Panama,2007,,0,PRD,0.0,7.0,Presidential,3.0
+PAN,Panama,2008,,0,PRD,0.0,7.0,Presidential,4.0
+PAN,Panama,2009,,0,PRD,1.0,7.0,Presidential,5.0
+PAN,Panama,2010,,0,AC,0.0,7.0,Presidential,1.0
+PAN,Panama,2011,,0,AC,0.0,7.0,Presidential,2.0
+PAN,Panama,2012,,0,AC,0.0,7.0,Presidential,3.0
+PAN,Panama,2013,,0,AC,0.0,7.0,Presidential,4.0
+PAN,Panama,2014,,0,AC,1.0,7.0,Presidential,5.0
+PAN,Panama,2015,,0,PP,0.0,7.0,Presidential,1.0
+PAN,Panama,2016,,0,PP,0.0,7.0,Presidential,2.0
+PAN,Panama,2017,,0,PP,0.0,7.0,Presidential,3.0
+PAN,Panama,2018,,0,PP,0.0,7.0,Presidential,4.0
+PAN,Panama,2019,,0,PP,1.0,7.0,Presidential,5.0
+PAN,Panama,2020,,0,PRD,0.0,7.0,Presidential,1.0
+PAN,Panama,2021,,0,PRD,0.0,7.0,Presidential,2.0
+PAN,Panama,2022,,0,PRD,0.0,7.0,Presidential,3.0
+PAN,Panama,2023,,0,PRD,0.0,7.0,Presidential,4.0
+PER,Peru,1975,,0,independent,0.0,2.0,Presidential,7.0
+PER,Peru,1976,,0,independent,0.0,2.0,Presidential,1.0
+PER,Peru,1977,,0,independent,0.0,2.0,Presidential,2.0
+PER,Peru,1978,,0,independent,0.0,2.0,Presidential,3.0
+PER,Peru,1979,,0,independent,0.0,2.0,Presidential,4.0
+PER,Peru,1980,,0,independent,1.0,2.0,Presidential,5.0
+PER,Peru,1981,Right,Right,AP,0.0,7.0,Presidential,1.0
+PER,Peru,1982,Right,Right,AP,0.0,7.0,Presidential,2.0
+PER,Peru,1983,Right,Right,AP,0.0,7.0,Presidential,3.0
+PER,Peru,1984,Right,Right,AP,0.0,7.0,Presidential,4.0
+PER,Peru,1985,Right,Right,AP,1.0,7.0,Presidential,5.0
+PER,Peru,1986,Left,Left,APRA,0.0,7.0,Presidential,1.0
+PER,Peru,1987,Left,Left,APRA,0.0,7.0,Presidential,2.0
+PER,Peru,1988,Left,Left,APRA,0.0,7.0,Presidential,3.0
+PER,Peru,1989,Left,Left,APRA,0.0,7.0,Presidential,4.0
+PER,Peru,1990,Left,Left,APRA,1.0,7.0,Presidential,5.0
+PER,Peru,1991,Right,Right,Change 90,0.0,7.0,Presidential,1.0
+PER,Peru,1992,Right,Right,Change 90,0.0,7.0,Presidential,2.0
+PER,Peru,1993,Right,Right,Change 90,0.0,7.0,Presidential,3.0
+PER,Peru,1994,Right,Right,Change 90,0.0,7.0,Presidential,4.0
+PER,Peru,1995,Right,Right,Change 90,1.0,7.0,Presidential,5.0
+PER,Peru,1996,Right,Right,Change 90,0.0,7.0,Presidential,6.0
+PER,Peru,1997,Right,Right,Change 90,0.0,7.0,Presidential,7.0
+PER,Peru,1998,Right,Right,Change 90,0.0,7.0,Presidential,8.0
+PER,Peru,1999,Right,Right,Change 90,0.0,7.0,Presidential,9.0
+PER,Peru,2000,Right,Right,Change 90,1.0,7.0,Presidential,10.0
+PER,Peru,2001,Right,Right,Change 90,1.0,7.0,Presidential,11.0
+PER,Peru,2002,Center,Center,PP,0.0,7.0,Presidential,1.0
+PER,Peru,2003,Center,Center,PP,0.0,7.0,Presidential,1.0
+PER,Peru,2004,Center,Center,PP,0.0,7.0,Presidential,2.0
+PER,Peru,2005,Center,Center,PP,0.0,7.0,Presidential,3.0
+PER,Peru,2006,Center,Center,PP,1.0,7.0,Presidential,4.0
+PER,Peru,2007,Left,Left,PAP,0.0,7.0,Presidential,1.0
+PER,Peru,2008,Left,Left,PAP,0.0,7.0,Presidential,2.0
+PER,Peru,2009,Left,Left,PAP,0.0,7.0,Presidential,3.0
+PER,Peru,2010,Left,Left,PAP,0.0,7.0,Presidential,4.0
+PER,Peru,2011,Left,Left,PAP,1.0,7.0,Presidential,5.0
+PER,Peru,2012,Left,Left,Gana Peru,0.0,7.0,Presidential,1.0
+PER,Peru,2013,Left,Left,Gana Peru,0.0,7.0,Presidential,2.0
+PER,Peru,2014,Left,Left,Gana Peru,0.0,7.0,Presidential,3.0
+PER,Peru,2015,Left,Left,Gana Peru,0.0,7.0,Presidential,4.0
+PER,Peru,2016,Left,Left,Gana Peru,1.0,7.0,Presidential,5.0
+PER,Peru,2017,Center,Center,PPK,0.0,7.0,Presidential,1.0
+PER,Peru,2018,Center,Center,PPK,0.0,7.0,Presidential,2.0
+PER,Peru,2019,Center,Center,PPK,0.0,7.0,Presidential,1.0
+PER,Peru,2020,Center,Center,PPK,0.0,7.0,Presidential,2.0
+PER,Peru,2021,Center,Center,PPK,1.0,7.0,Presidential,3.0
+PER,Peru,2022,Left,Left,Peru Libre,0.0,7.0,Presidential,1.0
+PER,Peru,2023,Left,Left,Peru Libre,0.0,7.0,Presidential,1.0
+PRY,Paraguay,1975,Right,Right,Colorado,0.0,6.0,Presidential,21.0
+PRY,Paraguay,1976,Right,Right,Colorado,0.0,6.0,Presidential,22.0
+PRY,Paraguay,1977,Right,Right,Colorado,0.0,6.0,Presidential,23.0
+PRY,Paraguay,1978,Right,Right,Colorado,1.0,6.0,Presidential,24.0
+PRY,Paraguay,1979,Right,Right,Colorado,0.0,6.0,Presidential,25.0
+PRY,Paraguay,1980,Right,Right,Colorado,0.0,6.0,Presidential,26.0
+PRY,Paraguay,1981,Right,Right,Colorado,0.0,6.0,Presidential,27.0
+PRY,Paraguay,1982,Right,Right,Colorado,0.0,6.0,Presidential,28.0
+PRY,Paraguay,1983,Right,Right,Colorado,1.0,6.0,Presidential,29.0
+PRY,Paraguay,1984,Right,Right,Colorado,0.0,6.0,Presidential,30.0
+PRY,Paraguay,1985,Right,Right,Colorado,0.0,6.0,Presidential,31.0
+PRY,Paraguay,1986,Right,Right,Colorado,0.0,6.0,Presidential,32.0
+PRY,Paraguay,1987,Right,Right,Colorado,0.0,6.0,Presidential,33.0
+PRY,Paraguay,1988,Right,Right,Colorado,1.0,6.0,Presidential,34.0
+PRY,Paraguay,1989,Right,Right,Colorado,1.0,6.0,Presidential,35.0
+PRY,Paraguay,1990,Right,Right,Colorado,0.0,7.0,Presidential,1.0
+PRY,Paraguay,1991,Right,Right,Colorado,0.0,7.0,Presidential,2.0
+PRY,Paraguay,1992,Right,Right,Colorado,0.0,7.0,Presidential,3.0
+PRY,Paraguay,1993,Right,Right,Colorado,1.0,7.0,Presidential,4.0
+PRY,Paraguay,1994,Right,Right,Colorado,0.0,7.0,Presidential,1.0
+PRY,Paraguay,1995,Right,Right,Colorado,0.0,7.0,Presidential,2.0
+PRY,Paraguay,1996,Right,Right,Colorado,0.0,7.0,Presidential,3.0
+PRY,Paraguay,1997,Right,Right,Colorado,0.0,7.0,Presidential,4.0
+PRY,Paraguay,1998,Right,Right,Colorado,1.0,7.0,Presidential,5.0
+PRY,Paraguay,1999,Right,Right,Colorado,0.0,7.0,Presidential,1.0
+PRY,Paraguay,2000,Right,Right,Colorado,0.0,7.0,Presidential,1.0
+PRY,Paraguay,2001,Right,Right,Colorado,0.0,7.0,Presidential,2.0
+PRY,Paraguay,2002,Right,Right,Colorado,0.0,7.0,Presidential,3.0
+PRY,Paraguay,2003,Right,Right,Colorado,1.0,7.0,Presidential,4.0
+PRY,Paraguay,2004,Right,Right,Colorado,0.0,7.0,Presidential,1.0
+PRY,Paraguay,2005,Right,Right,Colorado,0.0,7.0,Presidential,2.0
+PRY,Paraguay,2006,Right,Right,Colorado,0.0,7.0,Presidential,3.0
+PRY,Paraguay,2007,Right,Right,Colorado,0.0,7.0,Presidential,4.0
+PRY,Paraguay,2008,Right,Right,Colorado,1.0,7.0,Presidential,5.0
+PRY,Paraguay,2009,Left,Left,APC,0.0,7.0,Presidential,1.0
+PRY,Paraguay,2010,Left,Left,APC,0.0,7.0,Presidential,2.0
+PRY,Paraguay,2011,Left,Left,APC,0.0,7.0,Presidential,3.0
+PRY,Paraguay,2012,Left,Left,APC,0.0,7.0,Presidential,4.0
+PRY,Paraguay,2013,Left,Left,APC,1.0,7.0,Presidential,5.0
+PRY,Paraguay,2014,Right,Right,Colorado,0.0,7.0,Presidential,1.0
+PRY,Paraguay,2015,Right,Right,Colorado,0.0,7.0,Presidential,2.0
+PRY,Paraguay,2016,Right,Right,Colorado,0.0,7.0,Presidential,3.0
+PRY,Paraguay,2017,Right,Right,Colorado,0.0,7.0,Presidential,4.0
+PRY,Paraguay,2018,Right,Right,Colorado,1.0,7.0,Presidential,5.0
+PRY,Paraguay,2019,Right,Right,Colorado,0.0,7.0,Presidential,1.0
+PRY,Paraguay,2020,Right,Right,Colorado,0.0,7.0,Presidential,2.0
+PRY,Paraguay,2021,Right,Right,Colorado,0.0,7.0,Presidential,3.0
+PRY,Paraguay,2022,Right,Right,Colorado,0.0,7.0,Presidential,4.0
+PRY,Paraguay,2023,Right,Right,Colorado,1.0,7.0,Presidential,5.0
+SLV,El Salvador,1975,Right,Right,PCN,0.0,6.5,Presidential,3.0
+SLV,El Salvador,1976,Right,Right,PCN,0.0,6.5,Presidential,4.0
+SLV,El Salvador,1977,Right,Right,PCN,1.0,6.5,Presidential,5.0
+SLV,El Salvador,1978,Right,Right,PCN,0.0,6.5,Presidential,1.0
+SLV,El Salvador,1979,Right,Right,PCN,0.0,6.5,Presidential,2.0
+SLV,El Salvador,1980,,0,independent,0.0,2.0,Presidential,1.0
+SLV,El Salvador,1981,,0,independent,0.0,2.0,Presidential,1.0
+SLV,El Salvador,1982,,0,independent,0.0,2.0,Presidential,2.0
+SLV,El Salvador,1983,,0,independent,0.0,3.0,Presidential,1.0
+SLV,El Salvador,1984,,0,independent,1.0,3.0,Presidential,2.0
+SLV,El Salvador,1985,Center,Center,PDC,0.0,7.0,Presidential,1.0
+SLV,El Salvador,1986,Center,Center,PDC,0.0,7.0,Presidential,2.0
+SLV,El Salvador,1987,Center,Center,PDC,0.0,7.0,Presidential,3.0
+SLV,El Salvador,1988,Center,Center,PDC,0.0,7.0,Presidential,4.0
+SLV,El Salvador,1989,Center,Center,PDC,1.0,7.0,Presidential,5.0
+SLV,El Salvador,1990,Right,Right,ARENA,0.0,7.0,Presidential,1.0
+SLV,El Salvador,1991,Right,Right,ARENA,0.0,7.0,Presidential,2.0
+SLV,El Salvador,1992,Right,Right,ARENA,0.0,7.0,Presidential,3.0
+SLV,El Salvador,1993,Right,Right,ARENA,0.0,7.0,Presidential,4.0
+SLV,El Salvador,1994,Right,Right,ARENA,1.0,7.0,Presidential,5.0
+SLV,El Salvador,1995,Right,Right,ARENA,0.0,7.0,Presidential,1.0
+SLV,El Salvador,1996,Right,Right,ARENA,0.0,7.0,Presidential,2.0
+SLV,El Salvador,1997,Right,Right,ARENA,0.0,7.0,Presidential,3.0
+SLV,El Salvador,1998,Right,Right,ARENA,0.0,7.0,Presidential,4.0
+SLV,El Salvador,1999,Right,Right,ARENA,1.0,7.0,Presidential,5.0
+SLV,El Salvador,2000,Right,Right,ARENA,0.0,7.0,Presidential,1.0
+SLV,El Salvador,2001,Right,Right,ARENA,0.0,7.0,Presidential,2.0
+SLV,El Salvador,2002,Right,Right,ARENA,0.0,7.0,Presidential,3.0
+SLV,El Salvador,2003,Right,Right,ARENA,0.0,7.0,Presidential,4.0
+SLV,El Salvador,2004,Right,Right,ARENA,1.0,7.0,Presidential,5.0
+SLV,El Salvador,2005,Right,Right,ARENA,0.0,7.0,Presidential,1.0
+SLV,El Salvador,2006,Right,Right,ARENA,0.0,7.0,Presidential,2.0
+SLV,El Salvador,2007,Right,Right,ARENA,0.0,7.0,Presidential,3.0
+SLV,El Salvador,2008,Right,Right,ARENA,0.0,7.0,Presidential,4.0
+SLV,El Salvador,2009,Right,Right,ARENA,1.0,7.0,Presidential,5.0
+SLV,El Salvador,2010,Left,Left,FMLN,0.0,7.0,Presidential,1.0
+SLV,El Salvador,2011,Left,Left,FMLN,0.0,7.0,Presidential,2.0
+SLV,El Salvador,2012,Left,Left,FMLN,0.0,7.0,Presidential,3.0
+SLV,El Salvador,2013,Left,Left,FMLN,0.0,7.0,Presidential,4.0
+SLV,El Salvador,2014,Left,Left,FMLN,1.0,7.0,Presidential,5.0
+SLV,El Salvador,2015,Left,Left,FMLN,0.0,7.0,Presidential,1.0
+SLV,El Salvador,2016,Left,Left,FMLN,0.0,7.0,Presidential,2.0
+SLV,El Salvador,2017,Left,Left,FMLN,0.0,7.0,Presidential,3.0
+SLV,El Salvador,2018,Left,Left,FMLN,0.0,7.0,Presidential,4.0
+SLV,El Salvador,2019,Left,Left,FMLN,1.0,7.0,Presidential,5.0
+SLV,El Salvador,2020,Right,Right,Nuevas Ideas,0.0,7.0,Presidential,1.0
+SLV,El Salvador,2021,Right,Right,Nuevas Ideas,0.0,7.0,Presidential,2.0
+SLV,El Salvador,2022,Right,Right,Nuevas Ideas,0.0,7.0,Presidential,3.0
+SLV,El Salvador,2023,Right,Right,Nueva Ideas,0.0,7.0,Presidential,4.0
+SUR,Suriname,1975,,-999,,,,,
+SUR,Suriname,1976,,0,NPS,0.0,7.0,Parliamentary,3.0
+SUR,Suriname,1977,,0,NPS,0.0,7.0,Parliamentary,4.0
+SUR,Suriname,1978,,0,NPS,0.0,7.0,Parliamentary,5.0
+SUR,Suriname,1979,,0,NPS,0.0,7.0,Parliamentary,6.0
+SUR,Suriname,1980,,0,NPS,0.0,7.0,Parliamentary,7.0
+SUR,Suriname,1981,,0,independent,0.0,2.0,Presidential,1.0
+SUR,Suriname,1982,,0,independent,0.0,2.0,Presidential,2.0
+SUR,Suriname,1983,,0,independent,0.0,2.0,Presidential,1.0
+SUR,Suriname,1984,,0,independent,0.0,2.0,Presidential,2.0
+SUR,Suriname,1985,,0,independent,0.0,2.0,Presidential,3.0
+SUR,Suriname,1986,,0,Stanvaste,0.0,2.0,Presidential,1.0
+SUR,Suriname,1987,,0,Stanvaste,0.0,2.0,Presidential,2.0
+SUR,Suriname,1988,,0,Stanvaste,0.0,2.0,Presidential,3.0
+SUR,Suriname,1989,Left,Left,VHP,0.0,5.0,Parliamentary,1.0
+SUR,Suriname,1990,Left,Left,VHP,0.0,5.0,Parliamentary,2.0
+SUR,Suriname,1991,,0,NPS,0.0,2.0,Presidential,1.0
+SUR,Suriname,1992,,0,NPS,0.0,7.0,Parliamentary,1.0
+SUR,Suriname,1993,,0,NPS,0.0,7.0,Parliamentary,2.0
+SUR,Suriname,1994,,0,NPS,0.0,7.0,Parliamentary,3.0
+SUR,Suriname,1995,,0,NPS,0.0,7.0,Parliamentary,4.0
+SUR,Suriname,1996,,0,NPS,0.0,7.0,Parliamentary,5.0
+SUR,Suriname,1997,,0,NDP,0.0,7.0,Parliamentary,1.0
+SUR,Suriname,1998,,0,NDP,0.0,7.0,Parliamentary,2.0
+SUR,Suriname,1999,,0,NDP,0.0,7.0,Parliamentary,3.0
+SUR,Suriname,2000,,0,NDP,0.0,7.0,Parliamentary,4.0
+SUR,Suriname,2001,,0,NF,0.0,7.0,Parliamentary,1.0
+SUR,Suriname,2002,,0,NF,0.0,7.0,Parliamentary,2.0
+SUR,Suriname,2003,,0,NF,0.0,7.0,Parliamentary,3.0
+SUR,Suriname,2004,,0,NF,0.0,7.0,Parliamentary,4.0
+SUR,Suriname,2005,,0,NF,0.0,7.0,Parliamentary,5.0
+SUR,Suriname,2006,,0,NF,0.0,7.0,Parliamentary,6.0
+SUR,Suriname,2007,,0,NF,0.0,7.0,Parliamentary,7.0
+SUR,Suriname,2008,,0,NF,0.0,7.0,Parliamentary,8.0
+SUR,Suriname,2009,,0,NF,0.0,7.0,Parliamentary,9.0
+SUR,Suriname,2010,,0,NPS,1.0,7.0,Parliamentary,10.0
+SUR,Suriname,2011,,0,MC,0.0,7.0,Parliamentary,1.0
+SUR,Suriname,2012,,0,MC,0.0,7.0,Parliamentary,2.0
+SUR,Suriname,2013,,0,MC,0.0,7.0,Parliamentary,3.0
+SUR,Suriname,2014,,0,MC,0.0,7.0,Parliamentary,4.0
+SUR,Suriname,2015,,0,MC,0.0,7.0,Parliamentary,5.0
+SUR,Suriname,2016,,0,NDP,0.0,7.0,Parliamentary,6.0
+SUR,Suriname,2017,,0,NDP,0.0,7.0,Parliamentary,7.0
+SUR,Suriname,2018,,0,NDP,0.0,7.0,Parliamentary,8.0
+SUR,Suriname,2019,,0,NDP,0.0,7.0,Parliamentary,9.0
+SUR,Suriname,2020,,0,NDP,0.0,7.0,Parliamentary,10.0
+SUR,Suriname,2021,Left,Left,VHP,0.0,7.0,Assembly-Elected President,1.0
+SUR,Suriname,2022,Left,Left,VHP,0.0,7.0,Assembly-Elected President,2.0
+SUR,Suriname,2023,Left,Left,VHP,0.0,7.0,Assembly-Elected President,3.0
+TTO,Trinidad-Tobago,1975,Right,Right,PNM,0.0,7.0,Parliamentary,16.0
+TTO,Trinidad-Tobago,1976,Right,Right,PNM,0.0,7.0,Parliamentary,17.0
+TTO,Trinidad-Tobago,1977,Right,Right,PNM,0.0,7.0,Parliamentary,18.0
+TTO,Trinidad-Tobago,1978,Right,Right,PNM,0.0,7.0,Parliamentary,19.0
+TTO,Trinidad-Tobago,1979,Right,Right,PNM,0.0,7.0,Parliamentary,20.0
+TTO,Trinidad-Tobago,1980,Right,Right,PNM,0.0,7.0,Parliamentary,21.0
+TTO,Trinidad-Tobago,1981,Right,Right,PNM,0.0,7.0,Parliamentary,22.0
+TTO,Trinidad-Tobago,1982,Right,Right,PNM,0.0,7.0,Parliamentary,1.0
+TTO,Trinidad-Tobago,1983,Right,Right,PNM,0.0,7.0,Parliamentary,2.0
+TTO,Trinidad-Tobago,1984,Right,Right,PNM,0.0,7.0,Parliamentary,3.0
+TTO,Trinidad-Tobago,1985,Right,Right,PNM,0.0,7.0,Parliamentary,4.0
+TTO,Trinidad-Tobago,1986,Right,Right,PNM,0.0,7.0,Parliamentary,5.0
+TTO,Trinidad-Tobago,1987,Left,Left,NAR,0.0,6.0,Parliamentary,1.0
+TTO,Trinidad-Tobago,1988,Left,Left,NAR,0.0,6.0,Parliamentary,2.0
+TTO,Trinidad-Tobago,1989,Left,Left,NAR,0.0,6.0,Parliamentary,3.0
+TTO,Trinidad-Tobago,1990,Left,Left,NAR,0.0,6.0,Parliamentary,4.0
+TTO,Trinidad-Tobago,1991,Left,Left,NAR,0.0,6.0,Parliamentary,5.0
+TTO,Trinidad-Tobago,1992,Right,Right,PNM,0.0,7.0,Parliamentary,1.0
+TTO,Trinidad-Tobago,1993,Right,Right,PNM,0.0,7.0,Parliamentary,2.0
+TTO,Trinidad-Tobago,1994,Right,Right,PNM,0.0,7.0,Parliamentary,3.0
+TTO,Trinidad-Tobago,1995,Right,Right,PNM,0.0,7.0,Parliamentary,4.0
+TTO,Trinidad-Tobago,1996,Left,Left,UNC,0.0,7.0,Parliamentary,1.0
+TTO,Trinidad-Tobago,1997,Left,Left,UNC,0.0,7.0,Parliamentary,2.0
+TTO,Trinidad-Tobago,1998,Left,Left,UNC,0.0,7.0,Parliamentary,3.0
+TTO,Trinidad-Tobago,1999,Left,Left,UNC,0.0,7.0,Parliamentary,4.0
+TTO,Trinidad-Tobago,2000,Left,Left,UNC,0.0,7.0,Parliamentary,5.0
+TTO,Trinidad-Tobago,2001,Left,Left,UNC,0.0,7.0,Parliamentary,6.0
+TTO,Trinidad-Tobago,2002,Right,Right,PNM,0.0,7.0,Parliamentary,1.0
+TTO,Trinidad-Tobago,2003,Right,Right,PNM,0.0,7.0,Parliamentary,2.0
+TTO,Trinidad-Tobago,2004,Right,Right,PNM,0.0,7.0,Parliamentary,3.0
+TTO,Trinidad-Tobago,2005,Right,Right,PNM,0.0,7.0,Parliamentary,4.0
+TTO,Trinidad-Tobago,2006,Right,Right,PNM,0.0,7.0,Parliamentary,5.0
+TTO,Trinidad-Tobago,2007,Right,Right,PNM,0.0,7.0,Parliamentary,6.0
+TTO,Trinidad-Tobago,2008,Right,Right,PNM,0.0,7.0,Parliamentary,7.0
+TTO,Trinidad-Tobago,2009,Right,Right,PNM,0.0,7.0,Parliamentary,8.0
+TTO,Trinidad-Tobago,2010,Right,Right,PNM,0.0,7.0,Parliamentary,9.0
+TTO,Trinidad-Tobago,2011,Left,Left,UNC,0.0,7.0,Parliamentary,1.0
+TTO,Trinidad-Tobago,2012,Left,Left,UNC,0.0,7.0,Parliamentary,2.0
+TTO,Trinidad-Tobago,2013,Left,Left,UNC,0.0,7.0,Parliamentary,3.0
+TTO,Trinidad-Tobago,2014,Left,Left,UNC,0.0,7.0,Parliamentary,4.0
+TTO,Trinidad-Tobago,2015,Left,Left,UNC,0.0,7.0,Parliamentary,5.0
+TTO,Trinidad-Tobago,2016,Right,Right,PNM,0.0,7.0,Parliamentary,1.0
+TTO,Trinidad-Tobago,2017,Right,Right,PNM,0.0,7.0,Parliamentary,2.0
+TTO,Trinidad-Tobago,2018,Right,Right,PNM,0.0,7.0,Parliamentary,3.0
+TTO,Trinidad-Tobago,2019,Right,Right,PNM,0.0,7.0,Parliamentary,4.0
+TTO,Trinidad-Tobago,2020,Right,Right,PNM,0.0,7.0,Parliamentary,5.0
+TTO,Trinidad-Tobago,2021,Right,Right,PNM,0.0,7.0,Parliamentary,6.0
+TTO,Trinidad-Tobago,2022,Right,Right,PNM,0.0,7.0,Parliamentary,7.0
+TTO,Trinidad-Tobago,2023,Right,Right,PNM,0.0,7.0,Parliamentary,8.0
+URY,Uruguay,1975,Right,Right,Colorado,0.0,6.5,Presidential,4.0
+URY,Uruguay,1976,Right,Right,Colorado,0.0,6.5,Presidential,5.0
+URY,Uruguay,1977,,0,independent,0.0,2.0,Presidential,1.0
+URY,Uruguay,1978,,0,independent,0.0,2.0,Presidential,2.0
+URY,Uruguay,1979,,0,independent,0.0,2.0,Presidential,3.0
+URY,Uruguay,1980,,0,independent,0.0,2.0,Presidential,4.0
+URY,Uruguay,1981,,0,independent,0.0,2.0,Presidential,5.0
+URY,Uruguay,1982,,0,independent,0.0,2.0,Presidential,1.0
+URY,Uruguay,1983,,0,independent,0.0,2.0,Presidential,2.0
+URY,Uruguay,1984,,0,independent,1.0,2.0,Presidential,3.0
+URY,Uruguay,1985,Right,Right,Colorado,0.0,7.0,Presidential,1.0
+URY,Uruguay,1986,Right,Right,Colorado,0.0,7.0,Presidential,2.0
+URY,Uruguay,1987,Right,Right,Colorado,0.0,7.0,Presidential,3.0
+URY,Uruguay,1988,Right,Right,Colorado,0.0,7.0,Presidential,4.0
+URY,Uruguay,1989,Right,Right,Colorado,1.0,7.0,Presidential,5.0
+URY,Uruguay,1990,Right,Right,PN,0.0,7.0,Presidential,1.0
+URY,Uruguay,1991,Right,Right,PN,0.0,7.0,Presidential,2.0
+URY,Uruguay,1992,Right,Right,PN,0.0,7.0,Presidential,3.0
+URY,Uruguay,1993,Right,Right,PN,0.0,7.0,Presidential,4.0
+URY,Uruguay,1994,Right,Right,PN,1.0,7.0,Presidential,5.0
+URY,Uruguay,1995,Right,Right,Colorado,0.0,7.0,Presidential,1.0
+URY,Uruguay,1996,Right,Right,Colorado,0.0,7.0,Presidential,2.0
+URY,Uruguay,1997,Right,Right,Colorado,0.0,7.0,Presidential,3.0
+URY,Uruguay,1998,Right,Right,Colorado,0.0,7.0,Presidential,4.0
+URY,Uruguay,1999,Right,Right,Colorado,1.0,7.0,Presidential,5.0
+URY,Uruguay,2000,Right,Right,Colorado,0.0,7.0,Presidential,1.0
+URY,Uruguay,2001,Right,Right,Colorado,0.0,7.0,Presidential,2.0
+URY,Uruguay,2002,Right,Right,Colorado,0.0,7.0,Presidential,3.0
+URY,Uruguay,2003,Right,Right,Colorado,0.0,7.0,Presidential,4.0
+URY,Uruguay,2004,Right,Right,Colorado,1.0,7.0,Presidential,5.0
+URY,Uruguay,2005,Left,Left,EP-FA,0.0,7.0,Presidential,1.0
+URY,Uruguay,2006,Left,Left,EP-FA,0.0,7.0,Presidential,2.0
+URY,Uruguay,2007,Left,Left,EP-FA,0.0,7.0,Presidential,3.0
+URY,Uruguay,2008,Left,Left,EP-FA,0.0,7.0,Presidential,4.0
+URY,Uruguay,2009,Left,Left,EP-FA,1.0,7.0,Presidential,5.0
+URY,Uruguay,2010,Left,Left,EP-FA,0.0,7.0,Presidential,1.0
+URY,Uruguay,2011,Left,Left,EP-FA,0.0,7.0,Presidential,2.0
+URY,Uruguay,2012,Left,Left,EP-FA,0.0,7.0,Presidential,3.0
+URY,Uruguay,2013,Left,Left,EP-FA,0.0,7.0,Presidential,4.0
+URY,Uruguay,2014,Left,Left,EP-FA,1.0,7.0,Presidential,5.0
+URY,Uruguay,2015,Left,Left,EP-FA,0.0,7.0,Presidential,1.0
+URY,Uruguay,2016,Left,Left,EP-FA,0.0,7.0,Presidential,2.0
+URY,Uruguay,2017,Left,Left,EP-FA,0.0,7.0,Presidential,3.0
+URY,Uruguay,2018,Left,Left,EP-FA,0.0,7.0,Presidential,4.0
+URY,Uruguay,2019,Left,Left,EP-FA,1.0,7.0,Presidential,5.0
+URY,Uruguay,2020,Right,Right,PN,0.0,7.0,Presidential,1.0
+URY,Uruguay,2021,Right,Right,PN,0.0,7.0,Presidential,2.0
+URY,Uruguay,2022,Right,Right,PN,0.0,7.0,Presidential,3.0
+URY,Uruguay,2023,Right,Right,PN,0.0,7.0,Presidential,4.0
+USA,USA,1975,Right,Right,Republicans,0.0,7.0,Presidential,1.0
+USA,USA,1976,Right,Right,Republicans,1.0,7.0,Presidential,2.0
+USA,USA,1977,Left,Left,Democrats,0.0,7.0,Presidential,1.0
+USA,USA,1978,Left,Left,Democrats,0.0,7.0,Presidential,2.0
+USA,USA,1979,Left,Left,Democrats,0.0,7.0,Presidential,3.0
+USA,USA,1980,Left,Left,Democrats,1.0,7.0,Presidential,4.0
+USA,USA,1981,Right,Right,Republicans,0.0,7.0,Presidential,1.0
+USA,USA,1982,Right,Right,Republicans,0.0,7.0,Presidential,2.0
+USA,USA,1983,Right,Right,Republicans,0.0,7.0,Presidential,3.0
+USA,USA,1984,Right,Right,Republicans,1.0,7.0,Presidential,4.0
+USA,USA,1985,Right,Right,Republicans,0.0,7.0,Presidential,5.0
+USA,USA,1986,Right,Right,Republicans,0.0,7.0,Presidential,6.0
+USA,USA,1987,Right,Right,Republicans,0.0,7.0,Presidential,7.0
+USA,USA,1988,Right,Right,Republicans,1.0,7.0,Presidential,8.0
+USA,USA,1989,Right,Right,Republicans,0.0,7.0,Presidential,1.0
+USA,USA,1990,Right,Right,Republicans,0.0,7.0,Presidential,2.0
+USA,USA,1991,Right,Right,Republicans,0.0,7.0,Presidential,3.0
+USA,USA,1992,Right,Right,Republicans,1.0,7.0,Presidential,4.0
+USA,USA,1993,Left,Left,Democrats,0.0,7.0,Presidential,1.0
+USA,USA,1994,Left,Left,Democrats,0.0,7.0,Presidential,2.0
+USA,USA,1995,Left,Left,Democrats,0.0,7.0,Presidential,3.0
+USA,USA,1996,Left,Left,Democrats,1.0,7.0,Presidential,4.0
+USA,USA,1997,Left,Left,Democrats,0.0,7.0,Presidential,5.0
+USA,USA,1998,Left,Left,Democrats,0.0,7.0,Presidential,6.0
+USA,USA,1999,Left,Left,Democrats,0.0,7.0,Presidential,7.0
+USA,USA,2000,Left,Left,Democrats,1.0,7.0,Presidential,8.0
+USA,USA,2001,Right,Right,Republicans,0.0,7.0,Presidential,1.0
+USA,USA,2002,Right,Right,Republicans,0.0,7.0,Presidential,2.0
+USA,USA,2003,Right,Right,Republicans,0.0,7.0,Presidential,3.0
+USA,USA,2004,Right,Right,Republicans,1.0,7.0,Presidential,4.0
+USA,USA,2005,Right,Right,Republicans,0.0,7.0,Presidential,5.0
+USA,USA,2006,Right,Right,Republicans,0.0,7.0,Presidential,6.0
+USA,USA,2007,Right,Right,Republicans,0.0,7.0,Presidential,7.0
+USA,USA,2008,Right,Right,Republicans,1.0,7.0,Presidential,8.0
+USA,USA,2009,Left,Left,Democrats,0.0,7.0,Presidential,1.0
+USA,USA,2010,Left,Left,Democrats,0.0,7.0,Presidential,2.0
+USA,USA,2011,Left,Left,Democrats,0.0,7.0,Presidential,3.0
+USA,USA,2012,Left,Left,Democrats,1.0,7.0,Presidential,4.0
+USA,USA,2013,Left,Left,Democrats,0.0,7.0,Presidential,5.0
+USA,USA,2014,Left,Left,Democrats,0.0,7.0,Presidential,6.0
+USA,USA,2015,Left,Left,Democrats,0.0,7.0,Presidential,7.0
+USA,USA,2016,Left,Left,Democrats,1.0,7.0,Presidential,8.0
+USA,USA,2017,Right,Right,Republicans,0.0,7.0,Presidential,1.0
+USA,USA,2018,Right,Right,Republicans,0.0,7.0,Presidential,2.0
+USA,USA,2019,Right,Right,Republicans,0.0,7.0,Presidential,3.0
+USA,USA,2020,Right,Right,Republicans,1.0,7.0,Presidential,4.0
+USA,USA,2021,Left,Left,Democrats,0.0,7.0,Presidential,1.0
+USA,USA,2022,Left,Left,Democrats,0.0,7.0,Presidential,2.0
+USA,USA,2023,Left,Left,Democrats,0.0,7.0,Presidential,3.0
+VEN,Venezuela,1975,Left,Left,AD,0.0,6.5,Presidential,2.0
+VEN,Venezuela,1976,Left,Left,AD,0.0,6.5,Presidential,3.0
+VEN,Venezuela,1977,Left,Left,AD,0.0,6.5,Presidential,4.0
+VEN,Venezuela,1978,Left,Left,AD,1.0,6.5,Presidential,5.0
+VEN,Venezuela,1979,,0,COPEI,0.0,7.0,Presidential,1.0
+VEN,Venezuela,1980,,0,COPEI,0.0,7.0,Presidential,2.0
+VEN,Venezuela,1981,,0,COPEI,0.0,7.0,Presidential,3.0
+VEN,Venezuela,1982,,0,COPEI,0.0,7.0,Presidential,4.0
+VEN,Venezuela,1983,,0,COPEI,1.0,7.0,Presidential,5.0
+VEN,Venezuela,1984,Left,Left,AD,0.0,7.0,Presidential,1.0
+VEN,Venezuela,1985,Left,Left,AD,0.0,7.0,Presidential,2.0
+VEN,Venezuela,1986,Left,Left,AD,0.0,7.0,Presidential,3.0
+VEN,Venezuela,1987,Left,Left,AD,0.0,7.0,Presidential,4.0
+VEN,Venezuela,1988,Left,Left,AD,1.0,7.0,Presidential,5.0
+VEN,Venezuela,1989,Right,Right,AD,0.0,7.0,Presidential,1.0
+VEN,Venezuela,1990,Right,Right,AD,0.0,7.0,Presidential,2.0
+VEN,Venezuela,1991,Right,Right,AD,0.0,7.0,Presidential,3.0
+VEN,Venezuela,1992,Right,Right,AD,0.0,7.0,Presidential,4.0
+VEN,Venezuela,1993,Right,Right,AD,1.0,7.0,Presidential,5.0
+VEN,Venezuela,1994,,0,CN,0.0,7.0,Presidential,1.0
+VEN,Venezuela,1995,,0,CN,0.0,7.0,Presidential,2.0
+VEN,Venezuela,1996,,0,CN,0.0,7.0,Presidential,3.0
+VEN,Venezuela,1997,,0,CN,0.0,7.0,Presidential,4.0
+VEN,Venezuela,1998,,0,CN,1.0,7.0,Presidential,5.0
+VEN,Venezuela,1999,,0,MVR,0.0,7.0,Presidential,1.0
+VEN,Venezuela,2000,,0,MVR,1.0,7.0,Presidential,2.0
+VEN,Venezuela,2001,,0,MVR,0.0,7.0,Presidential,3.0
+VEN,Venezuela,2002,,0,MVR,0.0,7.0,Presidential,4.0
+VEN,Venezuela,2003,,0,MVR,0.0,7.0,Presidential,5.0
+VEN,Venezuela,2004,,0,MVR,0.0,7.0,Presidential,6.0
+VEN,Venezuela,2005,,0,MVR,0.0,7.0,Presidential,7.0
+VEN,Venezuela,2006,,0,MVR,1.0,7.0,Presidential,8.0
+VEN,Venezuela,2007,,0,PSUV,0.0,7.0,Presidential,9.0
+VEN,Venezuela,2008,,0,PSUV,0.0,7.0,Presidential,10.0
+VEN,Venezuela,2009,,0,PSUV,0.0,7.0,Presidential,11.0
+VEN,Venezuela,2010,,0,PSUV,0.0,7.0,Presidential,12.0
+VEN,Venezuela,2011,,0,PSUV,0.0,7.0,Presidential,13.0
+VEN,Venezuela,2012,,0,PSUV,1.0,7.0,Presidential,14.0
+VEN,Venezuela,2013,,0,PSUV,1.0,7.0,Presidential,15.0
+VEN,Venezuela,2014,,0,PSUV,0.0,7.0,Presidential,1.0
+VEN,Venezuela,2015,,0,PSUV,0.0,7.0,Presidential,2.0
+VEN,Venezuela,2016,,0,PSUV,0.0,7.0,Presidential,3.0
+VEN,Venezuela,2017,,0,PSUV,0.0,7.0,Presidential,4.0
+VEN,Venezuela,2018,,0,PSUV,1.0,7.0,Presidential,5.0
+VEN,Venezuela,2019,,0,PSUV,0.0,7.0,Presidential,6.0
+VEN,Venezuela,2020,,0,PSUV,0.0,7.0,Presidential,7.0
+VEN,Venezuela,2021,Left,Left,PSUV,0.0,7.0,Presidential,8.0
+VEN,Venezuela,2022,Left,Left,PSUV,0.0,7.0,Presidential,9.0
+VEN,Venezuela,2023,Left,Left,PSUV,0.0,7.0,Presidential,10.0

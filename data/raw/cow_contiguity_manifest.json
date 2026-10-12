@@ -1,0 +1,61 @@
+{
+  "dataset": "COW Direct Contiguity",
+  "version": "3.2",
+  "coverage": [
+    1816,
+    2016
+  ],
+  "source_page": "https://correlatesofwar.org/data-sets/direct-contiguity/",
+  "state_codes_source_page": "https://correlatesofwar.org/data-sets/state-system-membership/",
+  "url": "https://correlatesofwar.org/wp-content/uploads/DirectContiguity320.zip",
+  "sha256": "f1be081934f353f395bb873093b695ea01d7dfcb48e89146bd984c45342ba17a",
+  "cached": true,
+  "observed_at_utc": "2026-10-12T00:50:03.366027+00:00",
+  "sources": {
+    "contiguity": {
+      "url": "https://correlatesofwar.org/wp-content/uploads/DirectContiguity320.zip",
+      "path": "data/raw/cow_direct_contiguity_v3.2.zip",
+      "sha256": "f1be081934f353f395bb873093b695ea01d7dfcb48e89146bd984c45342ba17a",
+      "bytes": 636368,
+      "cached": true,
+      "downloaded_at_utc": "2026-10-12T00:43:20.965198+00:00",
+      "members": {
+        "cow_contdird_v3.2.csv": {
+          "archive_member": "DirectContiguity320/contdird.csv",
+          "path": "data/raw/cow_contdird_v3.2.csv",
+          "sha256": "42b8fe2bc7fffe58665a38f7476d7d76cf3acd5a22e176c3691670997a4717f2",
+          "bytes": 3104061
+        },
+        "cow_contdir_v3.2.csv": {
+          "archive_member": "DirectContiguity320/contdir.csv",
+          "path": "data/raw/cow_contdir_v3.2.csv",
+          "sha256": "62f3714d1a75c940887bf15b40b256aeeb41545734ab13abe96ab3f49a980362",
+          "bytes": 89528
+        },
+        "cow_direct_contiguity_codebook_v3.2.pdf": {
+          "archive_member": "DirectContiguity320/Direct Contiguity Codebook.pdf",
+          "path": "data/raw/cow_direct_contiguity_codebook_v3.2.pdf",
+          "sha256": "48ea294628530531c835b1615e7b395cdabd34fe09c3f3a56b2f1e9418601193",
+          "bytes": 156120
+        }
+      }
+    },
+    "states": {
+      "url": "https://correlatesofwar.org/wp-content/uploads/States2024.zip",
+      "path": "data/raw/cow_states_v2024.zip",
+      "sha256": "c11689e8c0aa70ede855f6b605c4dd71c7b04122b71d5827dab5ba06b32e2015",
+      "bytes": 10651,
+      "cached": true,
+      "downloaded_at_utc": "2026-10-12T00:43:20.965198+00:00",
+      "members": {
+        "cow_states_v2024.csv": {
+          "archive_member": "States2024/statelist2024.csv",
+          "path": "data/raw/cow_states_v2024.csv",
+          "sha256": "722153b45eda9c39826a04aab80ca7b29a8b1cfdfe5d92714503420555675484",
+          "bytes": 10641
+        }
+      }
+    }
+  },
+  "citation": "Stinnett, D. M., Tir, J., Schafer, P., Diehl, P. F., & Gochman, C. (2002). The Correlates of War Project Direct Contiguity Data, Version 3. Conflict Management and Peace Science, 19(2), 58-66. Dataset v3.2, 1816-2016."
+}
