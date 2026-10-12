@@ -6,3 +6,4 @@ tmp/
 outputs/publication/*_600dpi.png
 outputs/publication/Americas_Figures_and_Tables_English.pdf
 outputs/publication_figures/
+outputs/literature/*.pdf

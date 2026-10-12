@@ -230,3 +230,13 @@ python run_publication.py
 The command reads frozen outputs and verified local cartography without model fitting or downloads. It also re-renders the original diagnostics in English. Vector SVG/PDF masters, 300/600 dpi PNGs, plotted data and a captioned figure-and-table PDF are produced in `outputs/publication/`.
 
 La ampliación evalúa 1.007 casos DPI y 1.677 casos históricos GLI HOG. Los nuevos drivers no superan el Brier global de Markov simple en esta ejecución. GLI y DPI discrepan en el 22,57 % de las observaciones conjuntamente clasificadas y alineadas por fecha; las fuentes se conservan separadas. ENSO mide variabilidad climática, no cambio climático antropogénico.
+
+## Revisión de literatura y novedad
+
+La [revisión de literatura](docs/literature/LITERATURE_REVIEW.md), con corte al 12 de octubre de 2026, compara el análisis con 26 estudios seleccionados y diez antecedentes cercanos. Incluye una [matriz de evidencia](docs/literature/literature_matrix.csv), [bibliografía BibTeX](docs/literature/references.bib) y [texto del manuscrito en inglés](docs/literature/MANUSCRIPT_RELATED_WORK.md). Las fuentes, tablas y límites de acceso se documentan en [la guía](docs/literature/README.md).
+
+Los métodos tienen antecedentes claros. El aporte defendible es un benchmark retrospectivo reproducible y una auditoría de sensibilidad de medición para transiciones ideológicas ejecutivas. La revisión no establece prioridad mundial ni capacidad fiable para anticipar cambios. Para reproducir los documentos y el PDF sin volver a ajustar modelos:
+
+```bash
+python docs/literature/build_review.py
+```
