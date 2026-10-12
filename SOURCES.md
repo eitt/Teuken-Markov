@@ -92,3 +92,13 @@ Los precios internacionales permiten construir medidas de presiones económicas.
 - Analiza ideología del Ejecutivo en 100 elecciones de 18 países latinoamericanos, 1975–2007. Ofrece antecedentes sobre condiciones económicas y políticas nacionales que deben distinguirse de difusión internacional. La verificación utilizada aquí alcanza el resumen y los metadatos editoriales.
 
 La existencia de estos antecedentes impide presentar el proyecto como la primera utilización de Markov, redes o contagio ideológico en ciencia política. La posible contribución empírica específica requiere una revisión bibliográfica adicional y resultados de evaluación que la sustenten.
+
+## Fuentes adicionales de la extensión histórica y drivers
+
+La ejecución separada de [RESEARCH_EXTENSION.md](RESEARCH_EXTENSION.md) conserva GLI y DPI como mediciones distintas. El panel histórico GLI usa HOG como opción primaria, con cortes al 31 de diciembre y rótulos alineados al enero siguiente; no añade datos políticos posteriores a 2020 ni imputa competitividad electoral.
+
+Las nuevas exposiciones WDI son `TX.VAL.FUEL.ZS.UN` (combustibles / exportaciones de mercancías) y `NV.AGR.TOTL.ZS` (agricultura, silvicultura y pesca / PIB). Fuente: <https://data.worldbank.org/indicator/TX.VAL.FUEL.ZS.UN> y <https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS>. Las participaciones de importaciones y exportaciones se utilizan por separado, con rezago adicional, y no se restan como medida neta.
+
+NOAA ONI: <https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt>; documentación: <https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v6/>. Se congela una serie homogénea, sin sustituir RONI por tramos. ENSO mide variabilidad climática y no constituye atribución de cambio climático. La agregación de once ventanas DJF–OND excluye NDJ porque contiene enero del siguiente año; sigue siendo una evaluación retrospectiva con revisiones.
+
+Las respuestas API completas, los datos ONI y sus manifiestos se conservan en `data/raw/`. Los resultados y las métricas por periodo están en `outputs/extensions/`; las discrepancias entre fuentes en `outputs/history/`.

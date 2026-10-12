@@ -1,0 +1,212 @@
+{
+  "alignment": "GLI December 31 y is relabelled to adjacent January 1 y+1; no new observation is created. Inaugurations on January 1 may differ from DPI.",
+  "primary_role": "hog",
+  "roles": {
+    "hog": {
+      "source_year_range": [
+        1945,
+        2020
+      ],
+      "aligned_year_range": [
+        1946,
+        2021
+      ],
+      "source_rows": 2060,
+      "source_countries": 29,
+      "classified_rows": 1932,
+      "classified_countries": 27,
+      "unknown_rows": 128,
+      "missing_series": [
+        "ATG",
+        "DMA",
+        "GRD",
+        "KNA",
+        "LCA",
+        "VCT"
+      ],
+      "role_never_classified": [
+        "BHS",
+        "BLZ"
+      ],
+      "source_sha256": "c9e2752bd304bb59666ef8fd7a56ea600d51e4c38e5cbaf0cd07757b5f7f99c3",
+      "source_url": "https://raw.githubusercontent.com/bastianherre/global-leader-ideologies/1552fa731866baf6c1fe8cc9da53d0dd483bac7b/global_leader_ideologies.csv",
+      "comparison_year_range": [
+        1975,
+        2021
+      ],
+      "jointly_classified": 1019,
+      "disagreements": 230,
+      "disagreement_rate": 0.22571148184494602,
+      "jointly_classified_cow_eligible": 1019,
+      "disagreements_cow_eligible": 230,
+      "disagreement_rate_cow_eligible": 0.22571148184494602,
+      "comparison_status_counts": {
+        "both_known_agree": 789,
+        "gli_only_known": 240,
+        "both_known_disagree": 230,
+        "neither_known": 210,
+        "dpi_only_known": 176
+      },
+      "absence_status_counts": {
+        "classified": 1932,
+        "absent_record": 600,
+        "record_unknown_ideology": 128
+      },
+      "cow_membership_available": true,
+      "cow_eligible_rows": 2034,
+      "classified_cow_eligible_rows": 1932,
+      "classified_cow_eligible_countries": 27,
+      "method_notes": {
+        "source_dataset": "GLI",
+        "source_role": "hog",
+        "source_url": "https://raw.githubusercontent.com/bastianherre/global-leader-ideologies/1552fa731866baf6c1fe8cc9da53d0dd483bac7b/global_leader_ideologies.csv",
+        "source_sha256": "c9e2752bd304bb59666ef8fd7a56ea600d51e4c38e5cbaf0cd07757b5f7f99c3",
+        "observation_date": "December 31 of source_year",
+        "alignment": "GLI December 31 y is relabelled to adjacent January 1 y+1; no new observation is created. Inaugurations on January 1 may differ from DPI.",
+        "source_year_range": [
+          1945,
+          2020
+        ],
+        "aligned_year_range": [
+          1946,
+          2021
+        ],
+        "cow_membership_available": true,
+        "missing_series": [
+          "ATG",
+          "DMA",
+          "GRD",
+          "KNA",
+          "LCA",
+          "VCT"
+        ],
+        "unavailable_fields": [
+          "eiec",
+          "election_held",
+          "system",
+          "years_in_office"
+        ],
+        "duration_definition": "Consecutive identical annual snapshots; gaps/unknowns reset; not exact tenure.",
+        "measurement_note": "GLI classifies the officeholder; DPI classifies the chief executive's economic orientation. GLI used DPI among its coding sources, so disagreement is not independent validation."
+      }
+    },
+    "leader": {
+      "source_year_range": [
+        1945,
+        2020
+      ],
+      "aligned_year_range": [
+        1946,
+        2021
+      ],
+      "source_rows": 2060,
+      "source_countries": 29,
+      "classified_rows": 2047,
+      "classified_countries": 29,
+      "unknown_rows": 13,
+      "missing_series": [
+        "ATG",
+        "DMA",
+        "GRD",
+        "KNA",
+        "LCA",
+        "VCT"
+      ],
+      "role_never_classified": [],
+      "source_sha256": "c9e2752bd304bb59666ef8fd7a56ea600d51e4c38e5cbaf0cd07757b5f7f99c3",
+      "source_url": "https://raw.githubusercontent.com/bastianherre/global-leader-ideologies/1552fa731866baf6c1fe8cc9da53d0dd483bac7b/global_leader_ideologies.csv",
+      "comparison_year_range": [
+        1975,
+        2021
+      ],
+      "jointly_classified": 1109,
+      "disagreements": 279,
+      "disagreement_rate": 0.2515779981965735,
+      "jointly_classified_cow_eligible": 1109,
+      "disagreements_cow_eligible": 279,
+      "disagreement_rate_cow_eligible": 0.2515779981965735,
+      "comparison_status_counts": {
+        "both_known_agree": 830,
+        "both_known_disagree": 279,
+        "gli_only_known": 245,
+        "neither_known": 205,
+        "dpi_only_known": 86
+      },
+      "absence_status_counts": {
+        "classified": 2047,
+        "absent_record": 600,
+        "record_unknown_ideology": 13
+      },
+      "cow_membership_available": true,
+      "cow_eligible_rows": 2034,
+      "classified_cow_eligible_rows": 2021,
+      "classified_cow_eligible_countries": 29,
+      "method_notes": {
+        "source_dataset": "GLI",
+        "source_role": "leader",
+        "source_url": "https://raw.githubusercontent.com/bastianherre/global-leader-ideologies/1552fa731866baf6c1fe8cc9da53d0dd483bac7b/global_leader_ideologies.csv",
+        "source_sha256": "c9e2752bd304bb59666ef8fd7a56ea600d51e4c38e5cbaf0cd07757b5f7f99c3",
+        "observation_date": "December 31 of source_year",
+        "alignment": "GLI December 31 y is relabelled to adjacent January 1 y+1; no new observation is created. Inaugurations on January 1 may differ from DPI.",
+        "source_year_range": [
+          1945,
+          2020
+        ],
+        "aligned_year_range": [
+          1946,
+          2021
+        ],
+        "cow_membership_available": true,
+        "missing_series": [
+          "ATG",
+          "DMA",
+          "GRD",
+          "KNA",
+          "LCA",
+          "VCT"
+        ],
+        "unavailable_fields": [
+          "eiec",
+          "election_held",
+          "system",
+          "years_in_office"
+        ],
+        "duration_definition": "Consecutive identical annual snapshots; gaps/unknowns reset; not exact tenure.",
+        "measurement_note": "GLI classifies the officeholder; DPI classifies the chief executive's economic orientation. GLI used DPI among its coding sources, so disagreement is not independent validation."
+      }
+    }
+  },
+  "files": [
+    "outputs/history/gli_hog_aligned_panel.csv",
+    "outputs/history/gli_hog_coverage_35_countries.csv",
+    "outputs/history/gli_hog_availability_grid.csv",
+    "outputs/history/dpi_gli_hog_aligned_comparison.csv",
+    "outputs/history/dpi_gli_hog_disagreements.csv",
+    "outputs/history/dpi_gli_hog_confusion.csv",
+    "outputs/history/dpi_gli_hog_comparison_by_country.csv",
+    "outputs/history/gli_leader_aligned_panel.csv",
+    "outputs/history/gli_leader_coverage_35_countries.csv",
+    "outputs/history/gli_leader_availability_grid.csv",
+    "outputs/history/dpi_gli_leader_aligned_comparison.csv",
+    "outputs/history/dpi_gli_leader_disagreements.csv",
+    "outputs/history/dpi_gli_leader_confusion.csv",
+    "outputs/history/dpi_gli_leader_comparison_by_country.csv"
+  ],
+  "dpi_source_url": "https://data.iadb.org/files/download/30f45628-8608-4c0c-ad55-bc4c870dd62d",
+  "dpi_source_sha256": "da597ff4f3b8658e37b92466a03d5811d3cacf9accc90c46fefdfa667db3782f",
+  "dpi_manifest_original_sha256": "5b5b047b88bdb659fefc73a36764de0fc8ca9f74cbeb20a8d06d74445881d1a2",
+  "dpi_cached_bytes_differ_from_original_hash": true,
+  "dpi_cache_note": "The public DPI loader verified exact restoration of original CRLF bytes from Git-normalized LF. dpi_source_sha256 fingerprints the local cached bytes; dpi_manifest_original_sha256 fingerprints the original download.",
+  "method_notes": [
+    "HOG is primary; leader is a separate sensitivity choice. No role fallback or GLI/DPI splice.",
+    "1945-2020 are actual December 31 source years; 1946-2021 are aligned labels, not additional coverage.",
+    "Retain source ideologies and explicitly filter eligible_cow_jan1 for historical analysis; COW membership is not legal independence.",
+    "EIEC, EXELEC, government-system type and exact years in office are unavailable and remain missing. GLI democracy is not EIEC.",
+    "Duration columns count consecutive identical snapshots; they cannot identify within-year exits/returns or exact tenure.",
+    "Unknown/nonideological/not-applicable values remain distinct in ideology_raw; none is never Center.",
+    "Disagreement rates condition on jointly classified observations and do not declare either source ground truth.",
+    "GLI uses DPI among its source materials; this is a measurement sensitivity audit, not independent validation.",
+    "January 1 inaugurations can differ from the preceding December 31 snapshot despite adjacent-date alignment.",
+    "Fit historical persistence/Markov and parsimonious political models separately. Do not fabricate pre-1960 macro data or competitive-election filtering."
+  ]
+}

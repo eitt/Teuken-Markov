@@ -1,0 +1,25 @@
+{
+  "sources": {
+    "fuel_export_share": {
+      "indicator": "TX.VAL.FUEL.ZS.UN",
+      "url": "https://api.worldbank.org/v2/country/ATG;ARG;BHS;BRB;BLZ;BOL;BRA;CAN;CHL;COL;CRI;CUB;DMA;DOM;ECU;SLV;GRD;GTM;GUY;HTI;HND;JAM;MEX;NIC;PAN;PRY;PER;KNA;LCA;VCT;SUR;TTO;USA;URY;VEN/indicator/TX.VAL.FUEL.ZS.UN?source=2&date=1960:2025&format=json&per_page=20000&page=1",
+      "raw_path": "data/raw/driver_wdi_TX.VAL.FUEL.ZS.UN.json",
+      "sha256": "a341f2920b20e19fe911a7c2392ed10caf7f576e7baf8e000bd71beba6e32556",
+      "retrieved_at": "2026-10-12T01:55:29.091750+00:00",
+      "units": "percent of merchandise exports",
+      "api_last_updated": "2026-10-08",
+      "rows": 2310
+    },
+    "agriculture_share": {
+      "indicator": "NV.AGR.TOTL.ZS",
+      "url": "https://api.worldbank.org/v2/country/ATG;ARG;BHS;BRB;BLZ;BOL;BRA;CAN;CHL;COL;CRI;CUB;DMA;DOM;ECU;SLV;GRD;GTM;GUY;HTI;HND;JAM;MEX;NIC;PAN;PRY;PER;KNA;LCA;VCT;SUR;TTO;USA;URY;VEN/indicator/NV.AGR.TOTL.ZS?source=2&date=1960:2025&format=json&per_page=20000&page=1",
+      "raw_path": "data/raw/driver_wdi_NV.AGR.TOTL.ZS.json",
+      "sha256": "899922a2d173eb759d046c8f60c60f30ccacf29aba4222bb0251faae9f602dcb",
+      "retrieved_at": "2026-10-12T01:56:29.536698+00:00",
+      "units": "agriculture, forestry and fishing; percent of GDP",
+      "api_last_updated": "2026-10-08",
+      "rows": 2310
+    }
+  },
+  "note": "Revised historical values; not real-time release vintages. Missing values retained."
+}

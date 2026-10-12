@@ -22,14 +22,14 @@ MODEL_FEATURES = {
 MODEL_ORDER = ["persistence", "markov", *MODEL_FEATURES]
 
 
-def fit_model(train: pd.DataFrame, name: str):
+def fit_model(train: pd.DataFrame, name: str, numeric_columns=None):
     if not len(train): raise ValueError("Conjunto de entrenamiento vacío")
     if name == "persistence": return {"kind": name}
     if name == "markov":
         counts = pd.crosstab(train.state, train.target_state).reindex(index=STATES, columns=STATES, fill_value=0).astype(float)
         counts += 1.0  # suavizado de Laplace declarado; nunca usa el test
         return {"kind": name, "matrix": counts.div(counts.sum(axis=1), axis=0)}
-    columns = MODEL_FEATURES[name]
+    columns = list(numeric_columns) if numeric_columns is not None else MODEL_FEATURES[name]
     numeric = Pipeline([("impute", SimpleImputer(strategy="median", add_indicator=True, keep_empty_features=True)),
                         ("scale", StandardScaler())])
     preprocess = ColumnTransformer([("numeric", numeric, columns),
@@ -79,15 +79,19 @@ def score_predictions(frame: pd.DataFrame) -> dict:
             "zero_probability_outcomes": int((actual_p == 0).sum())}
 
 
-def rolling_evaluate(panel: pd.DataFrame, start_year=2000):
+def rolling_evaluate(panel: pd.DataFrame, start_year=2000, model_features=None):
+    # Optional experimental specifications stay local: the original model
+    # registry/order and existing CLI are never mutated by a separate analysis.
+    order = MODEL_ORDER if model_features is None else ["persistence", "markov", *model_features]
     outputs, fold_rows = [], []
     for origin in sorted(panel.loc[panel.year >= start_year, "year"].unique()):
         train, test = panel.loc[panel.year < origin], panel.loc[panel.year == origin]
         if len(train) < 40 or train.target_state.nunique() < 2: continue
         # Al 1 de enero del origen, sólo hay resultados observados hasta ese año.
         if int(train.target_year.max()) > origin: raise AssertionError("Fuga temporal")
-        for name in MODEL_ORDER:
-            fitted = fit_model(train, name)
+        for name in order:
+            numeric = None if model_features is None else model_features.get(name)
+            fitted = fit_model(train, name, numeric_columns=numeric)
             prob = predict_probabilities(fitted, test)
             keep = ["country_code", "year", "target_year", "state", "target_state", "changed"]
             result = test[keep].copy();result["model"] = name
@@ -102,7 +106,7 @@ def rolling_evaluate(panel: pd.DataFrame, start_year=2000):
     if not outputs: raise ValueError("No hay folds con entrenamiento suficiente")
     predictions = pd.concat(outputs, ignore_index=True)
     metrics = []
-    for name in MODEL_ORDER:
+    for name in order:
         subset = predictions.loc[predictions.model == name]
         for label, mask in [("all", np.ones(len(subset), dtype=bool)),
                             ("changed", subset.changed.to_numpy()), ("unchanged", ~subset.changed.to_numpy())]:

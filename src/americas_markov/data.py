@@ -280,7 +280,17 @@ def _require_file(root: Path, filename: str) -> Path:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     entry = next((item for item in manifest.get("sources", {}).values()
                   if Path(item.get("raw_path", "")).name == filename), None)
-    if entry is None or sha256(path.read_bytes()).hexdigest() != entry.get("sha256"):
+    payload = path.read_bytes()
+    verified = entry is not None and sha256(payload).hexdigest() == entry.get("sha256")
+    # Legacy GitHub uploads normalised this CSV from CRLF to LF. Accept that
+    # ONE lossless transformation only when restoring CRLF recovers the exact
+    # original recorded SHA256. Any changed cell/whitespace still fails.
+    if not verified and entry is not None and filename == "dpi2023.csv" and b"\r" not in payload:
+        restored = payload.replace(b"\n", b"\r\n")
+        verified = sha256(restored).hexdigest() == entry.get("sha256")
+        if verified:
+            warnings.warn("DPI CSV has Git-normalised LF endings; exact original SHA256 verified after CRLF restoration.", RuntimeWarning)
+    if not verified:
         raise DataSourceError(f"El hash de {filename} no coincide con el manifiesto; no se usa como fuente verificada.")
     return path
 

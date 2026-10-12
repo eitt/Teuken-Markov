@@ -207,3 +207,15 @@ La ordenación del riesgo de alternancia ofrece un diagnóstico distinto: AUC-RO
 Los datos necesarios están incluidos para ejecutar offline. No se redistribuyen los archivos ZIP originales ni el PDF del código COW; el descargador puede obtenerlos. Los lectores locales no hacen descargas implícitas y verifican los hashes de sus entradas.
 
 El cuaderno `Americas_Markov_Colab.ipynb` permite cargar este proyecto en Colab o ejecutar desde su carpeta en Jupyter. Las celdas se entregan sin salidas de ejecución; los resultados adjuntos proceden de ejecutar el mismo programa mediante `run.py`.
+
+## Ampliación histórica y drivers
+
+[RESEARCH_EXTENSION.md](RESEARCH_EXTENSION.md) documenta una evaluación DPI desde 1985, un panel GLI histórico separado y bloques de exposición a petróleo y ENSO. Los nuevos resultados se guardan en `outputs/extensions/` y `outputs/history/`.
+
+```bash
+python run_extensions.py --download --run
+# Con las fuentes incluidas, sin red:
+python run_extensions.py --offline --run
+```
+
+La ampliación evalúa 1.007 casos DPI y 1.677 casos históricos GLI HOG. Los nuevos drivers no superan el Brier global de Markov simple en esta ejecución. GLI y DPI discrepan en el 22,57 % de las observaciones conjuntamente clasificadas y alineadas por fecha; las fuentes se conservan separadas. ENSO mide variabilidad climática, no cambio climático antropogénico.

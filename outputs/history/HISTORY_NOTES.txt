@@ -1,0 +1,10 @@
+HOG is primary; leader is a separate sensitivity choice. No role fallback or GLI/DPI splice.
+1945-2020 are actual December 31 source years; 1946-2021 are aligned labels, not additional coverage.
+Retain source ideologies and explicitly filter eligible_cow_jan1 for historical analysis; COW membership is not legal independence.
+EIEC, EXELEC, government-system type and exact years in office are unavailable and remain missing. GLI democracy is not EIEC.
+Duration columns count consecutive identical snapshots; they cannot identify within-year exits/returns or exact tenure.
+Unknown/nonideological/not-applicable values remain distinct in ideology_raw; none is never Center.
+Disagreement rates condition on jointly classified observations and do not declare either source ground truth.
+GLI uses DPI among its source materials; this is a measurement sensitivity audit, not independent validation.
+January 1 inaugurations can differ from the preceding December 31 snapshot despite adjacent-date alignment.
+Fit historical persistence/Markov and parsimonious political models separately. Do not fabricate pre-1960 macro data or competitive-election filtering.

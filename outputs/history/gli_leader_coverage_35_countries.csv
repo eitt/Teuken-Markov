@@ -1,0 +1,36 @@
+country_code,country_name,source_rows,role_present_rows,classified_rows,unknown_rows,absent_series,first_source_year,last_source_year,first_aligned_year,last_aligned_year,cow_eligible_rows,cow_eligibility_unknown_rows
+ARG,Argentina,76,76,76,0,False,1945,2020,1946,2021,76,0
+ATG,Antigua & Barbuda,0,0,0,0,True,,,,,0,0
+BHS,Bahamas,54,54,54,0,False,1967,2020,1968,2021,48,0
+BLZ,Belize,60,60,60,0,False,1961,2020,1962,2021,40,0
+BOL,Bolivia,76,76,76,0,False,1945,2020,1946,2021,76,0
+BRA,Brazil,76,76,75,1,False,1945,2020,1946,2021,76,0
+BRB,Barbados,55,55,55,0,False,1966,2020,1967,2021,55,0
+CAN,Canada,76,76,76,0,False,1945,2020,1946,2021,76,0
+CHL,Chile,76,76,76,0,False,1945,2020,1946,2021,76,0
+COL,Colombia,76,76,75,1,False,1945,2020,1946,2021,76,0
+CRI,Costa Rica,76,76,76,0,False,1945,2020,1946,2021,76,0
+CUB,Cuba,76,76,76,0,False,1945,2020,1946,2021,76,0
+DMA,Dominica,0,0,0,0,True,,,,,0,0
+DOM,Dominican Republic,76,76,76,0,False,1945,2020,1946,2021,76,0
+ECU,Ecuador,76,76,74,2,False,1945,2020,1946,2021,76,0
+GRD,Grenada,0,0,0,0,True,,,,,0,0
+GTM,Guatemala,76,76,76,0,False,1945,2020,1946,2021,76,0
+GUY,Guyana,55,55,55,0,False,1966,2020,1967,2021,55,0
+HND,Honduras,76,76,75,1,False,1945,2020,1946,2021,76,0
+HTI,Haiti,76,76,69,7,False,1945,2020,1946,2021,76,0
+JAM,Jamaica,59,59,59,0,False,1962,2020,1963,2021,59,0
+KNA,St. Kitts and Nevis,0,0,0,0,True,,,,,0,0
+LCA,St. Lucia,0,0,0,0,True,,,,,0,0
+MEX,Mexico,76,76,76,0,False,1945,2020,1946,2021,76,0
+NIC,Nicaragua,76,76,76,0,False,1945,2020,1946,2021,76,0
+PAN,Panama,76,76,76,0,False,1945,2020,1946,2021,76,0
+PER,Peru,76,76,76,0,False,1945,2020,1946,2021,76,0
+PRY,Paraguay,76,76,76,0,False,1945,2020,1946,2021,76,0
+SLV,El Salvador,76,76,76,0,False,1945,2020,1946,2021,76,0
+SUR,Suriname,46,46,46,0,False,1975,2020,1976,2021,46,0
+TTO,Trinidad and Tobago,59,59,59,0,False,1962,2020,1963,2021,59,0
+URY,Uruguay,76,76,76,0,False,1945,2020,1946,2021,76,0
+USA,United States of America,76,76,76,0,False,1945,2020,1946,2021,76,0
+VCT,St. Vincent and the Grenadines,0,0,0,0,True,,,,,0,0
+VEN,Venezuela,76,76,75,1,False,1945,2020,1946,2021,76,0

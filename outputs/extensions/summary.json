@@ -1,0 +1,87 @@
+{
+  "dpi": {
+    "panel_pairs": 1207,
+    "panel_changes": 108,
+    "evaluated_pairs": 1007,
+    "evaluated_changes": 93,
+    "first_origin": 1985,
+    "last_origin": 2022,
+    "last_target": 2023,
+    "model_specs": {
+      "lean": [
+        "gdp_growth",
+        "inflation",
+        "state_duration",
+        "eiec"
+      ],
+      "lean_oil": [
+        "gdp_growth",
+        "inflation",
+        "state_duration",
+        "eiec",
+        "oil_growth",
+        "fuel_import_share_prior",
+        "fuel_export_share_prior",
+        "oil_x_import_prior",
+        "oil_x_export_prior"
+      ],
+      "lean_enso": [
+        "gdp_growth",
+        "inflation",
+        "state_duration",
+        "eiec",
+        "enso_mean",
+        "agriculture_share_prior",
+        "enso_x_agriculture_prior"
+      ],
+      "lean_oil_enso": [
+        "gdp_growth",
+        "inflation",
+        "state_duration",
+        "eiec",
+        "oil_growth",
+        "fuel_import_share_prior",
+        "fuel_export_share_prior",
+        "oil_x_import_prior",
+        "oil_x_export_prior",
+        "enso_mean",
+        "agriculture_share_prior",
+        "enso_x_agriculture_prior"
+      ]
+    },
+    "interpretation": "Retrospective prediction with revised inputs; no causal effect or political direction imposed."
+  },
+  "gli": {
+    "panel_pairs": 1896,
+    "panel_changes": 185,
+    "evaluated_pairs": 1677,
+    "evaluated_changes": 167,
+    "first_origin": 1956,
+    "last_origin": 2020,
+    "last_target": 2021,
+    "model_specs": {
+      "history_duration": [
+        "state_duration"
+      ],
+      "history_network": [
+        "state_duration",
+        "neighbor_left",
+        "neighbor_center",
+        "neighbor_right",
+        "neighbor_known_weight",
+        "isolated"
+      ]
+    },
+    "interpretation": "Retrospective prediction with revised inputs; no causal effect or political direction imposed."
+  },
+  "gli_role": "hog",
+  "dpi_cow_membership_excluded": 13,
+  "gli_cow_membership_excluded": 26,
+  "sources_not_spliced": true,
+  "climate_measure": "ENSO variability (ONI), not anthropogenic climate change",
+  "exposure_year": "origin-2",
+  "economic_and_climate_year": "origin-1",
+  "oil_proxy": "fuel import share and fuel export share; separate denominators, not net petroleum",
+  "ukraine_effect_estimated": false,
+  "prediction_limit": "No post2023 DPI labels; no realised2022 Ukraine indicator in origin2022 predictors."
+}
