@@ -155,7 +155,7 @@ class HistoricalIntegrity(unittest.TestCase):
                 {"year": "2000", "hog_ideology": "rightist"},
                 {"year": "2001", "hog_ideology": "none"},
             ]))
-            original = root / "outputs/main/metricas.csv"
+            original = root / "outputs/main/metrics.csv"
             original.parent.mkdir(parents=True)
             original.write_text("unchanged original metrics\n")
             dpi = pd.DataFrame({

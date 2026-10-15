@@ -1,9 +1,9 @@
-"""Autómata probabilístico anual condicionado, no pronóstico electoral actual.
+"""Conditional annual probabilistic automaton, not a current election forecast.
 
-Actualización simultánea: todos los países usan los estados del paso anterior.
-El reloj anual reproduce la unidad del modelo; no inventa fechas electorales.
-Covariables nacionales y el grafo se mantienen fijos, excepto la duración
-del estado ideológico y los choques expresamente declarados.
+Synchronous updating: all countries use states from the previous step.
+The annual clock reproduces the model's unit; it does not invent election dates.
+Domestic covariates and the graph remain fixed, except for ideological state
+duration and explicitly specified shocks.
 """
 from __future__ import annotations
 
@@ -11,28 +11,30 @@ import numpy as np
 import pandas as pd
 
 from . import STATES
+from .artifacts import canonical_scenario
 from .features import neighbor_features, shock_interactions
 from .models import predict_probabilities
 
 SCENARIOS = {
-    "condiciones_constantes": {"world_growth": None, "oil_growth": 0.0, "food_growth": 0.0},
-    "recesion_hipotetica": {"world_growth": -2.0, "oil_growth": 0.0, "food_growth": 0.0},
-    "energia_alimentos_hipotetico": {"world_growth": None, "oil_growth": 50.0, "food_growth": 20.0},
+    "constant_conditions": {"world_growth": None, "oil_growth": 0.0, "food_growth": 0.0},
+    "hypothetical_recession": {"world_growth": -2.0, "oil_growth": 0.0, "food_growth": 0.0},
+    "hypothetical_energy_food": {"world_growth": None, "oil_growth": 50.0, "food_growth": 20.0},
 }
 
 
 def simulate(model, initial: pd.DataFrame, weights: pd.DataFrame,
-             horizon=6, runs=500, seed=2026, scenario="condiciones_constantes",
+             horizon=6, runs=500, seed=2026, scenario="constant_conditions",
              shock_duration=2):
-    if scenario not in SCENARIOS: raise ValueError("Escenario desconocido")
-    if horizon < 1 or runs < 1 or shock_duration < 1: raise ValueError("Parámetros de simulación no positivos")
+    scenario = canonical_scenario(scenario)
+    if scenario not in SCENARIOS: raise ValueError("Unknown scenario")
+    if horizon < 1 or runs < 1 or shock_duration < 1: raise ValueError("Nonpositive simulation parameters")
     base = initial.copy().sort_values("country_code").reset_index(drop=True)
     if base.country_code.duplicated().any() or not base.state.isin(STATES).all():
-        raise ValueError("La simulación requiere un estado inicial observado y único por país")
+        raise ValueError("Simulation requires one unique observed initial state per country")
     codes = list(base.country_code)
     w = weights.reindex(index=codes, columns=codes, fill_value=0).to_numpy(dtype=float)
-    # Conserva los pesos hacia países excluidos como cobertura faltante;
-    # las proporciones se normalizan sólo entre vecinos activos observados.
+    # Preserve weights toward excluded countries as missing coverage;
+    # normalize proportions only among observed active neighbors.
     denom = w.sum(axis=1)
     w = np.divide(w, denom[:, None], out=np.zeros_like(w), where=denom[:, None] > 0)
     n = len(codes)
@@ -56,8 +58,8 @@ def simulate(model, initial: pd.DataFrame, weights: pd.DataFrame,
             block[column] = totals.ravel()
         block["neighbor_known_weight"] = np.tile(denom, runs)
         block["isolated"] = np.tile(geographically_isolated, runs)
-        # La referencia supone precios constantes, no repetir indefinidamente
-        # el crecimiento observado en 2022. La pandemia no se perpetúa.
+        # The baseline assumes constant prices rather than indefinitely repeating
+        # the growth observed in 2022. The pandemic does not persist.
         block["oil_growth"] = 0.0;block["food_growth"] = 0.0;block["covid_lag"] = 0.0
         if step <= shock_duration:
             for key, value in SCENARIOS[scenario].items():

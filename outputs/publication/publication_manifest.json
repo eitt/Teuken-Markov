@@ -93,7 +93,7 @@
       "id": "Figure_06",
       "title": "Conditional Monte Carlo paths under three hypothetical scenarios",
       "caption": "The original main-model simulation starts from 30 classified countries in January 2023 and uses 500 paths through 2029. Lines show mean country counts; shaded regions show the 5th\u201395th percentiles across simulated paths. The initial state composition is identical across scenarios. Conditions are fixed according to the stored constant, recession, or energy-and-food scenario; annual updates are synchronous. These bands describe conditional path variation, excluding parameter uncertainty. They are neither confidence intervals nor forecasts of realized governments, and no causal interpretation is assigned to scenario contrasts.",
-      "source": "Frozen outputs/main/escenarios_resumen.csv; original simulation outputs are used without rerunning paths or fitting parameters.",
+      "source": "Frozen outputs/main/scenario_summary.csv; original simulation outputs are used without rerunning paths or fitting parameters.",
       "width_mm": 160.0,
       "height_mm": 180.0,
       "stem": "Figure_06",

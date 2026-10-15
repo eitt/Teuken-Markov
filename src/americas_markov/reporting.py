@@ -1,7 +1,7 @@
 """English descriptive results and diagnostics; no automatic causal inference.
 
-Source identifiers and historical output filenames stay unchanged so existing
-analysis scripts can continue to consume the frozen scientific outputs.
+Scientific columns retain their definitions. New outputs use English filenames
+and scenario identifiers; readers also accept the historical naming scheme.
 """
 from __future__ import annotations
 
@@ -15,6 +15,7 @@ import numpy as np
 import pandas as pd
 
 from . import STATES
+from .artifacts import normalize_scenario_columns
 from .models import MODEL_ORDER
 
 MODEL_NAMES = {
@@ -26,9 +27,9 @@ MODEL_NAMES = {
     "history_duration": "Duration", "history_network": "Duration + geographic network",
 }
 SCENARIO_NAMES = {
-    "condiciones_constantes": "Constant conditions",
-    "recesion_hipotetica": "Hypothetical recession",
-    "energia_alimentos_hipotetico": "Hypothetical energy and food shock",
+    "constant_conditions": "Constant conditions",
+    "hypothetical_recession": "Hypothetical recession",
+    "hypothetical_energy_food": "Hypothetical energy and food shock",
 }
 COLORS = {"Left": "#0072B2", "Center": "#777777", "Right": "#D55E00"}
 
@@ -40,6 +41,8 @@ def save_figure(fig, folder: Path, name: str):
 
 def render_results(predictions, metrics, folds, politics, panel, weights,
                    scenario_summary, folder: Path, info: dict):
+    if scenario_summary is not None:
+        scenario_summary = normalize_scenario_columns(scenario_summary)
     folder.mkdir(parents=True, exist_ok=True)
     plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 9, "svg.fonttype": "none"})
     fig, axes = plt.subplots(1, 2, figsize=(10, 4.3))
@@ -51,7 +54,7 @@ def render_results(predictions, metrics, folds, politics, panel, weights,
         for j, value in enumerate(m.brier_multiclass):ax.text(value + .01, j, f"{value:.3f}", va="center", fontsize=8)
         ax.set_xlim(0, max(m.brier_multiclass)*1.22)
         ax.spines[["top", "right"]].set_visible(False)
-    fig.tight_layout();save_figure(fig, folder, "comparacion_modelos")
+    fig.tight_layout();save_figure(fig, folder, "model_comparison")
 
     # Classwise calibration, using the same fixed probability bins.
     calibration_rows = []
@@ -71,8 +74,8 @@ def render_results(predictions, metrics, folds, politics, panel, weights,
     axes[0].set_ylabel("Observed fraction")
     handles, labels = axes[-1].get_legend_handles_labels()
     fig.legend(handles, labels, fontsize=7, loc="lower center", ncol=3, frameon=False)
-    fig.tight_layout(rect=(0, .1, 1, 1));save_figure(fig, folder, "calibracion")
-    pd.DataFrame(calibration_rows).to_csv(folder / "calibracion.csv", index=False)
+    fig.tight_layout(rect=(0, .1, 1, 1));save_figure(fig, folder, "calibration")
+    pd.DataFrame(calibration_rows).to_csv(folder / "calibration.csv", index=False)
 
     fig, ax = plt.subplots(figsize=(9, 3.5))
     for name in ["markov", "domestic", "network", "shocks", "network_shocks"]:
@@ -80,10 +83,10 @@ def render_results(predictions, metrics, folds, politics, panel, weights,
         ax.plot(f.origin_year, f.brier_multiclass, label=MODEL_NAMES[name], lw=1.1)
     ax.set_xlabel("Origin year (target state: January of the following year)")
     ax.set_ylabel("Multiclass Brier score");ax.legend(fontsize=7, ncol=2)
-    fig.tight_layout();save_figure(fig, folder, "desempeno_por_ano")
+    fig.tight_layout();save_figure(fig, folder, "performance_by_year")
 
     if scenario_summary is not None and len(scenario_summary):
-        scenario_summary.to_csv(folder / "escenarios_resumen.csv", index=False)
+        scenario_summary.to_csv(folder / "scenario_summary.csv", index=False)
         fig, axes = plt.subplots(1, 3, figsize=(11, 3.6), sharex=True, sharey=True)
         for ax, (scenario, block) in zip(axes, scenario_summary.groupby("scenario", sort=False)):
             for state in STATES:
@@ -92,7 +95,7 @@ def render_results(predictions, metrics, folds, politics, panel, weights,
                 ax.fill_between(s.year, s.q05, s.q95, color=COLORS[state], alpha=.12)
             ax.set_title(SCENARIO_NAMES[scenario], fontsize=8);ax.set_xlabel("Simulated year")
         axes[0].set_ylabel("Number of active countries");axes[-1].legend(fontsize=7)
-        fig.tight_layout();save_figure(fig, folder, "escenarios")
+        fig.tight_layout();save_figure(fig, folder, "scenarios")
 
     all_scores = metrics.loc[metrics.subset == "all"].set_index("model")
     best = all_scores.brier_multiclass.idxmin()
@@ -117,7 +120,7 @@ def render_results(predictions, metrics, folds, politics, panel, weights,
     report += ["", f"Lowest observed Brier score: {MODEL_NAMES[best]}.",
                f"Brier difference (network + shocks minus domestic): {combined.brier_multiclass-base.brier_multiclass:+.6f}. A negative value favors the combined model in this run.",
                "This comparison does not estimate statistical significance or establish political contagion.",
-               "Overall accuracy is influenced by persistence. See the changed subset in metricas.csv.",
+               "Overall accuracy is influenced by persistence. See the changed subset in metrics.csv.",
                f"Correct predictions among observed changes when selecting the highest-probability class: {correct_changed}. Overall accuracy does not measure anticipation of ideological change.",
                "Change risk is one minus the probability of the initial state. Binary Brier score, ROC AUC and average precision assess this risk across all cases; no decision threshold is selected on the test set.",
                "", "SCOPE AND LIMITATIONS",
@@ -140,5 +143,5 @@ def render_results(predictions, metrics, folds, politics, panel, weights,
                "Hypothetical energy and food shock: price changes of +50%/+20% for two steps; this is neither a prediction nor an estimated Ukraine effect.",
                "The 5–95% bands show Monte Carlo dispersion conditional on fitted parameters; parameter and measurement uncertainty are excluded.",
                "Final models use the full panel for scenarios; evaluation metrics come from separate chronological fold fits, not the final fit."]
-    (folder / "RESULTADOS.txt").write_text("\n".join(report)+"\n", encoding="utf-8")
+    (folder / "RESULTS.txt").write_text("\n".join(report)+"\n", encoding="utf-8")
     (folder / "run_info.json").write_text(json.dumps(info, ensure_ascii=False, indent=2), encoding="utf-8")

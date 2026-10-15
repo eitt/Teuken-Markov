@@ -1,4 +1,4 @@
-"""Baselines y logit multinomial con regularización L2 y validación cronológica."""
+"""Baselines and L2-regularized multinomial logit with chronological validation."""
 from __future__ import annotations
 
 import numpy as np
@@ -23,11 +23,11 @@ MODEL_ORDER = ["persistence", "markov", *MODEL_FEATURES]
 
 
 def fit_model(train: pd.DataFrame, name: str, numeric_columns=None):
-    if not len(train): raise ValueError("Conjunto de entrenamiento vacío")
+    if not len(train): raise ValueError("Empty training set")
     if name == "persistence": return {"kind": name}
     if name == "markov":
         counts = pd.crosstab(train.state, train.target_state).reindex(index=STATES, columns=STATES, fill_value=0).astype(float)
-        counts += 1.0  # suavizado de Laplace declarado; nunca usa el test
+        counts += 1.0  # declared Laplace smoothing; never uses the test set
         return {"kind": name, "matrix": counts.div(counts.sum(axis=1), axis=0)}
     columns = list(numeric_columns) if numeric_columns is not None else MODEL_FEATURES[name]
     numeric = Pipeline([("impute", SimpleImputer(strategy="median", add_indicator=True, keep_empty_features=True)),
@@ -55,7 +55,7 @@ def predict_probabilities(model, frame: pd.DataFrame) -> np.ndarray:
         for j, label in enumerate(model["estimator"].named_steps["classifier"].classes_):
             p[:, STATES.index(label)] = raw[:, j]
     if np.any(~np.isfinite(p)) or np.any(p < 0) or not np.allclose(p.sum(axis=1), 1):
-        raise ValueError("Probabilidades inválidas o estados de entrada desconocidos")
+        raise ValueError("Invalid probabilities or unknown input states")
     return p
 
 
@@ -66,8 +66,8 @@ def score_predictions(frame: pd.DataFrame) -> dict:
     initial_index = np.asarray([STATES.index(s) for s in frame.state])
     change_p = 1-p[np.arange(len(p)), initial_index]
     change_y = frame.changed.astype(int).to_numpy()
-    # Persistencia es degenerada: el log-loss sin truncamiento sería infinito
-    # cuando hay alternancia. Esta métrica documenta la cota numérica utilizada.
+    # Persistence is degenerate: unclipped log loss would be infinite
+    # when the state changes. This metric documents the numerical bound used.
     logloss = -np.log(np.clip(actual_p, 1e-12, 1)).mean()
     return {"n": len(frame), "changes": int(frame.changed.sum()),
             "log_loss_clipped": float(logloss),
@@ -87,8 +87,8 @@ def rolling_evaluate(panel: pd.DataFrame, start_year=2000, model_features=None):
     for origin in sorted(panel.loc[panel.year >= start_year, "year"].unique()):
         train, test = panel.loc[panel.year < origin], panel.loc[panel.year == origin]
         if len(train) < 40 or train.target_state.nunique() < 2: continue
-        # Al 1 de enero del origen, sólo hay resultados observados hasta ese año.
-        if int(train.target_year.max()) > origin: raise AssertionError("Fuga temporal")
+        # On January 1 of the origin year, observed outcomes extend only through that year.
+        if int(train.target_year.max()) > origin: raise AssertionError("Temporal leakage")
         for name in order:
             numeric = None if model_features is None else model_features.get(name)
             fitted = fit_model(train, name, numeric_columns=numeric)
@@ -103,7 +103,7 @@ def rolling_evaluate(panel: pd.DataFrame, start_year=2000, model_features=None):
             result["train_max_target"] = int(train.target_year.max())
             outputs.append(result)
             fold_rows.append({"model": name, "origin_year": int(origin), "train_n": len(train), **score_predictions(result)})
-    if not outputs: raise ValueError("No hay folds con entrenamiento suficiente")
+    if not outputs: raise ValueError("No folds have sufficient training data")
     predictions = pd.concat(outputs, ignore_index=True)
     metrics = []
     for name in order:
@@ -121,7 +121,7 @@ def coefficients(model) -> pd.DataFrame:
     names = est.named_steps["preprocess"].get_feature_names_out()
     classifier = est.named_steps["classifier"]
     if classifier.coef_.shape[0] != len(classifier.classes_):
-        return pd.DataFrame()  # caso binario: no inventar tres ecuaciones
+        return pd.DataFrame()  # binary case: do not invent three equations
     rows = [{"state": state, "feature": feature, "coefficient": float(value)}
             for state, values in zip(classifier.classes_, classifier.coef_)
             for feature, value in zip(names, values)]

@@ -1,104 +1,104 @@
-# Ampliación histórica y drivers observados
+# Historical extension and observed drivers
 
-La extensión permite evaluar más años y contrastar exposición a petróleo y variabilidad ENSO. Los análisis se ejecutan por separado y conservan los resultados originales en `outputs/main/`. No se empalman las etiquetas de GLI con DPI ni se asigna una dirección izquierda/derecha a los choques.
+The extension evaluates additional years and examines exposure to oil prices and ENSO variability. The analyses run separately and preserve the original results in `outputs/main/`. GLI and DPI labels are not spliced together, and shocks are not assigned a left/right direction.
 
-## Ejecutar
+## Running the extension
 
-Desde la raíz del proyecto, con las dependencias de `requirements.txt`:
+From the project root, with the dependencies in `requirements.txt` installed:
 
 ```bash
 python run_extensions.py --download --run
 ```
 
-Con los datos incluidos, sin acceso a Internet:
+Using the included data, without Internet access:
 
 ```bash
 python run_extensions.py --offline --run
 python -m unittest discover -s tests -v
 ```
 
-Las opciones `--start-year 1985`, `--history-start-year 1956` y `--history-role hog` son predeterminadas. `--history-role leader` ejecuta una sensibilidad con el líder político de GLI; no rellena HOG faltante mediante otra función ejecutiva. La actualización de datos requiere `--download --refresh` y puede cambiar resultados. La CLI original `run.py` y sus seis modelos mantienen su comportamiento.
+The default options are `--start-year 1985`, `--history-start-year 1956`, and `--history-role hog`. `--history-role leader` runs a sensitivity analysis using GLI's political leader measure; it does not fill missing HOG observations using another executive role. Updating the data requires `--download --refresh` and may change the results. The original `run.py` CLI and its six models retain their existing behavior.
 
-## Qué se amplía
+## Scope of the extension
 
-| Análisis | Fuente / fechas | Evaluación de esta ejecución |
+| Analysis | Source / dates | Evaluation in this run |
 |---|---|---|
-| DPI principal | Enero de 1975–2023 | Orígenes 1985–2022; 1.007 pares y 93 cambios |
-| DPI anterior a 2000 | Mismas etiquetas, sin añadir años a la fuente | 403 pares adicionales y 33 cambios |
-| DPI desde 2000 | Ventana original, entrenamiento desde 1975 | 604 pares y 60 cambios |
-| GLI HOG histórico | Fuente diciembre de 1945–2020 | Orígenes alineados 1956–2020; 1.677 pares y 167 cambios |
+| Main DPI analysis | January 1975–2023 | Origins 1985–2022; 1,007 pairs and 93 changes |
+| DPI before 2000 | Same labels, with no additional source years | 403 additional pairs and 33 changes |
+| DPI from 2000 onward | Original window, with training from 1975 | 604 pairs and 60 changes |
+| Historical GLI HOG | December 1945–2020 source data | Aligned origins 1956–2020; 1,677 pairs and 167 changes |
 
-La fuente DPI ya proporcionaba 49 años: `--start-year` determina dónde comienza la evaluación, no dónde comienza todo el entrenamiento. En 1985 el entrenamiento contiene 200 pares y sólo 15 cambios; los modelos con drivers adicionales deben interpretarse como exploratorios.
+The DPI source already provided 49 years: `--start-year` determines when evaluation begins, rather than the beginning of the full training period. In 1985, the training data contain 200 pairs and only 15 changes; models with additional drivers should be interpreted as exploratory.
 
-GLI observa el 31 de diciembre y DPI principalmente el 1 de enero. Se conserva el año de fuente y se etiqueta el corte GLI de diciembre de Y con enero de Y+1: los rótulos alineados 1946–2021 **no añaden observaciones posteriores a diciembre de 2020**. Son fechas adyacentes, no una identidad garantizada: una investidura del 1 de enero, como en Brasil, puede modificar al Ejecutivo entre esos cortes.
+GLI observes December 31, while DPI primarily observes January 1. The source year is retained, and the GLI observation from December of Y is labeled January of Y+1: the aligned 1946–2021 labels **do not add observations after December 2020**. These are adjacent dates, with no guarantee of an identical executive: a January 1 inauguration, as in Brazil, can change the executive between the two reference dates.
 
-GLI HOG tiene 29 series nacionales y 27 países con alguna ideología clasificable; Bahamas y Belice carecen de HOG clasificable. No cubre Antigua y Barbuda, Dominica, Granada, San Cristóbal y Nieves, Santa Lucía y San Vicente y las Granadinas. EIEC, elecciones y años exactos de mandato no están disponibles en GLI y permanecen faltantes. Las duraciones históricas cuentan rachas de cortes anuales idénticos, no fechas exactas de investidura.
+GLI HOG contains 29 national series and 27 countries with at least one classifiable ideology; the Bahamas and Belize have no classifiable HOG. It does not cover Antigua and Barbuda, Dominica, Grenada, Saint Kitts and Nevis, Saint Lucia, or Saint Vincent and the Grenadines. EIEC, elections, and exact years in office are unavailable in GLI and remain missing. Historical durations count runs of identical annual observations rather than exact inauguration dates.
 
-Entre 1975 y 2021, GLI HOG y DPI tienen 1.019 observaciones conjuntamente clasificadas y 230 desacuerdos (**22,57 %**). No se declara una fuente como verdad ni se modifican manualmente las clases para alcanzar consenso. GLI utiliza DPI entre sus materiales: esta comparación evalúa sensibilidad de medición y no constituye validación completamente independiente.
+Between 1975 and 2021, GLI HOG and DPI have 1,019 jointly classified observations and 230 disagreements (**22.57%**). Neither source is designated as the truth, and classes are not manually changed to produce agreement. GLI uses DPI among its source materials: this comparison assesses measurement sensitivity and does not constitute fully independent validation.
 
-## Drivers y orden temporal
+## Drivers and temporal ordering
 
-Para el origen político enero de t y desenlace enero de t+1:
+For a political origin in January of t and an outcome in January of t+1:
 
-| Variable | Fuente y medición | Año utilizado |
+| Variable | Source and measurement | Year used |
 |---|---|---|
-| Precio del petróleo | Pink Sheet: cambio porcentual de la media anual | t−1 |
-| Exposición importadora | WDI `TM.VAL.FUEL.ZS.UN`: combustibles / importaciones de mercancías | t−2 |
-| Exposición exportadora | WDI `TX.VAL.FUEL.ZS.UN`: combustibles / exportaciones de mercancías | t−2 |
-| ENSO | NOAA ONI: media de 11 ventanas trimestrales DJF–OND | t−1 |
-| Exposición agrícola | WDI `NV.AGR.TOTL.ZS`: agricultura, silvicultura y pesca / PIB | t−2 |
+| Oil price | Pink Sheet: percentage change in the annual mean | t−1 |
+| Import exposure | WDI `TM.VAL.FUEL.ZS.UN`: fuels / merchandise imports | t−2 |
+| Export exposure | WDI `TX.VAL.FUEL.ZS.UN`: fuels / merchandise exports | t−2 |
+| ENSO | NOAA ONI: mean of 11 three-month DJF–OND windows | t−1 |
+| Agricultural exposure | WDI `NV.AGR.TOTL.ZS`: agriculture, forestry, and fishing / GDP | t−2 |
 
-Las interacciones multiplican el índice o cambio porcentual por la participación nacional dividida entre 100. Se mantienen efectos principales e interacciones en los bloques petrolero y ENSO. Los porcentajes importador y exportador tienen denominadores distintos: **no se restan ni se denominan exposición neta petrolera**. Combustibles incluye productos distintos del petróleo. La exposición agrícola es un proxy económico general y no representa una teleconexión física de ENSO estimada para cada país.
+The interactions multiply the index or percentage change by the national share divided by 100. Main effects and interactions are retained in the oil and ENSO blocks. Import and export percentages have different denominators: **they are not subtracted or described as net oil exposure**. Fuels include products other than oil. Agricultural exposure is a broad economic proxy and does not represent a physical ENSO teleconnection estimated for each country.
 
-El núcleo reducido utiliza crecimiento, inflación, duración de la clase, competitividad, país y estado inicial. Se comparan persistencia, Markov y cuatro especificaciones L2: núcleo, núcleo+petróleo, núcleo+ENSO y núcleo+ambos. El panel GLI temprano compara persistencia, Markov, duración y duración+red, sin imputar macroeconomía previa a 1960 dentro de esos predictores.
+The lean core uses growth, inflation, class duration, competitiveness, country, and initial state. Persistence, Markov, and four L2 specifications are compared: core, core+oil, core+ENSO, and core+both. The early GLI panel compares persistence, Markov, duration, and duration+network, without imputing pre-1960 macroeconomic data into those predictors.
 
-ONI mide **variabilidad climática**, no calentamiento antropogénico. No se cambian productos ONI/RONI por tramos. NDJ de Y contiene enero de Y+1 y se excluye para no incluir meses posteriores al año asignado. La media de DJF–OND es una agregación de 11 ventanas solapadas definida aquí, no 11 meses independientes ni un índice anual oficial de NOAA. La fuente conserva 1950–2025 completos; el año terminal 2026 incompleto se excluye.
+ONI measures **climate variability**, rather than anthropogenic warming. ONI/RONI products are not switched across segments. NDJ of Y includes January of Y+1 and is excluded to avoid including months after the assigned year. The DJF–OND mean is an aggregation of 11 overlapping windows defined here, rather than 11 independent months or an official NOAA annual index. The source retains complete years from 1950–2025; the incomplete terminal year, 2026, is excluded.
 
-Los rezagos ordenan fechas de los eventos, pero los indicadores económicos y climáticos contienen revisiones. Algunas publicaciones de diciembre llegan después de enero: no se reconstruyen los datos que estaban efectivamente disponibles en cada fecha histórica. Esta limitación se conserva en todos los resultados.
+Lags establish the temporal order of events, but economic and climate indicators contain revisions. Some December releases arrive after January: the data actually available at each historical date are not reconstructed. This limitation applies to all results.
 
-## Resultados de la extensión
+## Extension results
 
-Brier multiclase global: menor es mejor; comparaciones sobre los mismos 1.007 casos DPI.
+Overall multiclass Brier score: lower is better; comparisons use the same 1,007 DPI cases.
 
-| Modelo | Brier 1985–2022 |
+| Model | Brier 1985–2022 |
 |---|---:|
-| Persistencia | 0,184707 |
-| Markov | **0,171169** |
-| Núcleo reducido | 0,172592 |
-| Núcleo + petróleo | 0,173445 |
-| Núcleo + ENSO | 0,173585 |
-| Núcleo + petróleo + ENSO | 0,174484 |
+| Persistence | 0.184707 |
+| Markov | **0.171169** |
+| Lean core | 0.172592 |
+| Core + oil | 0.173445 |
+| Core + ENSO | 0.173585 |
+| Core + oil + ENSO | 0.174484 |
 
-Los nuevos drivers **no mejoran el Brier global** de esta ejecución frente a Markov. En 2000–2022, el modelo ENSO mejora ligeramente el núcleo reducido (0,183909 frente a 0,184250), pero continúa por encima de Markov (0,182862). No se atribuye significación estadística a diferencias sin un contraste apropiado. Los modelos reducidos aislados aciertan por argmax 2 de los 93 cambios de toda la ventana; el combinado acierta 2/93. En la ventana 2000–2022 ninguno acierta los 60 cambios. La exactitud global cercana al 91 % sigue dominada por permanencia.
+The new drivers **do not improve the overall Brier score** relative to Markov in this run. In 2000–2022, the ENSO model slightly improves on the lean core (0.183909 versus 0.184250), but remains above Markov (0.182862). Differences are not assigned statistical significance without an appropriate test. The individual lean models correctly predict 2 of the 93 changes across the full window using argmax; the combined model correctly predicts 2/93. In the 2000–2022 window, none correctly predicts any of the 60 changes. Overall accuracy near 91% remains dominated by persistence.
 
-En GLI HOG, Markov obtiene Brier 0,183308, duración 0,184468 y duración+red 0,186231. Ninguno acierta mediante argmax los 167 cambios evaluados. Las métricas de distintas fuentes no son directamente comparables como si tuvieran las mismas etiquetas, países y años.
+In GLI HOG, Markov obtains a Brier score of 0.183308, duration 0.184468, and duration+network 0.186231. None correctly predicts any of the 167 evaluated changes using argmax. Metrics from different sources are not directly comparable as though they shared the same labels, countries, and years.
 
-`conditional_oil_scenarios.csv` contiene contrastes de un paso desde el corte observado de enero de 2023: cambio petrolero hipotético 0 %, −50 % y +50 %, con exposiciones nacionales y otros predictores fijos. Son probabilidades condicionadas al modelo ajustado; no predicciones categóricas de ganadores ni efectos causales de una crisis. No incluyen incertidumbre de parámetros. Los estados desconocidos no entran en la simulación.
+`conditional_oil_scenarios.csv` contains one-step contrasts from the observed January 2023 snapshot: hypothetical oil price changes of 0%, −50%, and +50%, holding national exposures and other predictors fixed. These are probabilities conditional on the fitted model, rather than categorical predictions of winners or causal effects of a crisis. They do not include parameter uncertainty. Unknown states do not enter the simulation.
 
-## Otros drivers y límites del diseño
+## Other drivers and design limitations
 
-La implementación original ya incluye crecimiento mundial, alimentos y pandemia, con limitaciones por el reducido número de años de choque. Una dummy global de guerra o crisis no sustituye las diferencias de exposición nacional. Un choque observado durante el intervalo de pronóstico no debe introducirse retrospectivamente como información conocida antes de que ocurriera.
+The original implementation already includes world growth, food, and the pandemic, with limitations arising from the small number of shock years. A global war or crisis dummy does not substitute for differences in national exposure. A shock observed during the forecast interval should not be introduced retrospectively as information known before it occurred.
 
-La guerra de Ucrania comienza en 2022. Con el esquema predictivo actual de rezago t−1 y DPI hasta enero de 2023, no hay un desenlace enero de 2024 para evaluar un origen enero de 2023 informado por los choques de 2022. Se podrían estudiar asociaciones explicativas contemporáneas con un diseño distinto, pero no presentarlas como predicciones desde enero de 2022.
+The war in Ukraine begins in 2022. Under the current predictive design, with a t−1 lag and DPI through January 2023, there is no January 2024 outcome to evaluate a January 2023 origin informed by the 2022 shocks. Contemporaneous explanatory associations could be studied with a different design, but should not be presented as predictions made from January 2022.
 
-Para extender después de 2023 se necesitan nuevas etiquetas políticas verificadas. Para analizar cambio climático, se necesitan temperatura/precipitación nacionales, extremos o impactos locales y una definición separada de tendencias y episodios. El archivo libre de Berkeley Earth examinado no proporcionó cobertura nacional hasta 2023; no se completó artificialmente. ENSO×agricultura queda como bloque exploratorio.
+Extending beyond 2023 requires new, verified political labels. Analyzing climate change requires national temperature/precipitation data, extremes or local impacts, and separate definitions of trends and episodes. The freely available Berkeley Earth file examined did not provide national coverage through 2023; its coverage was not artificially extended. ENSO×agriculture remains an exploratory block.
 
-Los efectos fijos completos de año absorberían cualquier choque global común. Las interacciones con exposición nacional conservan variación entre países, pero no identifican por sí solas causalidad. Los choques pueden afectar al incumbente sin determinar qué orientación ideológica lo sustituye. Países autoritarios, elecciones competitivas y diferencias de medición requieren sensibilidades separadas.
+A full set of year fixed effects would absorb any common global shock. Interactions with national exposure retain variation across countries, but do not identify causality on their own. Shocks can affect the incumbent without determining the ideological orientation of its replacement. Authoritarian countries, competitive elections, and measurement differences require separate sensitivity analyses.
 
-## Archivos y reproducibilidad
+## Files and reproducibility
 
-- `outputs/extensions/dpi_drivers/`: métricas generales y por periodo, predicciones, cobertura y escenarios petroleros.
-- `outputs/extensions/gli_hog/`: evaluación histórica separada; `gli_leader/` si se elige esa sensibilidad.
-- `outputs/history/`: paneles GLI, ausencia/cobertura, comparaciones y desacuerdos por país.
-- `data/raw/driver_exposures_manifest.json` y `climate_manifest.json`: fuentes, fecha, unidades y SHA256.
+- `outputs/extensions/dpi_drivers/`: overall metrics and metrics by period, predictions, coverage, and oil scenarios.
+- `outputs/extensions/gli_hog/`: separate historical evaluation; `gli_leader/` if that sensitivity analysis is selected.
+- `outputs/history/`: GLI panels, missingness/coverage, comparisons, and disagreements by country.
+- `data/raw/driver_exposures_manifest.json` and `climate_manifest.json`: sources, date, units, and SHA256.
 
-La copia DPI subida inicialmente a GitHub normalizó CRLF a LF. El loader acepta esa conversión **sólo si reconstruir CRLF reproduce exactamente el SHA256 original registrado**; cualquier celda o espacio modificado sigue causando error. `.gitattributes` protege las próximas descargas frente a nuevas conversiones de Git. No se desactiva la validación de contenido.
+The DPI copy initially uploaded to GitHub normalized CRLF to LF. The loader accepts that conversion **only if reconstructing CRLF exactly reproduces the recorded original SHA256**; any changed cell or space still causes an error. `.gitattributes` protects subsequent downloads from further Git conversions. Content validation remains enabled.
 
-## Referencias y fuentes
+## References and sources
 
-- Herre, B. (2023). Identifying Ideologues: A Global Dataset on Political Leaders, 1945–2020. *British Journal of Political Science*, 53(2), 740–748. <https://doi.org/10.1017/S0007123422000217>. Datos y reglas: <https://github.com/bastianherre/global-leader-ideologies>.
-- Campello, D., y Zucco, C. (2016). Presidential Success and the World Economy. *Journal of Politics*, 78(2), 589–602. <https://doi.org/10.1086/684749>.
-- Cole, S., Healy, A., y Werker, E. (2012). Do voters demand responsive governments? Evidence from Indian disaster relief. *Journal of Development Economics*, 97(2), 167–181. <https://doi.org/10.1016/j.jdeveco.2011.05.005>.
+- Herre, B. (2023). Identifying Ideologues: A Global Dataset on Political Leaders, 1945–2020. *British Journal of Political Science*, 53(2), 740–748. <https://doi.org/10.1017/S0007123422000217>. Data and rules: <https://github.com/bastianherre/global-leader-ideologies>.
+- Campello, D., and Zucco, C. (2016). Presidential Success and the World Economy. *Journal of Politics*, 78(2), 589–602. <https://doi.org/10.1086/684749>.
+- Cole, S., Healy, A., and Werker, E. (2012). Do voters demand responsive governments? Evidence from Indian disaster relief. *Journal of Development Economics*, 97(2), 167–181. <https://doi.org/10.1016/j.jdeveco.2011.05.005>.
 - Cooperman, A. (2022). (Un)Natural Disasters: Electoral Cycles in Disaster Relief. *Comparative Political Studies*. <https://doi.org/10.1177/00104140211047410>.
 - WDI: <https://data.worldbank.org/indicator/TX.VAL.FUEL.ZS.UN>, <https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS>.
-- NOAA: <https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt> y <https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v6/>.
+- NOAA: <https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt> and <https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v6/>.

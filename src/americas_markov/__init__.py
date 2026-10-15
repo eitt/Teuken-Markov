@@ -1,4 +1,4 @@
-"""Transiciones ideológicas de los ejecutivos americanos sobre redes."""
+"""Network models of executive ideological transitions in the Americas."""
 
 STATES = ("Left", "Center", "Right")
-STATE_ES = {"Left": "izquierda", "Center": "centro", "Right": "derecha"}
+STATE_LABELS = {"Left": "Left", "Center": "Center", "Right": "Right"}

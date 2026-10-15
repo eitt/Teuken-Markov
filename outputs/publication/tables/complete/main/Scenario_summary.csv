@@ -1,64 +1,64 @@
 Scenario,Simulated year,Simulated state,Mean countries,5th percentile,95th percentile,Runs,Active countries,Scenario ID
-Constant conditions,2023,Left,18.0,18.0,18.0,500,30,condiciones_constantes
-Constant conditions,2023,Center,2.0,2.0,2.0,500,30,condiciones_constantes
-Constant conditions,2023,Right,10.0,10.0,10.0,500,30,condiciones_constantes
-Constant conditions,2024,Left,17.134,14.0,19.0,500,30,condiciones_constantes
-Constant conditions,2024,Center,2.748,1.0,5.0,500,30,condiciones_constantes
-Constant conditions,2024,Right,10.118,8.0,13.0,500,30,condiciones_constantes
-Constant conditions,2025,Left,16.428,13.0,20.0,500,30,condiciones_constantes
-Constant conditions,2025,Center,3.218,1.0,5.0,500,30,condiciones_constantes
-Constant conditions,2025,Right,10.354,7.0,13.0,500,30,condiciones_constantes
-Constant conditions,2026,Left,15.798,12.0,20.0,500,30,condiciones_constantes
-Constant conditions,2026,Center,3.434,1.0,6.0,500,30,condiciones_constantes
-Constant conditions,2026,Right,10.768,7.0,14.0,500,30,condiciones_constantes
-Constant conditions,2027,Left,15.024,11.0,19.0,500,30,condiciones_constantes
-Constant conditions,2027,Center,3.572,1.0,6.0,500,30,condiciones_constantes
-Constant conditions,2027,Right,11.404,7.0,15.0,500,30,condiciones_constantes
-Constant conditions,2028,Left,14.338,10.0,19.0,500,30,condiciones_constantes
-Constant conditions,2028,Center,3.668,2.0,6.0,500,30,condiciones_constantes
-Constant conditions,2028,Right,11.994,7.0,16.0,500,30,condiciones_constantes
-Constant conditions,2029,Left,13.85,10.0,19.0,500,30,condiciones_constantes
-Constant conditions,2029,Center,3.756,2.0,6.0,500,30,condiciones_constantes
-Constant conditions,2029,Right,12.394,8.0,17.0,500,30,condiciones_constantes
-Hypothetical recession,2023,Left,18.0,18.0,18.0,500,30,recesion_hipotetica
-Hypothetical recession,2023,Center,2.0,2.0,2.0,500,30,recesion_hipotetica
-Hypothetical recession,2023,Right,10.0,10.0,10.0,500,30,recesion_hipotetica
-Hypothetical recession,2024,Left,17.89,15.0,20.0,500,30,recesion_hipotetica
-Hypothetical recession,2024,Center,2.832,1.0,5.0,500,30,recesion_hipotetica
-Hypothetical recession,2024,Right,9.278,7.0,12.0,500,30,recesion_hipotetica
-Hypothetical recession,2025,Left,17.75,14.0,21.0,500,30,recesion_hipotetica
-Hypothetical recession,2025,Center,3.458,2.0,6.0,500,30,recesion_hipotetica
-Hypothetical recession,2025,Right,8.792,6.0,12.0,500,30,recesion_hipotetica
-Hypothetical recession,2026,Left,16.946,13.0,21.0,500,30,recesion_hipotetica
-Hypothetical recession,2026,Center,3.578,2.0,6.0,500,30,recesion_hipotetica
-Hypothetical recession,2026,Right,9.476,6.0,13.0,500,30,recesion_hipotetica
-Hypothetical recession,2027,Left,16.04,12.0,20.0,500,30,recesion_hipotetica
-Hypothetical recession,2027,Center,3.746,2.0,6.0,500,30,recesion_hipotetica
-Hypothetical recession,2027,Right,10.214,6.0,14.0,500,30,recesion_hipotetica
-Hypothetical recession,2028,Left,15.216,11.0,20.0,500,30,recesion_hipotetica
-Hypothetical recession,2028,Center,3.822,2.0,6.0,500,30,recesion_hipotetica
-Hypothetical recession,2028,Right,10.962,6.0,15.0,500,30,recesion_hipotetica
-Hypothetical recession,2029,Left,14.588,10.0,19.0,500,30,recesion_hipotetica
-Hypothetical recession,2029,Center,3.83,2.0,6.0,500,30,recesion_hipotetica
-Hypothetical recession,2029,Right,11.582,7.0,16.0,500,30,recesion_hipotetica
-Hypothetical energy and food shock,2023,Left,18.0,18.0,18.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2023,Center,2.0,2.0,2.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2023,Right,10.0,10.0,10.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2024,Left,18.056,15.0,20.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2024,Center,2.71,1.0,5.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2024,Right,9.234,7.0,12.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2025,Left,18.122,15.0,21.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2025,Center,3.172,1.0,5.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2025,Right,8.706,6.0,12.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2026,Left,17.256,14.0,21.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2026,Center,3.46,1.0,6.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2026,Right,9.284,6.0,13.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2027,Left,16.34,12.0,21.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2027,Center,3.656,1.0,6.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2027,Right,10.004,6.0,14.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2028,Left,15.474,11.0,20.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2028,Center,3.772,1.0,6.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2028,Right,10.754,6.0,15.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2029,Left,14.834,10.0,19.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2029,Center,3.804,2.0,6.0,500,30,energia_alimentos_hipotetico
-Hypothetical energy and food shock,2029,Right,11.362,7.0,16.0,500,30,energia_alimentos_hipotetico
+Constant conditions,2023,Left,18.0,18.0,18.0,500,30,constant_conditions
+Constant conditions,2023,Center,2.0,2.0,2.0,500,30,constant_conditions
+Constant conditions,2023,Right,10.0,10.0,10.0,500,30,constant_conditions
+Constant conditions,2024,Left,17.134,14.0,19.0,500,30,constant_conditions
+Constant conditions,2024,Center,2.748,1.0,5.0,500,30,constant_conditions
+Constant conditions,2024,Right,10.118,8.0,13.0,500,30,constant_conditions
+Constant conditions,2025,Left,16.428,13.0,20.0,500,30,constant_conditions
+Constant conditions,2025,Center,3.218,1.0,5.0,500,30,constant_conditions
+Constant conditions,2025,Right,10.354,7.0,13.0,500,30,constant_conditions
+Constant conditions,2026,Left,15.798,12.0,20.0,500,30,constant_conditions
+Constant conditions,2026,Center,3.434,1.0,6.0,500,30,constant_conditions
+Constant conditions,2026,Right,10.768,7.0,14.0,500,30,constant_conditions
+Constant conditions,2027,Left,15.024,11.0,19.0,500,30,constant_conditions
+Constant conditions,2027,Center,3.572,1.0,6.0,500,30,constant_conditions
+Constant conditions,2027,Right,11.404,7.0,15.0,500,30,constant_conditions
+Constant conditions,2028,Left,14.338,10.0,19.0,500,30,constant_conditions
+Constant conditions,2028,Center,3.668,2.0,6.0,500,30,constant_conditions
+Constant conditions,2028,Right,11.994,7.0,16.0,500,30,constant_conditions
+Constant conditions,2029,Left,13.85,10.0,19.0,500,30,constant_conditions
+Constant conditions,2029,Center,3.756,2.0,6.0,500,30,constant_conditions
+Constant conditions,2029,Right,12.394,8.0,17.0,500,30,constant_conditions
+Hypothetical recession,2023,Left,18.0,18.0,18.0,500,30,hypothetical_recession
+Hypothetical recession,2023,Center,2.0,2.0,2.0,500,30,hypothetical_recession
+Hypothetical recession,2023,Right,10.0,10.0,10.0,500,30,hypothetical_recession
+Hypothetical recession,2024,Left,17.89,15.0,20.0,500,30,hypothetical_recession
+Hypothetical recession,2024,Center,2.832,1.0,5.0,500,30,hypothetical_recession
+Hypothetical recession,2024,Right,9.278,7.0,12.0,500,30,hypothetical_recession
+Hypothetical recession,2025,Left,17.75,14.0,21.0,500,30,hypothetical_recession
+Hypothetical recession,2025,Center,3.458,2.0,6.0,500,30,hypothetical_recession
+Hypothetical recession,2025,Right,8.792,6.0,12.0,500,30,hypothetical_recession
+Hypothetical recession,2026,Left,16.946,13.0,21.0,500,30,hypothetical_recession
+Hypothetical recession,2026,Center,3.578,2.0,6.0,500,30,hypothetical_recession
+Hypothetical recession,2026,Right,9.476,6.0,13.0,500,30,hypothetical_recession
+Hypothetical recession,2027,Left,16.04,12.0,20.0,500,30,hypothetical_recession
+Hypothetical recession,2027,Center,3.746,2.0,6.0,500,30,hypothetical_recession
+Hypothetical recession,2027,Right,10.214,6.0,14.0,500,30,hypothetical_recession
+Hypothetical recession,2028,Left,15.216,11.0,20.0,500,30,hypothetical_recession
+Hypothetical recession,2028,Center,3.822,2.0,6.0,500,30,hypothetical_recession
+Hypothetical recession,2028,Right,10.962,6.0,15.0,500,30,hypothetical_recession
+Hypothetical recession,2029,Left,14.588,10.0,19.0,500,30,hypothetical_recession
+Hypothetical recession,2029,Center,3.83,2.0,6.0,500,30,hypothetical_recession
+Hypothetical recession,2029,Right,11.582,7.0,16.0,500,30,hypothetical_recession
+Hypothetical energy and food shock,2023,Left,18.0,18.0,18.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2023,Center,2.0,2.0,2.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2023,Right,10.0,10.0,10.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2024,Left,18.056,15.0,20.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2024,Center,2.71,1.0,5.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2024,Right,9.234,7.0,12.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2025,Left,18.122,15.0,21.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2025,Center,3.172,1.0,5.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2025,Right,8.706,6.0,12.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2026,Left,17.256,14.0,21.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2026,Center,3.46,1.0,6.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2026,Right,9.284,6.0,13.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2027,Left,16.34,12.0,21.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2027,Center,3.656,1.0,6.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2027,Right,10.004,6.0,14.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2028,Left,15.474,11.0,20.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2028,Center,3.772,1.0,6.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2028,Right,10.754,6.0,15.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2029,Left,14.834,10.0,19.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2029,Center,3.804,2.0,6.0,500,30,hypothetical_energy_food
+Hypothetical energy and food shock,2029,Right,11.362,7.0,16.0,500,30,hypothetical_energy_food

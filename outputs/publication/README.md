@@ -61,7 +61,7 @@ Source: Frozen outputs/extensions/dpi_drivers/metrics.csv and predictions.csv; a
 
 The original main-model simulation starts from 30 classified countries in January 2023 and uses 500 paths through 2029. Lines show mean country counts; shaded regions show the 5th–95th percentiles across simulated paths. The initial state composition is identical across scenarios. Conditions are fixed according to the stored constant, recession, or energy-and-food scenario; annual updates are synchronous. These bands describe conditional path variation, excluding parameter uncertainty. They are neither confidence intervals nor forecasts of realized governments, and no causal interpretation is assigned to scenario contrasts.
 
-Source: Frozen outputs/main/escenarios_resumen.csv; original simulation outputs are used without rerunning paths or fitting parameters.
+Source: Frozen outputs/main/scenario_summary.csv; original simulation outputs are used without rerunning paths or fitting parameters.
 
 [Vector SVG](Figure_06_master.svg) · [Vector PDF](Figure_06_master.pdf)
 

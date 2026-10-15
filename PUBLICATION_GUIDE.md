@@ -13,7 +13,7 @@ This command reads the saved analyses and verified cartography without downloadi
 
 Files are written to `outputs/publication/`. Each figure has a vector SVG and PDF master, a 300 dpi PNG, a 600 dpi PNG, and a CSV containing the plotted evidence. `publication_manifest.json` provides the title, caption, source and final dimensions. Six presentation tables are available as CSV and Markdown, with accompanying complete English exports where useful. The compiled `Americas_Figures_and_Tables_English.pdf` includes the figures, captions and tables. High-resolution PNGs and the compiled delivery PDF are generated locally rather than versioned.
 
-Use `--review-only` to omit 600 dpi PNGs, `--no-book` to omit the compiled PDF, or `--no-legacy` to leave the original diagnostic figures untouched. By default, saved legacy diagnostics are also re-rendered in English, without model fitting. Compatible historical output filenames are retained.
+Use `--review-only` to omit 600 dpi PNGs, `--no-book` to omit the compiled PDF, or `--no-legacy` to leave the existing diagnostic figures untouched. By default, saved diagnostics are also re-rendered in English, without model fitting. New files use English names; readers also accept archived filenames and scenario identifiers. See [ENGLISH_MIGRATION.md](ENGLISH_MIGRATION.md) for the canonical interface.
 
 ## Figure plan
 

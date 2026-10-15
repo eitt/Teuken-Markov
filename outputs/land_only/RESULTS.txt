@@ -19,7 +19,7 @@ Domestic + network + shocks: N=604, Brier=0.185039, clipped log loss=0.379373, a
 Lowest observed Brier score: Markov.
 Brier difference (network + shocks minus domestic): +0.000934. A negative value favors the combined model in this run.
 This comparison does not estimate statistical significance or establish political contagion.
-Overall accuracy is influenced by persistence. See the changed subset in metricas.csv.
+Overall accuracy is influenced by persistence. See the changed subset in metrics.csv.
 Correct predictions among observed changes when selecting the highest-probability class: Persistence: 0/60; Markov: 0/60; Domestic: 0/60; Domestic + geographic network: 0/60; Domestic + global shocks: 0/60; Domestic + network + shocks: 0/60. Overall accuracy does not measure anticipation of ideological change.
 Change risk is one minus the probability of the initial state. Binary Brier score, ROC AUC and average precision assess this risk across all cases; no decision threshold is selected on the test set.
 

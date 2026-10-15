@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 import hashlib
 import json
 from pathlib import Path
+from .artifacts import resolve_artifact
 
 
 def generate_publication(root: Path, folder: Path | None = None, *, book=True,
@@ -17,8 +18,8 @@ def generate_publication(root: Path, folder: Path | None = None, *, book=True,
     folder=Path(folder or root/"outputs/publication").resolve()
     required=["outputs/extensions/dpi_drivers/predictions.csv",
               "outputs/history/gli_hog_aligned_panel.csv",
-              "outputs/main/escenarios_resumen.csv"]
-    missing=[p for p in required if not (root/p).is_file()]
+              "outputs/main/scenario_summary.csv"]
+    missing=[p for p in required if not resolve_artifact(root/p).is_file()]
     if missing:
         raise FileNotFoundError("Missing frozen outputs: "+", ".join(missing)+
             ". Prepare the original analysis with python run.py --offline --simulate "

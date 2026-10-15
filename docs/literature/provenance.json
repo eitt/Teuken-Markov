@@ -7,7 +7,7 @@
     "outputs/extensions/dpi_drivers/metrics_by_period.csv": "251ba14bb41cbda54cf7b29c428ceb621c316a45812f72333bdb3f345502a6f6",
     "outputs/extensions/gli_hog/metrics.csv": "f89f0df845f320ea7590bf499edc8137b9a8bcf00fb6fa67f480f971b1e79d61",
     "outputs/history/history_report.json": "15d77e48475911fa3ccaeba9d7d8684e5b76e2b162b8b6017532090f46360da5",
-    "outputs/main/metricas.csv": "82a594e3815b54858a28ee0d6f94e4efb691795fb2bb4fe29af3767b7ce206f1",
-    "outputs/main/predicciones_fuera_muestra.csv": "f8e0d546960fe8b9dc92dbe017558cceb41c3369326bf87c55068cbf7f835ff5"
+    "outputs/main/metrics.csv": "82a594e3815b54858a28ee0d6f94e4efb691795fb2bb4fe29af3767b7ce206f1",
+    "outputs/main/predictions.csv": "f8e0d546960fe8b9dc92dbe017558cceb41c3369326bf87c55068cbf7f835ff5"
   }
 }

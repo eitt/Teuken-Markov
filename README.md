@@ -1,37 +1,39 @@
-# Transiciones ideológicas del Ejecutivo en las Américas
+# Executive ideological transitions in the Americas
 
-Proyecto reproducible en Python para analizar cambios anuales entre izquierda, centro y derecha y explorar escenarios de evolución conjunta de los países. Combina instituciones políticas, indicadores económicos, precios internacionales y una red geográfica. Su objetivo es comparar probabilidades de transición y evaluar si la información de los vecinos mejora el desempeño frente a referencias simples.
+The project interface, documentation, notebook and generated outputs use English. See [ENGLISH_MIGRATION.md](ENGLISH_MIGRATION.md) for canonical filenames and compatibility with archived runs.
 
-La evaluación es retrospectiva y utiliza series públicas revisadas. Las simulaciones son trayectorias condicionadas a supuestos. El proyecto no identifica efectos causales, no ofrece predicciones ciertas y no constituye un sistema de pronóstico operativo con las versiones de datos disponibles en cada fecha histórica.
+A reproducible Python project for analyzing annual changes among Left, Center and Right and exploring scenarios for countries' joint evolution. It combines political institutions, economic indicators, international prices and a geographic network. The aim is to compare transition probabilities and assess whether neighboring countries' information improves performance relative to simple baselines.
 
-## Inicio rápido
+The evaluation is retrospective and uses revised public series. Simulations produce trajectories conditional on specified assumptions. The project does not identify causal effects, provide certain predictions or constitute an operational forecasting system based on the data versions available at each historical date.
 
-Requiere **Python 3.10 o superior** con las dependencias compatibles de `requirements.txt`. Ejecute los comandos desde esta carpeta, donde se encuentran `run.py` y `requirements.txt`.
+## Quick start
+
+Requires **Python 3.10 or later** with compatible dependencies from `requirements.txt`. Run the commands from this directory, which contains `run.py` and `requirements.txt`.
 
 ```bash
 python -m pip install -r requirements.txt
 python run.py --download --run --simulate
 ```
 
-La ejecución entregada se probó con **Python 3.12**. Para instalar sus versiones exactas de dependencias, utilice `requirements-lock.txt`; ese archivo requiere **Python 3.11 o superior**. Con Python 3.10 use `requirements.txt`, que permite resolver versiones compatibles en lugar de imponer ese entorno fijado.
+The supplied run was tested with **Python 3.12**. To install its exact dependency versions, use `requirements-lock.txt`; that file requires **Python 3.11 or later**. With Python 3.10, use `requirements.txt` to resolve compatible versions rather than impose the locked environment.
 
 ```bash
 python -m pip install -r requirements-lock.txt
 ```
 
-Para repetir el análisis con los archivos ya descargados y sin acceso a Internet:
+To repeat the analysis using downloaded files without Internet access:
 
 ```bash
 python run.py --offline --run --simulate
 ```
 
-Para descargar de nuevo las fuentes y reconstruir el análisis:
+To download the sources again and rebuild the analysis:
 
 ```bash
 python run.py --download --refresh --run --simulate
 ```
 
-También puede separar las etapas:
+You can also run the stages separately:
 
 ```bash
 python run.py --download
@@ -39,24 +41,24 @@ python run.py --offline --run
 python run.py --offline --simulate
 ```
 
-`--download` obtiene las fuentes públicas y utiliza la caché cuando existe. `--refresh` solicita una nueva descarga y requiere `--download`; una versión nueva puede cambiar los resultados. `--offline` requiere una caché completa y no puede combinarse con `--download` o `--refresh`. `--run` prepara el panel y ejecuta la evaluación temporal. `--simulate` también prepara y evalúa los modelos antes de producir escenarios; no exige una ejecución previa con `--run`. Para las opciones concretas de la versión instalada:
+`--download` retrieves public sources and uses the cache when available. `--refresh` requests a new download and requires `--download`; a new source version may change the results. `--offline` requires a complete cache and cannot be combined with `--download` or `--refresh`. `--run` prepares the panel and performs the temporal evaluation. `--simulate` also prepares and evaluates the models before producing scenarios; it does not require a prior `--run`. For the options supported by the installed version:
 
 ```bash
 python run.py --help
 ```
 
-Las opciones de sensibilidad y simulación incluyen:
+Sensitivity and simulation options include:
 
-| Opción | Efecto | Valor predeterminado |
+| Option | Effect | Default |
 |---|---|---|
-| `--land-only` | Excluye aristas marítimas | Red terrestre y marítima |
-| `--competitive-only` | Restringe los orígenes y los estados iniciales simulados a `EIEC >= 6` | Sin ese filtro |
-| `--start-year` | Primer año de origen de evaluación | `2000` |
-| `--runs` | Trayectorias Monte Carlo por escenario | `500` |
-| `--horizon` | Pasos anuales posteriores al estado inicial | `6` |
-| `--seed` | Semilla de las simulaciones | `2026` |
+| `--land-only` | Excludes maritime edges | Land and maritime network |
+| `--competitive-only` | Restricts evaluation origins and simulated initial states to `EIEC >= 6` | No competitiveness filter |
+| `--start-year` | First evaluation origin year | `2000` |
+| `--runs` | Monte Carlo trajectories per scenario | `500` |
+| `--horizon` | Annual steps after the initial state | `6` |
+| `--seed` | Simulation seed | `2026` |
 
-Por ejemplo:
+For example:
 
 ```bash
 python run.py --offline --run --land-only
@@ -64,157 +66,156 @@ python run.py --offline --run --competitive-only
 python run.py --offline --simulate --runs 1000 --horizon 8 --seed 2026
 ```
 
-Conserve los archivos originales y su registro de hashes si necesita reproducir exactamente una ejecución. Reproducir el código con una descarga más reciente no equivale a reproducir la misma versión de los datos.
+Retain the original files and their hash records to reproduce a run exactly. Rerunning the code with a more recent download does not reproduce the same data version.
 
-## Cobertura y significado de la variable política
+## Coverage and meaning of the political variable
 
-La fuente principal es **Database of Political Institutions, DPI 2023**, publicada en 2026 y con observaciones de 1975 a 2023. DPI registra la situación institucional principalmente al **1 de enero** de cada año. La orientación económica del partido del jefe del Ejecutivo se clasifica como derecha, centro o izquierda. Esta variable no mide toda la ideología personal del dirigente ni permite equiparar automáticamente izquierda/derecha con democracia/autocracia.
+The main source is the **Database of Political Institutions, DPI 2023**, published in 2026 with observations from 1975 to 2023. DPI records institutional conditions primarily on **January 1** of each year. The economic orientation of the chief executive's party is classified as Right, Center or Left. This variable does not capture the leader's entire personal ideology or make Left/Right equivalent to democracy/autocracy.
 
-El universo seleccionado comprende **31 países soberanos de las Américas**: Argentina, Bahamas, Barbados, Belice, Bolivia, Brasil, Canadá, Chile, Colombia, Costa Rica, Cuba, Ecuador, El Salvador, Estados Unidos, Granada, Guatemala, Guyana, Haití, Honduras, Jamaica, México, Nicaragua, Panamá, Paraguay, Perú, República Dominicana, Santa Lucía, Surinam, Trinidad y Tobago, Uruguay y Venezuela.
+The selected universe comprises **31 sovereign countries in the Americas**: Argentina, Bahamas, Barbados, Belize, Bolivia, Brazil, Canada, Chile, Colombia, Costa Rica, Cuba, Ecuador, El Salvador, United States, Grenada, Guatemala, Guyana, Haiti, Honduras, Jamaica, Mexico, Nicaragua, Panama, Paraguay, Peru, Dominican Republic, Saint Lucia, Suriname, Trinidad and Tobago, Uruguay and Venezuela.
 
-No cubre los 35 países soberanos del continente: **Antigua y Barbuda, Dominica, San Cristóbal y Nieves, y San Vicente y las Granadinas** no están representados en la fuente DPI utilizada. La presencia de un país en el universo tampoco garantiza observaciones válidas en todos los años. La muestra de transiciones depende de que existan estados políticos consecutivos utilizables. Los códigos desconocidos o no aplicables no se reinterpretan como centro.
+It does not cover all 35 sovereign countries in the Americas: **Antigua and Barbuda, Dominica, Saint Kitts and Nevis, and Saint Vincent and the Grenadines** are absent from the DPI source used here. A country's inclusion in the universe also does not guarantee valid observations in every year. The transition sample requires consecutive usable political states. Unknown or not-applicable codes are not reinterpreted as Center.
 
-Antes de preparar las características se excluyen registros políticos de países que no pertenecían al sistema COW en el **1 de enero** de ese año, según las fechas de `States2024`. Es un criterio operativo de elegibilidad para esta fuente de red, **no una fecha exacta de soberanía ni una redefinición de independencia**. La ejecución registra cuántas filas excluye.
+Before feature preparation, political records are excluded for countries outside the COW state system on **January 1** of the relevant year, using the dates in `States2024`. This is an operational eligibility rule for the network source, **not an exact date of sovereignty or a redefinition of independence**. The run records the number of excluded rows.
 
-El **Global Leader Ideology Dataset, GLI**, de Herre, proporciona una referencia adicional de 1945 a 2020 para contrastar clasificaciones. Su unidad y sus reglas difieren de DPI: clasifica al líder, mientras DPI utiliza la orientación del partido ejecutivo. GLI no amplía por sí solo la serie principal hasta años posteriores ni elimina las discrepancias de medición.
+Herre's **Global Leader Ideology Dataset, GLI**, provides an additional reference for 1945–2020 to compare classifications. Its unit and coding rules differ from DPI: it classifies the leader, whereas DPI uses the executive party's orientation. GLI alone neither extends the main series to later years nor resolves measurement disagreement.
 
-## Fuentes y trazabilidad
+## Sources and provenance
 
-| Fuente | Función en el proyecto | Alcance y cautela |
+| Source | Role in the project | Scope and caveat |
 |---|---|---|
-| DPI 2023 | Estados ideológicos consecutivos del Ejecutivo | 1975–2023; observaciones principalmente al 1 de enero |
-| World Development Indicators, Banco Mundial | Crecimiento del PIB, inflación, apertura comercial, peso de las importaciones de combustibles y turismo | Series anuales revisadas; cobertura desigual entre países e indicadores |
-| Correlates of War, Direct Contiguity v3.2 | Aristas terrestres y marítimas | Grafo de `t-1` hasta el final de la fuente en 2016; después conserva esa última topología |
-| Banco Mundial, Pink Sheet | Precios mensuales históricos de petróleo e índice de alimentos; el libro también contiene trigo | La especificación principal utiliza petróleo y alimentos, no trigo como predictor separado |
-| GLI, Herre | Referencia opcional para medición ideológica | 1945–2020; no reemplaza automáticamente DPI |
+| DPI 2023 | Consecutive executive ideological states | 1975–2023; observations primarily on January 1 |
+| World Development Indicators, World Bank | GDP growth, inflation, trade openness, fuel-import share and tourism | Revised annual series; uneven coverage across countries and indicators |
+| Correlates of War, Direct Contiguity v3.2 | Land and maritime edges | Graph from `t-1` through the source endpoint in 2016; the final topology is then carried forward |
+| World Bank, Pink Sheet | Historical monthly oil prices and food index; the workbook also contains wheat | The main specification uses oil and food, with no separate wheat predictor |
+| GLI, Herre | Optional reference for ideological measurement | 1945–2020; does not automatically replace DPI |
 
-Los archivos de origen se conservan en `data/raw/`. El registro de descargas incluye la procedencia y los hashes de los archivos utilizados. Consulte [SOURCES.md](SOURCES.md) para los enlaces, las referencias y las diferencias de medición.
+Source files are retained in `data/raw/`. The download record includes the provenance and hashes of the files used. See [SOURCES.md](SOURCES.md) for links, references and measurement differences.
 
-La red representa **proximidad geográfica**, no contactos diplomáticos observados ni flujos comerciales bilaterales. La apertura comercial de WDI es una característica de cada país; no constituye una arista comercial. Para un año de origen `t`, el grafo utiliza `min(t-1, 2016)`: COW registra relaciones presentes durante alguna parte del año, por lo que se retrasa la topología un año para que sea anterior al origen político del 1 de enero. Desde el origen de 2017 se conserva la estructura de 2016. Esa continuidad es un supuesto ante el final de la fuente, no una medición de la topología de 2023 o del futuro.
+The network represents **geographic proximity**, rather than observed diplomatic contacts or bilateral trade flows. WDI trade openness is a country feature; it does not define a trade edge. For an origin year `t`, the graph uses `min(t-1, 2016)`: COW records relationships present during any part of a year, so topology is lagged by one year to precede the January 1 political origin. From the 2017 origin onward, the 2016 structure is retained. This continuation is an assumption required by the source endpoint, not a measurement of topology in 2023 or the future.
 
-## Orden temporal del análisis
+## Temporal alignment
 
-Para cada país y año de origen `t`, el desenlace es la clase política al **1 de enero de `t+1`**, condicionada a la clase al **1 de enero de `t`**. Los indicadores económicos corresponden al año **`t-1`** y la exposición a vecinos utiliza sus estados al **1 de enero de `t`**, sobre la topología de `min(t-1, 2016)`.
+For each country and origin year `t`, the outcome is the political class on **January 1 of `t+1`**, conditional on the class on **January 1 of `t`**. Economic indicators refer to **`t-1`**, while neighborhood exposure uses neighbors' states on **January 1 of `t`**, with the topology of `min(t-1, 2016)`.
 
-Por ejemplo, para evaluar la transición del 1 de enero de 2010 al 1 de enero de 2011 se utilizan la orientación política inicial de 2010, los estados iniciales de los vecinos en 2010 y la información económica de 2009. Una elección celebrada durante 2010 puede reflejarse en el estado de 2011.
+For example, evaluating the transition from January 1, 2010 to January 1, 2011 uses the initial political orientation in 2010, neighbors' initial states in 2010 and economic information from 2009. An election held during 2010 may be reflected in the 2011 state.
 
-Los rezagos evitan utilizar deliberadamente indicadores del año posterior en los predictores. Sin embargo, las series macroeconómicas actuales contienen revisiones y pueden haber sido publicadas después de la fecha de origen. **El proyecto no reconstruye las publicaciones disponibles en tiempo real en 2010 ni en ningún otro año.** Esta distinción limita la interpretación de su desempeño como pronóstico histórico realizable.
+The lags prevent deliberate use of following-year indicators as predictors. However, current macroeconomic series contain revisions and may have been published after the origin date. **The project does not reconstruct the releases available in real time in 2010 or any other year.** This distinction limits interpretation of its performance as a historically feasible forecast.
 
-La evaluación recorre los años de origen **2000–2022**, con entrenamiento expansivo: en cada paso sólo entran transiciones de años de origen anteriores, desde el inicio de la muestra utilizable en 1975. Las etiquetas de entrenamiento deben haber ocurrido antes o en la fecha de origen evaluada. La última transición observable termina el **1 de enero de 2023**. No se realiza una partición aleatoria que mezcle el futuro con el pasado.
+Evaluation covers origin years **2000–2022**, using expanding training windows: each step includes only transitions with earlier origins, from the start of the usable sample in 1975. Training outcomes must have occurred on or before the evaluated origin date. The final observable transition ends on **January 1, 2023**. No random split mixes future and past observations.
 
-## Modelos y evaluación
+## Models and evaluation
 
-El proyecto compara referencias simples con modelos de regresión logística con penalización **L2**, implementados con `scikit-learn`. Todos deben producir probabilidades para las mismas clases y evaluarse sobre observaciones comparables.
+The project compares simple baselines with **L2**-penalized logistic regression models implemented in `scikit-learn`. Every model must produce probabilities for the same classes and be evaluated on comparable observations.
 
-| Modelo | Información principal |
+| Model | Main information |
 |---|---|
-| Persistencia | Mantener la clase política inicial |
-| Markov | Probabilidades históricas de transición entre clases |
-| Doméstico | Estado inicial e indicadores del país |
-| Red | Información doméstica y composición ideológica de los vecinos |
-| Choques | Información doméstica y variables internacionales rezagadas |
-| Ambos | Información doméstica, vecinos y choques |
+| Persistence | Retains the initial political class |
+| Markov | Historical transition probabilities between classes |
+| Domestic | Initial state and domestic indicators |
+| Network | Domestic information and neighbors' ideological composition |
+| Shocks | Domestic information and lagged international variables |
+| Both | Domestic information, neighbors and shocks |
 
-La referencia Markov utiliza suavizado de Laplace, sumando uno a cada celda de la matriz de transiciones calculada sólo con el entrenamiento. Los modelos logísticos incluyen el país y el estado inicial como variables categóricas; la especificación doméstica añade **duración del estado ideológico observado**, `state_duration`, y competitividad electoral a los indicadores económicos. Esa duración cuenta años consecutivos con la misma clasificación: no es la permanencia personal del líder (`yrsoffc`). Se reinicia tras un cambio o una interrupción de la serie, y está limitada por el comienzo de las observaciones. Un cambio de líder que conserve la clase ideológica puede prolongar la misma racha.
+The Markov baseline uses Laplace smoothing, adding one to every cell of the transition matrix computed from training data alone. Logistic models include country and initial state as categorical variables; the domestic specification adds **observed ideological state duration**, `state_duration`, and electoral competitiveness to the economic indicators. Duration counts consecutive years with the same classification; it is not the leader's personal tenure (`yrsoffc`). It resets after a change or a gap in the series and is limited by the start of observations. A new leader who retains the ideological class can extend the same run.
 
-Por incorporar duración, el estado efectivo de los modelos ampliados contiene memoria. Puede interpretarse como una extensión de Markov con estado ampliado o duración, cercana al planteamiento de modelos semi-Markov; no es una cadena de primer orden definida únicamente por izquierda/centro/derecha. La especificación de choques utiliza crecimiento mundial, cambios de precios de petróleo y alimentos, COVID-19 rezagado e interacciones con exposición comercial, importaciones de combustibles y turismo.
+Because the expanded models incorporate duration, their effective state contains memory. They can be interpreted as duration-augmented or expanded-state Markov models, related to a semi-Markov formulation; they are not first-order chains defined solely by Left/Center/Right. The shock specification uses global growth, oil and food price changes, lagged COVID-19 and interactions with trade exposure, fuel imports and tourism.
 
-La comparación utiliza **Brier multiclase**, **log loss** y **calibración**. Las dos primeras métricas valoran las probabilidades, no sólo la clase más probable; valores menores indican mejor desempeño. El Brier se calcula como la media de la suma, sobre las tres clases, de los errores cuadrados de probabilidad; su escala es de 0 a 2. La calibración permite revisar si una probabilidad anunciada guarda relación con la frecuencia observada del evento.
+The comparison uses **multiclass Brier score**, **log loss** and **calibration**. The first two metrics assess probabilities, beyond the most likely class; lower values indicate better performance. Brier is the mean sum of squared probability errors across the three classes, with a range of 0 to 2. Calibration examines whether a stated probability corresponds to the event's observed frequency.
 
-La persistencia asigna probabilidad uno al estado inicial y cero a los demás. Su log loss sería infinito cuando existe alternancia. Para comparar numéricamente, la salida `log_loss_clipped` trunca la probabilidad del resultado observado por debajo de `1e-12` y registra el número de resultados con probabilidad cero. Esa convención debe acompañar cualquier cifra publicada. La imputación de covariables numéricas y su estandarización se ajustan dentro de cada entrenamiento; no rellenan ni reclasifican las etiquetas políticas.
+Persistence assigns probability one to the initial state and zero to the others. Its log loss would be infinite when the state changes. For numerical comparison, `log_loss_clipped` floors the observed outcome's probability at `1e-12` and records the number of zero-probability outcomes. Any published value must state this convention. Numerical covariate imputation and standardization are fitted within each training window; they neither fill nor reclassify political labels.
 
-Se examina además el subconjunto en el que realmente cambió la clase política. Este grupo se identifica **después de obtener las predicciones**, para diagnosticar cómo funcionan los modelos en transiciones menos frecuentes. El cambio futuro observado no puede utilizarse para decidir qué modelo aplicar ni como predictor. Un buen resultado general puede estar dominado por la persistencia y debe contrastarse con este diagnóstico.
+The subset in which the political class actually changed is examined separately. This group is identified **after predictions are obtained**, to diagnose model performance on less frequent transitions. The observed future change cannot determine which model to apply or serve as a predictor. Strong overall performance may be dominated by persistence and should be assessed alongside this diagnostic.
 
-Los resultados deben leerse junto con la cobertura, la frecuencia de cada clase y el número de cambios. La comparación entre modelos no establece que las diferencias sean estadísticamente significativas ni que el mejor modelo observado se mantenga como el mejor en otros periodos. El archivo de coeficientes procede del ajuste final con **todo el panel**, separado de los ajustes usados para evaluar cada año. Sus coeficientes describen ese modelo regularizado y no son efectos causales.
+Read results together with coverage, class frequencies and the number of changes. Model comparisons do not establish that differences are statistically significant or that the best observed model will remain best in other periods. The coefficient file comes from the final fit using **the entire panel**, separately from the fits used to evaluate each year. Its coefficients describe that regularized model and are not causal effects.
 
-## COVID-19, Ucrania y precios internacionales
+## COVID-19, Ukraine and international prices
 
-La información sobre un acontecimiento no se utiliza antes de su inicio. En particular, el indicador rezagado de COVID-19 se activa en los años de origen 2021 y 2022. No se asigna conocimiento de la pandemia a una predicción situada al 1 de enero de 2020. Cuando ese indicador aparece por primera vez en la evaluación, el entrenamiento previo aún no contiene casos con el indicador activo: no puede haber aprendido su asociación hasta que esas observaciones entren posteriormente en el entrenamiento.
+Information about an event is not used before its onset. In particular, the lagged COVID-19 indicator activates at the 2021 and 2022 origins. A prediction dated January 1, 2020 is not assigned knowledge of the pandemic. When the indicator first appears in evaluation, earlier training data contain no active cases: its association cannot have been learned until those observations subsequently enter training.
 
-La invasión a gran escala de Ucrania comenzó en febrero de 2022, mientras la última etiqueta DPI termina el 1 de enero de 2023. Con los rezagos del proyecto y años de origen que terminan en 2022, un indicador rezagado de la invasión sería cero en todo el panel observable. Por ello **Ucrania se excluye de las variables estimadas**. No existe un coeficiente aprendido de la invasión sobre las transiciones políticas. Una perturbación de precios asociada a Ucrania aparece únicamente como supuesto de escenario y no como efecto estimado de la guerra sobre los gobiernos americanos.
+The full-scale invasion of Ukraine began in February 2022, while the last DPI target is January 1, 2023. With the project's lags and origin years ending in 2022, a lagged invasion indicator would be zero throughout the observable panel. **Ukraine is therefore excluded from estimated features.** No coefficient for the invasion's relationship with political transitions has been learned. A price disturbance associated with Ukraine appears only as a scenario assumption, rather than an estimated war effect on governments in the Americas.
 
-Los movimientos históricos del petróleo y alimentos permiten representar presiones internacionales observadas. Sus cambios también responden a oferta, demanda y otros acontecimientos. El libro de origen contiene asimismo trigo, que no entra como predictor separado en la especificación principal. Una asociación con una transición política no identifica cuál de esas causas actuó. Los escenarios relacionados con guerras o crisis futuras son supuestos explícitos sobre esas presiones; no estimaciones causales de los acontecimientos.
+Historical oil and food movements represent observed international pressures. Their changes also respond to supply, demand and other events. The source workbook contains wheat, which is not a separate predictor in the main specification. An association with a political transition does not identify which of those causes operated. Scenarios associated with wars or future crises impose explicit assumptions about these pressures; they do not estimate the events' causal effects.
 
-## Qué significa la simulación
+## Interpreting the simulation
 
-Cada país es un nodo con un estado político. Las simulaciones comienzan en el último estado DPI observado, **enero de 2023**; no inicializan los gobiernos actuales de 2026. Sólo entran países con estado válido en esa fecha y elegibles según los filtros de la ejecución. En cada paso anual todos los países se actualizan **simultáneamente**, utilizando los estados del paso anterior. Se calculan probabilidades condicionadas al estado previo, al entorno y a las variables del escenario; después se muestrea un nuevo estado.
+Each country is a node with a political state. Simulations begin at the last observed DPI state, **January 2023**; they do not initialize governments in office in 2026. Only countries with a valid state on that date and eligible under the run's filters are included. At each annual step, all countries update **simultaneously**, using the previous step's states. Probabilities are calculated conditional on the previous state, environment and scenario variables; a new state is then sampled.
 
-El modelo de simulación es el ajuste final `network_shocks`, entrenado con todo el panel observable. La topología de 2016 y las covariables nacionales se mantienen fijas. La duración ideológica aumenta si se mantiene la clase y vuelve a uno si cambia; la composición de vecinos se recalcula a partir de los estados simulados. El crecimiento mundial permanece en su valor base, salvo durante la perturbación de recesión. Los cambios de precios se fijan en cero y COVID-19 en cero, excepto los cambios de precios expresamente impuestos por el escenario.
+The simulation model is the final `network_shocks` fit, trained on the full observable panel. The 2016 topology and domestic covariates remain fixed. Ideological duration increases when the class persists and resets to one when it changes; neighborhood composition is recalculated from simulated states. Global growth stays at baseline except during the recession disturbance. Price changes and COVID-19 are set to zero, except for price changes explicitly imposed by a scenario.
 
-| Escenario del código | Supuesto durante los dos primeros pasos | A partir del tercer paso |
+| Scenario ID | Assumption during the first two steps | From the third step onward |
 |---|---|---|
-| `condiciones_constantes` | Crecimiento mundial en su valor base; variación de petróleo y alimentos igual a cero | Mantiene la misma referencia |
-| `recesion_hipotetica` | Crecimiento mundial anual de **−2 %**; variación de precios igual a cero | Crecimiento mundial vuelve al valor base |
-| `energia_alimentos_hipotetico` | Variación anual de petróleo **+50 %** y de alimentos **+20 %**; crecimiento mundial en su valor base | Variación de ambos precios vuelve a cero |
+| `constant_conditions` | Global growth at baseline; zero oil and food price changes | Maintains the same baseline |
+| `hypothetical_recession` | Annual global growth of **−2%**; zero price changes | Global growth returns to baseline |
+| `hypothetical_energy_food` | Annual oil price change of **+50%** and food price change of **+20%**; global growth at baseline | Both price changes return to zero |
 
-Son tasas y condiciones impuestas, no perturbaciones estimadas de una guerra específica. El crecimiento doméstico tampoco cambia automáticamente cuando se modifica el crecimiento mundial. Con el horizonte predeterminado de seis pasos, los años posteriores al estado inicial son 2024–2029.
+These rates and conditions are imposed, rather than estimated disturbances from a particular war. Domestic growth also does not change automatically when global growth changes. With the default six-step horizon, years after the initial state are 2024–2029.
 
-Puede describirse como un **autómata probabilístico en una red**. No es el Juego de la Vida literal: no usa sus reglas deterministas de nacimiento y supervivencia. Tampoco representa las decisiones de cada votante ni un mecanismo demostrado de imitación entre gobiernos.
+The simulation can be described as a **probabilistic automaton on a network**. It is not a literal Game of Life: it does not use that model's deterministic birth and survival rules. Nor does it represent individual voters' decisions or an established mechanism of imitation between governments.
 
-La actualización es anual y agregada. **No se activa únicamente en años electorales**, porque no se conoce aquí el calendario futuro completo ni todos los mecanismos de sustitución del Ejecutivo. Un cambio simulado entre dos años no equivale necesariamente a una elección prevista. Los resultados dependen de los supuestos, del modelo y del muestreo. Las bandas de percentiles 5–95 muestran dispersión Monte Carlo condicionada a los parámetros ajustados; no incorporan incertidumbre de parámetros, de medición ni del calendario político.
+Updates are annual and aggregate. **They are not restricted to election years**, because the full future calendar and all mechanisms of executive replacement are not known here. A simulated change between two years does not necessarily represent a predicted election. Results depend on assumptions, the model and sampling. The 5–95 percentile bands show Monte Carlo dispersion conditional on fitted parameters; they exclude uncertainty about parameters, measurement and the political calendar.
 
-No interprete una trayectoria particular como el futuro más probable ni una frecuencia de simulación como una certeza electoral. El modelo anual debe revisarse antes de utilizarlo para preguntas sobre elecciones concretas, golpes de Estado, cambios de coalición o continuidad presidencial.
+Do not interpret a particular trajectory as the most likely future or a simulation frequency as electoral certainty. The annual model requires further assessment before use for questions about specific elections, coups, coalition changes or presidential continuity.
 
-## Archivos del proyecto y salidas
+## Project files and outputs
 
-| Archivo | Responsabilidad |
+| File | Responsibility |
 |---|---|
-| `run.py` | Punto de entrada |
-| `src/americas_markov/cli.py` | Opciones, etapas y guardado de salidas |
-| `src/americas_markov/data.py` | Descargas, caché, hashes y lectura de DPI/WDI/Pink Sheet |
-| `src/americas_markov/network.py` | Contigüidad COW y fechas de pertenencia estatal |
-| `src/americas_markov/features.py` | Rezagos, duración ideológica y características vecinales |
-| `src/americas_markov/models.py` | Referencias, regresiones y evaluación expansiva |
-| `src/americas_markov/simulation.py` | Tres escenarios y actualización simultánea |
-| `src/americas_markov/reporting.py` | Gráficos y resumen de ejecución |
-| `tests/test_core.py` | Verificaciones del núcleo |
+| `run.py` | Entry point |
+| `src/americas_markov/cli.py` | Options, stages and output saving |
+| `src/americas_markov/data.py` | Downloads, cache, hashes and DPI/WDI/Pink Sheet reading |
+| `src/americas_markov/network.py` | COW contiguity and state-membership dates |
+| `src/americas_markov/features.py` | Lags, ideological duration and neighborhood features |
+| `src/americas_markov/models.py` | Baselines, regressions and expanding-window evaluation |
+| `src/americas_markov/simulation.py` | Three scenarios and synchronous updates |
+| `src/americas_markov/reporting.py` | Charts and run summary |
+| `tests/test_core.py` | Core checks |
 
-La ejecución principal escribe en **`outputs/main/`**. `--land-only` utiliza `outputs/land_only/`; `--competitive-only` añade `_competitive` al nombre de la carpeta. Ejecuciones repetidas con las mismas opciones de red y competitividad actualizan esos archivos; conserve una copia si necesita comparar semillas u horizontes anteriores.
+The main run writes to **`outputs/main/`**. `--land-only` uses `outputs/land_only/`; `--competitive-only` appends `_competitive` to the folder name. Repeated runs with the same network and competitiveness options update those files; retain a copy to compare earlier seeds or horizons.
 
-| Salida | Contenido |
+| Output | Content |
 |---|---|
-| `caracteristicas.csv` | Estados, covariables y referencias temporales |
-| `panel_transiciones.csv` | Transiciones consecutivas elegibles |
-| `cobertura_covariables.csv` | Proporción faltante de cada predictor en el panel |
-| `transiciones_conteos.csv` | Conteos descriptivos de pares de clases |
-| `transiciones_probabilidades_descriptivas.csv` | Frecuencias condicionales de todo el panel; no predicciones fuera de muestra |
-| `predicciones_fuera_muestra.csv` | Probabilidades, objetivos y límites de entrenamiento de cada origen |
-| `metricas.csv` y `metricas_por_ano.csv` | Desempeño por subconjunto y por año |
-| `calibracion.csv` | Probabilidades y frecuencias agrupadas por clase y rango |
-| `coeficientes_descriptivos.csv` | Coeficientes del ajuste final completo |
-| `pesos_red_2016.csv` y `aristas_red_2016.csv` | Última topología COW utilizada en simulaciones |
-| `escenario_<nombre>.csv.gz` | Trayectorias, incluido el estado inicial observado; sólo con `--simulate` |
-| `escenarios_resumen.csv` | Medias y percentiles por clase y año simulado |
-| `RESULTADOS.txt` y `run_info.json` | Resumen, opciones, convenciones y versiones de ejecución |
+| `features.csv` | States, covariates and time references |
+| `transition_panel.csv` | Eligible consecutive transitions |
+| `feature_coverage.csv` | Missing share of each predictor in the panel |
+| `transition_counts.csv` | Descriptive counts of class pairs |
+| `descriptive_transition_probabilities.csv` | Conditional frequencies from the entire panel; not out-of-sample predictions |
+| `predictions.csv` | Probabilities, targets and training boundaries for each origin |
+| `metrics.csv` and `metrics_by_year.csv` | Performance by subset and year |
+| `calibration.csv` | Probabilities and frequencies grouped by class and range |
+| `descriptive_coefficients.csv` | Coefficients from the full final fit |
+| `network_weights_2016.csv` and `network_edges_2016.csv` | Final COW topology used in simulations |
+| `scenario_<name>.csv.gz` | Trajectories, including the observed initial state; only with `--simulate` |
+| `scenario_summary.csv` | Means and percentiles by class and simulated year |
+| `RESULTS.txt` and `run_info.json` | Summary, options, conventions and run versions |
 
-Los gráficos `comparacion_modelos`, `calibracion`, `desempeno_por_ano` y, cuando se simula, `escenarios` se guardan en **PNG y SVG**. Las tablas de entrada procesadas y los estados ideológicos desconocidos se guardan en `data/processed/`. Los originales y sus registros de descarga permanecen en `data/raw/`.
+Charts named `model_comparison`, `calibration`, `performance_by_year` and, when simulated, `scenarios` are saved as **PNG and SVG**. Processed input tables and unknown ideological states are saved in `data/processed/`. Original files and their download records remain in `data/raw/`.
 
-## Interpretación y contribución posible
+## Interpretation and potential contribution
 
-La relación entre vecinos puede reflejar difusión, condiciones nacionales similares o choques compartidos. La penalización L2 y la evaluación temporal no resuelven esa distinción causal. También importan la falta de datos, las discrepancias de clasificación, las diferencias institucionales y la elección de topología.
+Relationships between neighbors may reflect diffusion, similar domestic conditions or shared shocks. L2 penalization and temporal evaluation do not resolve this causal distinction. Missing data, classification disagreements, institutional differences and topology choices also matter.
 
-La combinación de países, estados políticos, vecindad y procesos de Markov tiene antecedentes. Gleditsch y Ward (2006) estudian transiciones entre democracia y autocracia con contexto geográfico. Antràs y Padró i Miquel (2025) formalizan influencia extranjera y olas ideológicas. Herre (2023) documenta la medición de ideologías ejecutivas. Estos trabajos delimitan la pregunta y evitan atribuir novedad a herramientas ya establecidas.
+Combining countries, political states, neighborhoods and Markov processes has precedents. Gleditsch and Ward (2006) study transitions between democracy and autocracy with geographic context. Antràs and Padró i Miquel (2025) formalize foreign influence and ideological waves. Herre (2023) documents the measurement of executive ideologies. These studies define the question and prevent established tools from being presented as novel.
 
-Una contribución potencial es **comparar de forma reproducible la capacidad predictiva de estados previos, condiciones domésticas, exposición geográfica y presiones internacionales para transiciones ejecutivas en las Américas**. Su valor depende de los resultados, de controles adicionales y de una revisión bibliográfica más amplia. Este repositorio no afirma prioridad mundial ni novedad suficiente para una publicación por el mero hecho de combinar esas herramientas.
+A potential contribution is **a reproducible comparison of the predictive value of previous states, domestic conditions, geographic exposure and international pressures for executive transitions in the Americas**. Its value depends on the results, additional controls and a broader literature review. This repository does not claim global priority or publication-worthy novelty simply from combining those tools.
 
+## Results from the supplied run
 
-## Resultado de la ejecución entregada
+The sample contains 1,207 observable transitions, including 108 changes. Expanding-window evaluation for 2000–2022 comprises 604 observations and 60 changes. The lowest multiclass Brier score belongs to the simple Markov model (0.182862); the combined model scores 0.184616. Accuracy near 90% is dominated by persistence: none of the six models correctly selects the class in the 60 changed cases when choosing the highest-probability outcome.
 
-La muestra contiene 1.207 transiciones observables, con 108 cambios. La evaluación expansiva de 2000–2022 comprende 604 observaciones y 60 cambios. El menor Brier multiclase corresponde a Markov simple (0,182862); el modelo combinado obtiene 0,184616. La exactitud cercana al 90 % está dominada por permanencia: ninguno de los seis modelos acierta la clase de los 60 cambios al seleccionar la probabilidad máxima.
+Change-risk ranking provides a different diagnostic: ROC AUC of 0.612745 and average precision of 0.156091 for the combined model, against a prevalence of 0.099338. This does not imply superior calibration, statistical significance or reliable election forecasting. Complete metrics, without selecting a threshold on the test set, appear in `metrics.csv`.
 
-La ordenación del riesgo de alternancia ofrece un diagnóstico distinto: AUC-ROC 0,612745 y precisión promedio 0,156091 para el modelo combinado, frente a prevalencia 0,099338. Esto no implica calibración superior, significación estadística ni anticipación fiable de elecciones. Las métricas completas, sin selección de umbral sobre el test, figuran en `metricas.csv`.
+The data required for offline execution are included. Original ZIP archives and the COW codebook PDF are not redistributed; the downloader can retrieve them. Local readers do not download implicitly and verify their input hashes.
 
-Los datos necesarios están incluidos para ejecutar offline. No se redistribuyen los archivos ZIP originales ni el PDF del código COW; el descargador puede obtenerlos. Los lectores locales no hacen descargas implícitas y verifican los hashes de sus entradas.
+The `Americas_Markov_Colab.ipynb` notebook lets you load this project in Colab or run it from its directory in Jupyter. Cells are supplied without execution outputs; attached results were produced by running the same program through `run.py`.
 
-El cuaderno `Americas_Markov_Colab.ipynb` permite cargar este proyecto en Colab o ejecutar desde su carpeta en Jupyter. Las celdas se entregan sin salidas de ejecución; los resultados adjuntos proceden de ejecutar el mismo programa mediante `run.py`.
+## Historical and driver extension
 
-## Ampliación histórica y drivers
-
-[RESEARCH_EXTENSION.md](RESEARCH_EXTENSION.md) documenta una evaluación DPI desde 1985, un panel GLI histórico separado y bloques de exposición a petróleo y ENSO. Los nuevos resultados se guardan en `outputs/extensions/` y `outputs/history/`.
+[RESEARCH_EXTENSION.md](RESEARCH_EXTENSION.md) documents DPI evaluation starting in 1985, a separate historical GLI panel, and oil and ENSO exposure blocks. New results are saved in `outputs/extensions/` and `outputs/history/`.
 
 ```bash
 python run_extensions.py --download --run
-# Con las fuentes incluidas, sin red:
+# With the included sources, without network access:
 python run_extensions.py --offline --run
 ```
 
@@ -229,13 +230,13 @@ python run_publication.py
 
 The command reads frozen outputs and verified local cartography without model fitting or downloads. It also re-renders the original diagnostics in English. Vector SVG/PDF masters, 300/600 dpi PNGs, plotted data and a captioned figure-and-table PDF are produced in `outputs/publication/`.
 
-La ampliación evalúa 1.007 casos DPI y 1.677 casos históricos GLI HOG. Los nuevos drivers no superan el Brier global de Markov simple en esta ejecución. GLI y DPI discrepan en el 22,57 % de las observaciones conjuntamente clasificadas y alineadas por fecha; las fuentes se conservan separadas. ENSO mide variabilidad climática, no cambio climático antropogénico.
+The extension evaluates 1,007 DPI cases and 1,677 historical GLI HOG cases. The new drivers do not outperform the simple Markov model's overall Brier score in this run. GLI and DPI disagree in 22.57% of jointly classified observations aligned by date; the sources remain separate. ENSO measures climate variability, not anthropogenic climate change.
 
-## Revisión de literatura y novedad
+## Literature review and novelty
 
-La [revisión de literatura](docs/literature/LITERATURE_REVIEW.md), con corte al 12 de octubre de 2026, compara el análisis con 26 estudios seleccionados y diez antecedentes cercanos. Incluye una [matriz de evidencia](docs/literature/literature_matrix.csv), [bibliografía BibTeX](docs/literature/references.bib) y [texto del manuscrito en inglés](docs/literature/MANUSCRIPT_RELATED_WORK.md). Las fuentes, tablas y límites de acceso se documentan en [la guía](docs/literature/README.md).
+The [literature review](docs/literature/LITERATURE_REVIEW.md), with a cutoff of October 12, 2026, compares the analysis with 26 selected studies and ten close precedents. It includes an [evidence matrix](docs/literature/literature_matrix.csv), [BibTeX bibliography](docs/literature/references.bib) and [English manuscript text](docs/literature/MANUSCRIPT_RELATED_WORK.md). Sources, tables and access limitations are documented in [the guide](docs/literature/README.md).
 
-Los métodos tienen antecedentes claros. El aporte defendible es un benchmark retrospectivo reproducible y una auditoría de sensibilidad de medición para transiciones ideológicas ejecutivas. La revisión no establece prioridad mundial ni capacidad fiable para anticipar cambios. Para reproducir los documentos y el PDF sin volver a ajustar modelos:
+The methods have clear precedents. The defensible contribution is a reproducible retrospective benchmark and a measurement-sensitivity audit of executive ideological transitions. The review establishes neither global priority nor a reliable ability to anticipate changes. To reproduce the documents and PDF without refitting models:
 
 ```bash
 python docs/literature/build_review.py

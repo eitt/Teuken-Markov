@@ -14,6 +14,7 @@ import numpy as np
 import pandas as pd
 
 from . import STATES
+from .artifacts import read_artifact_csv, resolve_artifact, normalize_scenario_columns
 from .network import COUNTRY_METADATA
 from .reporting import MODEL_NAMES, SCENARIO_NAMES, render_results
 
@@ -31,10 +32,10 @@ SUBSET_NAMES = {"all": "All cases", "changed": "Observed changes", "unchanged": 
 
 
 def _read(root: Path, name: str) -> pd.DataFrame:
-    path = root / name
+    path = resolve_artifact(root / name)
     if not path.is_file():
         raise FileNotFoundError(f"Missing frozen source for publication tables: {name}")
-    return pd.read_csv(path)
+    return read_artifact_csv(path)
 
 
 def _json(root: Path, name: str) -> dict:
@@ -170,10 +171,10 @@ def _coverage(root: Path, dpi: pd.DataFrame, hog: pd.DataFrame, leader: pd.DataF
                      "Observation date": date, "Countries": str(data.country_code.nunique()), "Records": len(data),
                      "Classified records": int(data.state.isin(STATES).sum()), "Main caveat": caveat})
     wdi = _read(root, "data/processed/wdi_americas_world.csv")
-    prices = _read(root, "data/processed/precios_anuales.csv")
+    prices = _read(root, "data/processed/annual_prices.csv")
     exposures = _json(root, "data/raw/driver_exposures_manifest.json")
     climate = _json(root, "data/raw/climate_manifest.json")["annual_coverage"]
-    edges = _read(root, "outputs/main/aristas_red_2016.csv")
+    edges = _read(root, "outputs/main/network_edges_2016.csv")
     pairs = {tuple(sorted((row.src, row.dst))) for row in edges.itertuples()}
     rows += [
         {"Source": "World Bank WDI: macroeconomy", "Measure": "Country-year grid", "Source years": _year_range(wdi.year),
@@ -191,7 +192,7 @@ def _coverage(root: Path, dpi: pd.DataFrame, hog: pd.DataFrame, leader: pd.DataF
          "Countries": "Global", "Records": int(climate["complete_source_years"]), "Classified records": np.nan,
          "Main caveat": "Research aggregation, not an official annual NOAA index or anthropogenic climate measure."},
         {"Source": "COW Direct Contiguity v3.2", "Measure": "Undirected pairs in fitted 2016 snapshot", "Source years": "1816–2016",
-         "Observation date": "Annual topology; model uses t-1", "Countries": str(len(pd.read_csv(root / "outputs/main/pesos_red_2016.csv", index_col=0))),
+         "Observation date": "Annual topology; model uses t-1", "Countries": str(len(read_artifact_csv(root / "outputs/main/network_weights_2016.csv", index_col=0))),
          "Records": len(pairs), "Classified records": np.nan,
          "Main caveat": "Land and water relations; 2016 carried forward after source coverage ends."},
     ]
@@ -264,7 +265,7 @@ HUMAN_COLUMNS = {
 
 
 def _human_export(data: pd.DataFrame, *, political_snapshot: bool = False) -> pd.DataFrame:
-    data = data.copy()
+    data = normalize_scenario_columns(data).copy()
     for name, labels, identifier in [("model", MODEL_NAMES, "Model ID"), ("scenario", SCENARIO_NAMES, "Scenario ID"),
                                      ("period", PERIOD_NAMES, "Period ID"), ("subset", SUBSET_NAMES, "Subset ID")]:
         if name in data:
@@ -305,24 +306,24 @@ def _complete_exports(root: Path, folder: Path) -> None:
     _human_export(_read(root, "data/processed/dpi_americas.csv"), political_snapshot=True).to_csv(
         complete / "DPI_observed_states.csv", index=False)
     legacy = {
-        "metricas.csv": "Model_metrics", "metricas_por_ano.csv": "Annual_model_metrics",
-        "predicciones_fuera_muestra.csv": "Out_of_sample_predictions", "panel_transiciones.csv": "Transition_panel",
-        "calibracion.csv": "Calibration", "escenarios_resumen.csv": "Scenario_summary",
-        "cobertura_covariables.csv": "Covariate_coverage", "coeficientes_descriptivos.csv": "Descriptive_coefficients",
-        "aristas_red_2016.csv": "Geographic_edges_2016", "caracteristicas.csv": "Feature_panel",
-        "transiciones_conteos.csv": "Observed_transition_counts",
-        "transiciones_probabilidades_descriptivas.csv": "Descriptive_transition_probabilities",
+        "metrics.csv": "Model_metrics", "metrics_by_year.csv": "Annual_model_metrics",
+        "predictions.csv": "Out_of_sample_predictions", "transition_panel.csv": "Transition_panel",
+        "calibration.csv": "Calibration", "scenario_summary.csv": "Scenario_summary",
+        "feature_coverage.csv": "Covariate_coverage", "descriptive_coefficients.csv": "Descriptive_coefficients",
+        "network_edges_2016.csv": "Geographic_edges_2016", "features.csv": "Feature_panel",
+        "transition_counts.csv": "Observed_transition_counts",
+        "descriptive_transition_probabilities.csv": "Descriptive_transition_probabilities",
     }
     for run in sorted((root / "outputs").iterdir()):
-        if not (run / "predicciones_fuera_muestra.csv").is_file():
+        if not resolve_artifact(run / "predictions.csv").is_file():
             continue
         destination = complete / run.name
         destination.mkdir(exist_ok=True)
         for filename, stem in legacy.items():
-            if (run / filename).is_file():
-                _human_export(pd.read_csv(run / filename)).to_csv(destination / f"{stem}.csv", index=False)
-        if (run / "pesos_red_2016.csv").is_file():
-            weights = pd.read_csv(run / "pesos_red_2016.csv", index_col=0)
+            if resolve_artifact(run / filename).is_file():
+                _human_export(read_artifact_csv(run / filename)).to_csv(destination / f"{stem}.csv", index=False)
+        if resolve_artifact(run / "network_weights_2016.csv").is_file():
+            weights = read_artifact_csv(run / "network_weights_2016.csv", index_col=0)
             weights.index.name = "country_code"
             _human_export(weights.reset_index()).to_csv(destination / "Geographic_weights_2016.csv", index=False)
 
@@ -381,21 +382,21 @@ def rerender_cached_reports(root: str | Path) -> list[dict]:
     root = Path(root).resolve()
     politics = _read(root, "data/processed/dpi_americas.csv")
     outputs, rendered = root / "outputs", []
-    required = ["predicciones_fuera_muestra.csv", "metricas.csv", "metricas_por_ano.csv",
-                "panel_transiciones.csv", "pesos_red_2016.csv", "run_info.json"]
+    required = ["predictions.csv", "metrics.csv", "metrics_by_year.csv",
+                "transition_panel.csv", "network_weights_2016.csv", "run_info.json"]
     for folder in sorted(outputs.iterdir()):
-        if not folder.is_dir() or not all((folder / filename).is_file() for filename in required):
+        if not folder.is_dir() or not all(resolve_artifact(folder / filename).is_file() for filename in required):
             continue
-        scenario_path = folder / "escenarios_resumen.csv"
-        scenario = pd.read_csv(scenario_path) if scenario_path.is_file() else None
-        protected = {path: path.read_bytes() for path in [scenario_path, folder / "calibracion.csv", folder / "run_info.json"] if path.is_file()}
+        scenario_path = resolve_artifact(folder / "scenario_summary.csv")
+        scenario = read_artifact_csv(scenario_path) if scenario_path.is_file() else None
+        protected = {path: path.read_bytes() for path in [scenario_path, resolve_artifact(folder / "calibration.csv"), folder / "run_info.json"] if path.is_file()}
         try:
-            render_results(pd.read_csv(folder / required[0]), pd.read_csv(folder / required[1]),
-                           pd.read_csv(folder / required[2]), politics, pd.read_csv(folder / required[3]),
-                           pd.read_csv(folder / required[4], index_col=0), scenario, folder,
+            render_results(read_artifact_csv(folder / required[0]), read_artifact_csv(folder / required[1]),
+                           read_artifact_csv(folder / required[2]), politics, read_artifact_csv(folder / required[3]),
+                           read_artifact_csv(folder / required[4], index_col=0), scenario, folder,
                            json.loads((folder / required[5]).read_text(encoding="utf-8")))
         finally:
             for path, payload in protected.items():
                 path.write_bytes(payload)
-        rendered.append({"folder": str(folder), "report": str(folder / "RESULTADOS.txt"), "language": "English"})
+        rendered.append({"folder": str(folder), "report": str(folder / "RESULTS.txt"), "language": "English"})
     return rendered

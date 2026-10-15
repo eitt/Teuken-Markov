@@ -36,14 +36,14 @@ class PublicationTableIntegrityTests(unittest.TestCase):
 
     def test_source_identifiers_survive_english_display_export(self):
         original = pd.DataFrame({"country_code": ["ATG"], "country_name": ["Antigua & Barbuda"],
-                                 "model": ["network_shocks"], "scenario": ["recesion_hipotetica"],
+                                 "model": ["network_shocks"], "scenario": ["hypothetical_recession"],
                                  "state": ["Left"], "year": [2025], "mean_countries": [0.123456789012345]})
         result = _human_export(original)
         self.assertEqual(result.loc[0, "Country"], "Antigua and Barbuda")
         self.assertEqual(result.loc[0, "Model"], "Domestic + network + shocks")
         self.assertEqual(result.loc[0, "Model ID"], "network_shocks")
         self.assertEqual(result.loc[0, "Scenario"], "Hypothetical recession")
-        self.assertEqual(result.loc[0, "Scenario ID"], "recesion_hipotetica")
+        self.assertEqual(result.loc[0, "Scenario ID"], "hypothetical_recession")
         self.assertEqual(result.loc[0, "Mean countries"], original.loc[0, "mean_countries"])
         self.assertIn("Simulated year", result)
         self.assertIn("Simulated state", result)
@@ -105,20 +105,20 @@ class PublicationTableIntegrityTests(unittest.TestCase):
             pd.DataFrame({"country_code": ["ARG"], "year": [2023], "state": ["Left"]}).to_csv(root / "data/processed/dpi_americas.csv", index=False)
             folder = root / "outputs/competitive_only"
             folder.mkdir(parents=True)
-            for filename in ["predicciones_fuera_muestra.csv", "metricas.csv", "metricas_por_ano.csv", "panel_transiciones.csv"]:
+            for filename in ["predictions.csv", "metrics.csv", "metrics_by_year.csv", "transition_panel.csv"]:
                 pd.DataFrame({"example": [1]}).to_csv(folder / filename, index=False)
-            pd.DataFrame({"ARG": [0]}, index=["ARG"]).to_csv(folder / "pesos_red_2016.csv")
+            pd.DataFrame({"ARG": [0]}, index=["ARG"]).to_csv(folder / "network_weights_2016.csv")
             (folder / "run_info.json").write_bytes(b'{"countries":1}\n')
-            (folder / "escenarios_resumen.csv").write_bytes(b"scenario,state,year,mean_countries\ncondiciones_constantes,Left,2023,1.0000000000000000\n")
-            (folder / "calibracion.csv").write_bytes(b"mean_predicted\n0.12345678901234500\n")
+            (folder / "scenario_summary.csv").write_bytes(b"scenario,state,year,mean_countries\nconstant_conditions,Left,2023,1.0000000000000000\n")
+            (folder / "calibration.csv").write_bytes(b"mean_predicted\n0.12345678901234500\n")
             before = {path: path.read_bytes() for path in folder.iterdir()}
 
             def render(*args):
                 target = args[-2]
-                (target / "escenarios_resumen.csv").write_text("rounded data\n")
-                (target / "calibracion.csv").write_text("rounded data\n")
+                (target / "scenario_summary.csv").write_text("rounded data\n")
+                (target / "calibration.csv").write_text("rounded data\n")
                 (target / "run_info.json").write_text("{}")
-                (target / "RESULTADOS.txt").write_text("English cached report\n")
+                (target / "RESULTS.txt").write_text("English cached report\n")
 
             with patch("americas_markov.publication_tables.render_results", side_effect=render) as mocked:
                 result = rerender_cached_reports(root)
@@ -126,7 +126,7 @@ class PublicationTableIntegrityTests(unittest.TestCase):
             self.assertEqual(result[0]["language"], "English")
             for path, payload in before.items():
                 self.assertEqual(path.read_bytes(), payload)
-            self.assertEqual((folder / "RESULTADOS.txt").read_text(), "English cached report\n")
+            self.assertEqual((folder / "RESULTS.txt").read_text(), "English cached report\n")
 
 
 if __name__ == "__main__":

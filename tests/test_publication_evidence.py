@@ -140,11 +140,14 @@ class FrozenPublicationEvidence(unittest.TestCase):
             self.assertAlmostEqual(row.delta_change_pp, expected_pp, places=10)
 
     def test_simulation_bands_reconcile_to_500_fixed_parameter_draws(self):
-        summary = pd.read_csv(ROOT / "outputs/main/escenarios_resumen.csv")
+        summary = pd.read_csv(ROOT / "outputs/main/scenario_summary.csv")
         self.assertEqual(len(summary), 63)
         self.assertTrue(summary.runs.eq(500).all())
         self.assertTrue(summary.active_countries.eq(30).all())
-        for path in sorted((ROOT / "outputs/main").glob("escenario_*.csv.gz")):
+        paths = sorted((ROOT / "outputs/main").glob("scenario_*.csv.gz"))
+        self.assertEqual(len(paths), 3, "All three stored scenarios must be checked")
+        self.assertEqual(set(summary.scenario), {"constant_conditions", "hypothetical_recession", "hypothetical_energy_food"})
+        for path in paths:
             draws = pd.read_csv(path)
             with self.subTest(scenario=path.name):
                 self.assertEqual((len(draws), draws.path.nunique(), draws.country_code.nunique()), (105000, 500, 30))

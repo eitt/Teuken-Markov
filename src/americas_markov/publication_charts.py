@@ -24,6 +24,7 @@ import pandas as pd
 from sklearn.metrics import precision_recall_curve
 
 from . import STATES
+from .artifacts import read_artifact_csv, resolve_artifact
 from .data import load_politics
 from .network import COUNTRY_METADATA
 
@@ -37,9 +38,9 @@ MODEL_LABELS = {
 }
 MODEL_COLORS = {"markov": "#555555", "lean_oil_enso": "#0072B2"}
 SCENARIO_LABELS = {
-    "condiciones_constantes": "Constant conditions",
-    "recesion_hipotetica": "Hypothetical recession",
-    "energia_alimentos_hipotetico": "Hypothetical energy and food shock",
+    "constant_conditions": "Constant conditions",
+    "hypothetical_recession": "Hypothetical recession",
+    "hypothetical_energy_food": "Hypothetical energy and food shock",
 }
 _STYLE = {
     "font.family": "DejaVu Sans", "font.size": 8,
@@ -51,10 +52,10 @@ _STYLE = {
 
 
 def _csv(root: Path, relative: str, required=()) -> pd.DataFrame:
-    path = Path(root) / relative
+    path = resolve_artifact(Path(root) / relative)
     if not path.is_file():
         raise FileNotFoundError(f"Frozen figure input is missing: {path}. Copy the stored results; do not refit to draw this figure.")
-    result = pd.read_csv(path)
+    result = read_artifact_csv(path)
     missing = set(required) - set(result.columns)
     if missing:
         raise ValueError(f"{relative}: required columns missing: {sorted(missing)}")
@@ -406,7 +407,7 @@ def _performance_figure(root: Path, folder: Path, publication: bool) -> dict:
 
 
 def _simulation_figure(root: Path, folder: Path, publication: bool) -> dict:
-    data = _csv(root, "outputs/main/escenarios_resumen.csv",
+    data = _csv(root, "outputs/main/scenario_summary.csv",
                 ["scenario", "year", "state", "mean_countries", "q05", "q95", "runs", "active_countries"])
     if set(data.scenario) != set(SCENARIO_LABELS):
         raise ValueError(f"Frozen Monte Carlo scenario identifiers changed: {sorted(set(data.scenario))}")
@@ -438,7 +439,7 @@ def _simulation_figure(root: Path, folder: Path, publication: bool) -> dict:
         "Lines show mean country counts; shaded regions show the 5th–95th percentiles across simulated paths. "
         "The initial state composition is identical across scenarios. Conditions are fixed according to the stored constant, recession, or energy-and-food scenario; annual updates are synchronous. "
         "These bands describe conditional path variation, excluding parameter uncertainty. They are neither confidence intervals nor forecasts of realized governments, and no causal interpretation is assigned to scenario contrasts.",
-        "Frozen outputs/main/escenarios_resumen.csv; original simulation outputs are used without rerunning paths or fitting parameters.", 180)
+        "Frozen outputs/main/scenario_summary.csv; original simulation outputs are used without rerunning paths or fitting parameters.", 180)
     export_data = data.rename(columns={"scenario": "scenario_id", "mean_countries": "mean_country_count", "q05": "path_quantile_05", "q95": "path_quantile_95", "runs": "simulation_paths"})
     export_data["scenario_label"] = export_data.scenario_id.map(SCENARIO_LABELS)
     _save_data(export_data, folder, meta["stem"])

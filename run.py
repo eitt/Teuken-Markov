@@ -1,4 +1,4 @@
-"""Entrada desde cualquier carpeta: python /ruta/americas_markov/run.py --run."""
+"""Run from any directory: python /path/to/americas_markov/run.py --run."""
 from pathlib import Path
 import sys
 

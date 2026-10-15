@@ -491,7 +491,7 @@ The reported covariate models did not outperform the Markov baseline on aggregat
     # Fixed source paths and hashes allow review without touching model artifacts.
     paths = ["outputs/extensions/dpi_drivers/metrics.csv", "outputs/extensions/dpi_drivers/metrics_by_period.csv",
              "outputs/extensions/gli_hog/metrics.csv", "outputs/history/history_report.json",
-             "outputs/main/metricas.csv", "outputs/main/predicciones_fuera_muestra.csv"]
+             "outputs/main/metrics.csv", "outputs/main/predictions.csv"]
     (OUT / "provenance.json").write_text(json.dumps(dict(analysis_commit=ANALYSIS_COMMIT,
         review_cutoff=CUTOFF, model_refitted=False,
         source_sha256={p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in paths}), indent=2) + "\n")

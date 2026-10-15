@@ -283,27 +283,27 @@ class ConditionalSimulation(unittest.TestCase):
         self.assertTrue(draws.state.eq(draws.country_code.map(observed)).all())
         self.assertTrue(draws.loc[draws.year.eq(2006), "initial_observed"].all())
         self.assertFalse(draws.loc[draws.year.gt(2006), "initial_observed"].any())
-        self.assertEqual(set(draws.scenario), {"condiciones_constantes"})
+        self.assertEqual(set(draws.scenario), {"constant_conditions"})
         np.testing.assert_allclose(summary.groupby("year").mean_countries.sum(), 3.0)
         np.testing.assert_allclose(summary.q05, summary.q95)
         self.assertTrue(summary.active_countries.eq(3).all())
 
     def test_markov_simulation_is_reproducible_with_an_explicit_seed(self):
         fitted = models.fit_model(self.panel, "markov")
-        kwargs = dict(horizon=4, runs=20, seed=2026, scenario="recesion_hipotetica")
+        kwargs = dict(horizon=4, runs=20, seed=2026, scenario="hypothetical_recession")
         first, first_summary = simulation.simulate(fitted, self.initial, self.weights, **kwargs)
         second, second_summary = simulation.simulate(fitted, self.initial, self.weights, **kwargs)
         pd.testing.assert_frame_equal(first, second)
         pd.testing.assert_frame_equal(first_summary, second_summary)
         self.assertEqual(set(first.state), {"Left", "Center", "Right"})
-        self.assertEqual(set(first_summary.scenario), {"recesion_hipotetica"})
+        self.assertEqual(set(first_summary.scenario), {"hypothetical_recession"})
         np.testing.assert_allclose(first_summary.groupby("year").mean_countries.sum(), 3.0)
         self.assertTrue(first_summary.q05.le(first_summary.q95).all())
 
     def test_unknown_initial_states_cannot_be_simulated_as_center(self):
         initial = self.initial.copy()
         initial.iloc[0, initial.columns.get_loc("state")] = pd.NA
-        with self.assertRaisesRegex(ValueError, "estado inicial"):
+        with self.assertRaisesRegex(ValueError, "initial state"):
             simulation.simulate({"kind": "persistence"}, initial, self.weights, runs=1)
 
     def test_network_updates_use_the_previous_step_for_every_country(self):
@@ -357,7 +357,7 @@ class ConditionalSimulation(unittest.TestCase):
         with patch("americas_markov.simulation.predict_probabilities", side_effect=persistence_capture):
             draws, summary = simulation.simulate(
                 {}, self.initial, self.weights, horizon=3, runs=1,
-                scenario="energia_alimentos_hipotetico", shock_duration=2,
+                scenario="hypothetical_energy_food", shock_duration=2,
             )
         for step, block in enumerate(captured, start=1):
             self.assertTrue(block.oil_growth.eq(50.0 if step <= 2 else 0.0).all())
@@ -365,8 +365,8 @@ class ConditionalSimulation(unittest.TestCase):
             self.assertTrue(block.covid_lag.eq(0).all())
             np.testing.assert_allclose(block.oil_x_fuel, block.oil_growth * block.fuel_import_share / 100)
             np.testing.assert_allclose(block.food_x_trade, block.food_growth * block.trade_open / 100)
-        self.assertEqual(set(draws.scenario), {"energia_alimentos_hipotetico"})
-        self.assertEqual(set(summary.scenario), {"energia_alimentos_hipotetico"})
+        self.assertEqual(set(draws.scenario), {"hypothetical_energy_food"})
+        self.assertEqual(set(summary.scenario), {"hypothetical_energy_food"})
         pd.testing.assert_frame_equal(self.initial, original)
         pd.testing.assert_frame_equal(self.weights, weights_original)
 
@@ -498,7 +498,7 @@ class ObservedGeography(unittest.TestCase):
                     (ROOT / "data" / "raw" / "cow_contiguity_manifest.json").read_text(),
                     encoding="utf-8",
                 )
-                with self.assertRaisesRegex(RuntimeError, "offline no descarga"):
+                with self.assertRaisesRegex(RuntimeError, "offline mode does not download"):
                     network.build_network(root, ["USA", "CAN"])
                 urllib_open.assert_not_called()
                 network_open.assert_not_called()
