@@ -1,8 +1,8 @@
-"""Panel con emparejamiento anual explícito y covariables rezagadas.
+"""Panel with explicit annual matching and lagged covariates.
 
-DPI describe el 1 de enero de t. Se predice el estado del 1 de enero
-de t+1 usando estados de t y series económicas del año t-1. Se emplean
-datos revisados; esto NO reconstruye sus publicaciones en tiempo real.
+DPI describes January 1 of year t. The state on January 1 of t+1 is
+predicted using states from t and economic series from year t-1. These
+are revised data; this does NOT reconstruct their real-time releases.
 """
 from __future__ import annotations
 
@@ -22,15 +22,15 @@ CATEGORICAL = ["state", "country_code"]
 
 
 def valid_state(value):
-    """No confunde un estado desconocido con centro."""
+    """Do not confuse an unknown state with Center."""
     return value if isinstance(value, str) and value in STATES else pd.NA
 
 
 def neighbor_features(states: pd.Series, weights: pd.DataFrame) -> pd.DataFrame:
-    """Proporciones condicionadas a vecinos con ideología observada.
+    """Proportions conditional on neighbors with observed ideology.
 
-    Con ningún vecino conocido se devuelven tres ceros y cobertura cero.
-    Una fila aislada no se clasifica como un vecindario centrista.
+    With no known neighbors, return three zeros and zero coverage.
+    An isolated row is not classified as a centrist neighborhood.
     """
     codes = list(weights.index)
     s = states.reindex(codes)
@@ -51,7 +51,7 @@ def neighbor_features(states: pd.Series, weights: pd.DataFrame) -> pd.DataFrame:
 
 def shock_interactions(frame: pd.DataFrame) -> pd.DataFrame:
     frame = frame.copy()
-    # Porcentajes se convierten en proporciones sólo en estas interacciones.
+    # Percentages are converted to proportions only in these interactions.
     frame["world_growth_x_trade"] = frame["world_growth"] * frame["trade_open"] / 100
     frame["oil_x_fuel"] = frame["oil_growth"] * frame["fuel_import_share"] / 100
     frame["food_x_trade"] = frame["food_growth"] * frame["trade_open"] / 100
@@ -63,7 +63,7 @@ def prepare_features(politics: pd.DataFrame, wdi: pd.DataFrame,
                      prices: pd.DataFrame, networks: dict[int, pd.DataFrame]) -> pd.DataFrame:
     p = politics.copy().sort_values(["country_code", "year"])
     if p.duplicated(["country_code", "year"]).any():
-        raise ValueError("DPI contiene duplicados país-año; no se agregan silenciosamente.")
+        raise ValueError("DPI contains duplicate country-years; they are not silently aggregated.")
     for col in ["years_in_office", "eiec"]:
         if col not in p: p[col] = np.nan
     durations = []
@@ -79,7 +79,7 @@ def prepare_features(politics: pd.DataFrame, wdi: pd.DataFrame,
     p["state_duration"] = durations
     economies = wdi.loc[wdi.country_code != "WLD"].copy()
     if economies.duplicated(["country_code", "year"]).any():
-        raise ValueError("WDI contiene duplicados país-año.")
+        raise ValueError("WDI contains duplicate country-years.")
     economies["economic_year"] = economies["year"]
     economies["year"] += 1
     f = p.merge(economies, on=["country_code", "year"], how="left", validate="one_to_one")
@@ -89,12 +89,12 @@ def prepare_features(politics: pd.DataFrame, wdi: pd.DataFrame,
     global_data["year"] += 1
     f = f.merge(global_data, on="year", how="left", validate="many_to_one")
     f["covid_lag"] = f["economic_year"].between(2020, 2021).astype(float)
-    # Bandera de documentación, deliberadamente excluida de SHOCK_NUM:
-    # no hay una observación con origen 2023 y resultado 2024 en DPI2023.
+    # Documentation flag, deliberately excluded from SHOCK_NUM:
+    # DPI2023 has no observation with origin 2023 and outcome 2024.
     f["ukraine_lag_not_estimable"] = (f["economic_year"] >= 2022).astype(float)
     chunks = []
     for year, block in f.groupby("year", sort=True):
-        if int(year) not in networks: raise ValueError(f"Falta red para {year}")
+        if int(year) not in networks: raise ValueError(f"Missing network for {year}")
         s = block.set_index("country_code")["state"]
         nf = neighbor_features(s, networks[int(year)])
         b = block.join(nf, on="country_code")
@@ -104,7 +104,7 @@ def prepare_features(politics: pd.DataFrame, wdi: pd.DataFrame,
 
 
 def make_transition_panel(features: pd.DataFrame, competitive_only=False) -> pd.DataFrame:
-    # Emparejar antes de excluir estados faltantes evita saltar años vacíos.
+    # Matching before excluding missing states avoids skipping empty years.
     nxt = features[["country_code", "year", "state"]].copy()
     nxt["target_year"] = nxt["year"]
     nxt["year"] -= 1
@@ -115,5 +115,5 @@ def make_transition_panel(features: pd.DataFrame, competitive_only=False) -> pd.
     panel = panel.loc[valid].copy()
     panel["target_year"] = panel["target_year"].astype(int)
     panel["changed"] = panel.state.ne(panel.target_state)
-    if not panel.target_year.eq(panel.year + 1).all(): raise AssertionError("Emparejamiento temporal inválido")
+    if not panel.target_year.eq(panel.year + 1).all(): raise AssertionError("Invalid temporal matching")
     return panel.sort_values(["year", "country_code"]).reset_index(drop=True)

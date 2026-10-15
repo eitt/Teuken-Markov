@@ -1,0 +1,80 @@
+src,dst,type,distancecategory,pair_a,pair_b,country_a_name,country_b_name
+ARG,BOL,land,1,ARG,BOL,Argentina,Bolivia
+ARG,BRA,land,1,ARG,BRA,Argentina,Brazil
+ARG,CHL,land,1,ARG,CHL,Argentina,Chile
+ARG,PRY,land,1,ARG,PRY,Argentina,Paraguay
+ARG,URY,land,1,ARG,URY,Argentina,Uruguay
+BHS,CUB,water,4,BHS,CUB,The Bahamas,Cuba
+BHS,DOM,water,4,BHS,DOM,The Bahamas,Dominican Republic
+BHS,HTI,water,4,BHS,HTI,The Bahamas,Haiti
+BHS,JAM,water,5,BHS,JAM,The Bahamas,Jamaica
+BHS,USA,water,4,BHS,USA,The Bahamas,United States of America
+BLZ,CUB,water,5,BLZ,CUB,Belize,Cuba
+BLZ,GTM,land,1,BLZ,GTM,Belize,Guatemala
+BLZ,HND,water,4,BLZ,HND,Belize,Honduras
+BLZ,MEX,land,1,BLZ,MEX,Belize,Mexico
+BOL,BRA,land,1,BOL,BRA,Bolivia,Brazil
+BOL,CHL,land,1,BOL,CHL,Bolivia,Chile
+BOL,PER,land,1,BOL,PER,Bolivia,Peru
+BOL,PRY,land,1,BOL,PRY,Bolivia,Paraguay
+BRA,COL,land,1,BRA,COL,Brazil,Colombia
+BRA,GUY,land,1,BRA,GUY,Brazil,Guyana
+BRA,PER,land,1,BRA,PER,Brazil,Peru
+BRA,PRY,land,1,BRA,PRY,Brazil,Paraguay
+BRA,SUR,land,1,BRA,SUR,Brazil,Suriname
+BRA,URY,land,1,BRA,URY,Brazil,Uruguay
+BRA,VEN,land,1,BRA,VEN,Brazil,Venezuela
+BRB,GRD,water,4,BRB,GRD,Barbados,Grenada
+BRB,GUY,water,5,BRB,GUY,Barbados,Guyana
+BRB,LCA,water,4,BRB,LCA,Barbados,Saint Lucia
+BRB,TTO,water,4,BRB,TTO,Barbados,Trinidad and Tobago
+BRB,VEN,water,5,BRB,VEN,Barbados,Venezuela
+CAN,USA,land,1,CAN,USA,Canada,United States of America
+CHL,PER,land,1,CHL,PER,Chile,Peru
+COL,CRI,water,4,COL,CRI,Colombia,Costa Rica
+COL,DOM,water,5,COL,DOM,Colombia,Dominican Republic
+COL,ECU,land,1,COL,ECU,Colombia,Ecuador
+COL,HTI,water,5,COL,HTI,Colombia,Haiti
+COL,JAM,water,5,COL,JAM,Colombia,Jamaica
+COL,NIC,water,4,COL,NIC,Colombia,Nicaragua
+COL,PAN,land,1,COL,PAN,Colombia,Panama
+COL,PER,land,1,COL,PER,Colombia,Peru
+COL,VEN,land,1,COL,VEN,Colombia,Venezuela
+CRI,GTM,water,5,CRI,GTM,Costa Rica,Guatemala
+CRI,NIC,land,1,CRI,NIC,Costa Rica,Nicaragua
+CRI,PAN,land,1,CRI,PAN,Costa Rica,Panama
+CRI,SLV,water,5,CRI,SLV,Costa Rica,El Salvador
+CUB,DOM,water,5,CUB,DOM,Cuba,Dominican Republic
+CUB,HND,water,5,CUB,HND,Cuba,Honduras
+CUB,HTI,water,4,CUB,HTI,Cuba,Haiti
+CUB,JAM,water,4,CUB,JAM,Cuba,Jamaica
+CUB,MEX,water,4,CUB,MEX,Cuba,Mexico
+CUB,USA,water,4,CUB,USA,Cuba,United States of America
+DOM,HTI,land,1,DOM,HTI,Dominican Republic,Haiti
+DOM,JAM,water,5,DOM,JAM,Dominican Republic,Jamaica
+DOM,VEN,water,5,DOM,VEN,Dominican Republic,Venezuela
+ECU,PER,land,1,ECU,PER,Ecuador,Peru
+GRD,GUY,water,5,GRD,GUY,Grenada,Guyana
+GRD,TTO,water,4,GRD,TTO,Grenada,Trinidad and Tobago
+GRD,VEN,water,4,GRD,VEN,Grenada,Venezuela
+GTM,HND,land,1,GTM,HND,Guatemala,Honduras
+GTM,MEX,land,1,GTM,MEX,Guatemala,Mexico
+GTM,NIC,water,5,GTM,NIC,Guatemala,Nicaragua
+GTM,SLV,land,1,GTM,SLV,Guatemala,El Salvador
+GUY,LCA,water,5,GUY,LCA,Guyana,Saint Lucia
+GUY,SUR,land,1,GUY,SUR,Guyana,Suriname
+GUY,TTO,water,4,GUY,TTO,Guyana,Trinidad and Tobago
+GUY,VEN,land,1,GUY,VEN,Guyana,Venezuela
+HND,JAM,water,5,HND,JAM,Honduras,Jamaica
+HND,MEX,water,5,HND,MEX,Honduras,Mexico
+HND,NIC,land,1,HND,NIC,Honduras,Nicaragua
+HND,SLV,land,1,HND,SLV,Honduras,El Salvador
+HTI,JAM,water,4,HTI,JAM,Haiti,Jamaica
+JAM,NIC,water,5,JAM,NIC,Jamaica,Nicaragua
+LCA,TTO,water,5,LCA,TTO,Saint Lucia,Trinidad and Tobago
+LCA,VEN,water,5,LCA,VEN,Saint Lucia,Venezuela
+MEX,USA,land,1,MEX,USA,Mexico,United States of America
+NIC,PAN,water,5,NIC,PAN,Nicaragua,Panama
+NIC,SLV,water,3,NIC,SLV,Nicaragua,El Salvador
+SUR,TTO,water,5,SUR,TTO,Suriname,Trinidad and Tobago
+TTO,VEN,water,3,TTO,VEN,Trinidad and Tobago,Venezuela

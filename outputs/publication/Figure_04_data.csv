@@ -1,0 +1,36 @@
+country_code,country_name,aligned_country_years,dpi_records,gli_records,jointly_classified,disagreements,disagreement_rate,comparison_status
+SUR,Suriname,47,47,46,3,3,1.0,Jointly classified
+TTO,Trinidad and Tobago,47,47,47,47,36,0.7659574468085106,Jointly classified
+CAN,Canada,47,47,47,47,24,0.5106382978723404,Jointly classified
+MEX,Mexico,47,47,47,47,24,0.5106382978723404,Jointly classified
+USA,United States of America,47,47,47,47,24,0.5106382978723404,Jointly classified
+HTI,Haiti,47,47,47,7,3,0.4285714285714285,Jointly classified
+HND,Honduras,47,47,47,40,16,0.4,Jointly classified
+VEN,Venezuela,47,47,47,15,6,0.4,Jointly classified
+BRB,Barbados,47,47,47,47,18,0.3829787234042553,Jointly classified
+URY,Uruguay,47,47,47,39,12,0.3076923076923077,Jointly classified
+BRA,Brazil,47,47,47,47,13,0.2765957446808511,Jointly classified
+ECU,Ecuador,47,47,47,35,8,0.2285714285714285,Jointly classified
+PER,Peru,47,47,47,41,9,0.2195121951219512,Jointly classified
+ARG,Argentina,47,47,47,40,8,0.2,Jointly classified
+BOL,Bolivia,47,47,47,44,7,0.1590909090909091,Jointly classified
+CHL,Chile,47,47,47,40,5,0.125,Jointly classified
+SLV,El Salvador,47,47,47,42,5,0.119047619047619,Jointly classified
+DOM,Dominican Republic,47,47,47,47,4,0.0851063829787234,Jointly classified
+GTM,Guatemala,47,47,47,32,2,0.0625,Jointly classified
+NIC,Nicaragua,47,47,47,36,1,0.0277777777777777,Jointly classified
+JAM,Jamaica,47,47,47,47,1,0.0212765957446808,Jointly classified
+PRY,Paraguay,47,47,47,47,1,0.0212765957446808,Jointly classified
+COL,Colombia,47,47,47,31,0,0.0,Jointly classified
+CRI,Costa Rica,47,47,47,47,0,0.0,Jointly classified
+CUB,Cuba,47,47,47,47,0,0.0,Jointly classified
+GUY,Guyana,47,47,47,47,0,0.0,Jointly classified
+PAN,Panama,47,47,47,10,0,0.0,Jointly classified
+ATG,Antigua & Barbuda,47,0,0,0,0,,No joint classification
+BHS,Bahamas,47,47,47,0,0,,No joint classification
+BLZ,Belize,47,47,47,0,0,,No joint classification
+DMA,Dominica,47,0,0,0,0,,No joint classification
+GRD,Grenada,47,47,0,0,0,,No joint classification
+KNA,St. Kitts and Nevis,47,0,0,0,0,,No joint classification
+LCA,St. Lucia,47,47,0,0,0,,No joint classification
+VCT,St. Vincent and the Grenadines,47,0,0,0,0,,No joint classification

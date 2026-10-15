@@ -1,0 +1,46 @@
+PROTOTYPE RESULTS: IDEOLOGICAL TRANSITIONS IN THE AMERICAS
+
+Countries present in DPI: 31; political records: 1519.
+Unknown political states: 264; these were not recoded as Center.
+Records excluded before COW membership on January 1: 13.
+Consecutive transitions with observed states: 1207; changes: 108.
+Evaluation origins: 2000–2022; last target: January 2023.
+Expanding evaluation: imputation, scaling and models are fitted separately at each origin using only earlier outcomes.
+Macroeconomic covariates: t-1; neighboring states: t; annual COW topology: t-1, carrying the 2016 graph forward after source coverage ends.
+
+OUT-OF-SAMPLE RESULTS
+Persistence: N=604, Brier=0.198675, clipped log loss=2.744803, accuracy=90.066%.
+Markov: N=604, Brier=0.182862, clipped log loss=0.382959, accuracy=90.066%.
+Domestic: N=604, Brier=0.184106, clipped log loss=0.380575, accuracy=90.066%.
+Domestic + geographic network: N=604, Brier=0.183396, clipped log loss=0.376465, accuracy=90.066%.
+Domestic + global shocks: N=604, Brier=0.184071, clipped log loss=0.377498, accuracy=89.735%.
+Domestic + network + shocks: N=604, Brier=0.184616, clipped log loss=0.376943, accuracy=89.735%.
+
+Lowest observed Brier score: Markov.
+Brier difference (network + shocks minus domestic): +0.000510. A negative value favors the combined model in this run.
+This comparison does not estimate statistical significance or establish political contagion.
+Overall accuracy is influenced by persistence. See the changed subset in metrics.csv.
+Correct predictions among observed changes when selecting the highest-probability class: Persistence: 0/60; Markov: 0/60; Domestic: 0/60; Domestic + geographic network: 0/60; Domestic + global shocks: 0/60; Domestic + network + shocks: 0/60. Overall accuracy does not measure anticipation of ideological change.
+Change risk is one minus the probability of the initial state. Binary Brier score, ROC AUC and average precision assess this risk across all cases; no decision threshold is selected on the test set.
+
+SCOPE AND LIMITATIONS
+Probabilities come from regularized multinomial models, rather than a universal transition matrix describing every institution.
+With ideological duration as a predictor, the effective state includes memory; this is a duration-augmented Markov specification.
+DPI ends in January 2023: the t-1 lag leaves no Ukraine indicator variation in the estimable panel. No war effect was estimated.
+COVID is an episode indicator, not mortality; it appears only at the 2021–2022 origins. Evidence for this global shock is sparse.
+Macroeconomic series are revised historical data, not their real-time publication vintages. Results are not operational forecasts.
+Medians and missingness indicators are learned within each training set; missing political states and targets are excluded.
+Fuel imports are a share of merchandise imports, not net imports or a causal instrument.
+The network is geographic; a bilateral trade network has not been constructed.
+Calibration is descriptive; no intervals assuming independent country-years are reported.
+No causal effects or p-values are estimated. Publication novelty has not been established.
+
+SIMULATION
+Scenarios begin at the last observed DPI snapshot (January 2023), not at the governments in office in 2026.
+Only countries classified on that date are active; unknown states are not initialized by imputation.
+All nodes update synchronously each year. The simulation does not reproduce election dates or individual voters.
+Constant conditions: zero price growth and zero COVID indicator; global growth and domestic covariates remain at baseline values.
+Hypothetical recession: global GDP growth is set to -2% for two steps, then returns to baseline.
+Hypothetical energy and food shock: price changes of +50%/+20% for two steps; this is neither a prediction nor an estimated Ukraine effect.
+The 5–95% bands show Monte Carlo dispersion conditional on fitted parameters; parameter and measurement uncertainty are excluded.
+Final models use the full panel for scenarios; evaluation metrics come from separate chronological fold fits, not the final fit.

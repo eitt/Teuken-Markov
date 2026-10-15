@@ -217,15 +217,15 @@ def _load_and_validate(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     raw = root / "data" / "raw"
     manifest_path = raw / "cow_contiguity_manifest.json"
     if not manifest_path.exists():
-        raise RuntimeError("Falta caché COW. Ejecute primero run.py --download; el lector no descarga implícitamente.")
+        raise RuntimeError("COW cache is missing. Run run.py --download first; the reader does not download implicitly.")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     for source_name, filename in [("contiguity", "cow_contdird_v3.2.csv"), ("states", "cow_states_v2024.csv")]:
         local_path = raw / filename
         if not local_path.exists():
-            raise RuntimeError(f"Falta {filename}. Ejecute run.py --download; el modo offline no descarga.")
+            raise RuntimeError(f"Missing {filename}. Run run.py --download; offline mode does not download.")
         expected = manifest["sources"][source_name]["members"][filename]["sha256"]
         if sha256(local_path.read_bytes()).hexdigest() != expected:
-            raise RuntimeError(f"SHA256 COW no coincide para {filename}; verifique el archivo o descargue con --refresh.")
+            raise RuntimeError(f"COW SHA256 mismatch for {filename}; verify the file or download with --refresh.")
     edges = pd.read_csv(raw / "cow_contdird_v3.2.csv")
     states = pd.read_csv(raw / "cow_states_v2024.csv")
     required_edges = {"state1no", "state1ab", "state2no", "state2ab", "year", "conttype", "version"}

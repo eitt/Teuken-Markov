@@ -1,0 +1,18 @@
+# Table 1. Source coverage and measurement units
+
+Coverage describes the cached source snapshot, not the evaluation sample. Records count the unit named in each row; political classifications and macroeconomic grids are not interchangeable denominators.
+
+| Source | Measure | Source years | Observation date | Countries | Records | Classified records | Main caveat |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| DPI | Political country-year records | 1975–2023 | January 1 of source year | 31 | 1519 | 1255 | Executive-party economic orientation; unknown records retained. |
+| GLI: head of government | Political country-year records | 1945–2020 | December 31; aligned to next January 1 | 29 | 2060 | 1932 | Leader orientation; separate historical panel, not a DPI splice. |
+| GLI: leader role | Political country-year records | 1945–2020 | December 31; aligned to next January 1 | 29 | 2060 | 2047 | Role sensitivity check; GLI partly draws on DPI coding. |
+| World Bank WDI: macroeconomy | Country-year grid | 1960–2025 | Annual; revised historical series | 35 + World | 2376 | — | Grid rows include missing values; not real-time release vintages. |
+| World Bank WDI: driver exposures | Indicator-country-year grid | 1960–2025 requested | Annual; revised historical series | 35 | 4620 | — | Two indicators; missing values retained. Import and export shares have different denominators. |
+| World Bank Pink Sheet | Complete annual global price aggregates | 1960–2025 | Annual aggregate of monthly observations | Global | 66 | — | Oil and food are common global indices, not country-specific exposure. |
+| NOAA ONI (ERSSTv6) | Complete annual ENSO aggregates | 1950–2025 | 11 overlapping windows: DJF–OND | Global | 76 | — | Research aggregation, not an official annual NOAA index or anthropogenic climate measure. |
+| COW Direct Contiguity v3.2 | Undirected pairs in fitted 2016 snapshot | 1816–2016 | Annual topology; model uses t-1 | 31 | 79 | — | Land and water relations; 2016 carried forward after source coverage ends. |
+
+Source: DPI 2023; GLI; World Bank WDI and Pink Sheet; NOAA ONI; COW Direct Contiguity v3.2. Cached manifests preserve retrieval dates and hashes.
+
+CSV values retain full numerical precision; Markdown values are rounded for display.

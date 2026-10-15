@@ -1,0 +1,54 @@
+Model,Initial state,Probability bin,Cases,Mean predicted probability,Observed fraction,Model ID
+Markov,Left,0,314,0.0591562394058039,0.0828025477707006,markov
+Markov,Left,9,290,0.9176871315089226,0.9241379310344828,markov
+Domestic,Left,0,294,0.0458560120249768,0.0816326530612244,domestic
+Domestic,Left,1,20,0.118714089169285,0.1,domestic
+Domestic,Left,6,1,0.6531025869860977,1.0,domestic
+Domestic,Left,7,4,0.7480084205385493,0.75,domestic
+Domestic,Left,8,65,0.8696918697646859,0.9692307692307692,domestic
+Domestic,Left,9,220,0.9415599388302028,0.9136363636363636,domestic
+Domestic + network + shocks,Left,0,260,0.0359969527432165,0.0769230769230769,network_shocks
+Domestic + network + shocks,Left,1,42,0.1335302571491779,0.0952380952380952,network_shocks
+Domestic + network + shocks,Left,2,5,0.2675187164150634,0.0,network_shocks
+Domestic + network + shocks,Left,3,5,0.3582354002367163,0.2,network_shocks
+Domestic + network + shocks,Left,4,2,0.4137463383392454,0.5,network_shocks
+Domestic + network + shocks,Left,6,2,0.6783604635250673,0.5,network_shocks
+Domestic + network + shocks,Left,7,6,0.7751218281997897,0.8333333333333334,network_shocks
+Domestic + network + shocks,Left,8,51,0.8608747563204561,0.9215686274509804,network_shocks
+Domestic + network + shocks,Left,9,231,0.9566804086463117,0.9307359307359307,network_shocks
+Markov,Center,0,544,0.0164924034038582,0.0202205882352941,markov
+Markov,Center,8,60,0.86509078998814,0.8166666666666667,markov
+Domestic,Center,0,535,0.013015896401588,0.0186915887850467,domestic
+Domestic,Center,1,9,0.1189967073437196,0.1111111111111111,domestic
+Domestic,Center,6,2,0.6967332574469289,1.0,domestic
+Domestic,Center,7,5,0.7568216086360151,0.6,domestic
+Domestic,Center,8,26,0.8597316163111344,0.8461538461538461,domestic
+Domestic,Center,9,27,0.9386246981661936,0.8148148148148148,domestic
+Domestic + network + shocks,Center,0,533,0.0139520850659985,0.0150093808630394,network_shocks
+Domestic + network + shocks,Center,1,11,0.14023667377591,0.3636363636363636,network_shocks
+Domestic + network + shocks,Center,2,1,0.2335450300933989,1.0,network_shocks
+Domestic + network + shocks,Center,3,1,0.3127955792556645,0.0,network_shocks
+Domestic + network + shocks,Center,6,2,0.6392574765395391,0.5,network_shocks
+Domestic + network + shocks,Center,7,6,0.754469721657108,0.8333333333333334,network_shocks
+Domestic + network + shocks,Center,8,22,0.8507531315880749,0.9090909090909092,network_shocks
+Domestic + network + shocks,Center,9,28,0.946819574972436,0.75,network_shocks
+Markov,Right,0,342,0.0723085266047117,0.067251461988304,markov
+Markov,Right,1,8,0.103951012223071,0.0,markov
+Markov,Right,9,254,0.9167607623677434,0.8937007874015748,markov
+Domestic,Right,0,297,0.053270140323506,0.0639730639730639,domestic
+Domestic,Right,1,45,0.1277111794486234,0.0444444444444444,domestic
+Domestic,Right,2,7,0.2202017953736328,0.2857142857142857,domestic
+Domestic,Right,3,1,0.3325755923719261,0.0,domestic
+Domestic,Right,7,1,0.7999827910233454,1.0,domestic
+Domestic,Right,8,45,0.8768907390233519,0.8888888888888888,domestic
+Domestic,Right,9,208,0.9433438894368126,0.8942307692307693,domestic
+Domestic + network + shocks,Right,0,285,0.0369220686024758,0.0526315789473684,network_shocks
+Domestic + network + shocks,Right,1,60,0.1378921586343492,0.1,network_shocks
+Domestic + network + shocks,Right,2,2,0.2665172846015711,1.0,network_shocks
+Domestic + network + shocks,Right,3,1,0.3373136541877274,0.0,network_shocks
+Domestic + network + shocks,Right,4,1,0.4501999933160027,0.0,network_shocks
+Domestic + network + shocks,Right,5,4,0.5718738281971945,0.5,network_shocks
+Domestic + network + shocks,Right,6,5,0.643358287180523,1.0,network_shocks
+Domestic + network + shocks,Right,7,9,0.7585035148748385,0.6666666666666666,network_shocks
+Domestic + network + shocks,Right,8,47,0.857270201526857,0.8085106382978723,network_shocks
+Domestic + network + shocks,Right,9,190,0.9519651504295852,0.9263157894736842,network_shocks

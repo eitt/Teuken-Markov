@@ -1,0 +1,32 @@
+country_code,country_name,label_lon,label_lat,coordinate_definition
+ARG,Argentina,-64.173331,-33.501159,Natural Earth LABEL_X/LABEL_Y; not a capital
+BHS,The Bahamas,-77.146688,26.401789,Natural Earth LABEL_X/LABEL_Y; not a capital
+BLZ,Belize,-88.712962,17.202068,Natural Earth LABEL_X/LABEL_Y; not a capital
+BOL,Bolivia,-64.593433,-16.666015,Natural Earth LABEL_X/LABEL_Y; not a capital
+BRA,Brazil,-49.55945,-12.098687,Natural Earth LABEL_X/LABEL_Y; not a capital
+BRB,Barbados,-59.568966,13.163709,Natural Earth LABEL_X/LABEL_Y; not a capital
+CAN,Canada,-101.9107,60.324287,Natural Earth LABEL_X/LABEL_Y; not a capital
+CHL,Chile,-72.318871,-38.151771,Natural Earth LABEL_X/LABEL_Y; not a capital
+COL,Colombia,-73.174347,3.373111,Natural Earth LABEL_X/LABEL_Y; not a capital
+CRI,Costa Rica,-84.077922,10.0651,Natural Earth LABEL_X/LABEL_Y; not a capital
+CUB,Cuba,-77.975855,21.334024,Natural Earth LABEL_X/LABEL_Y; not a capital
+DOM,Dominican Republic,-70.653998,19.104137,Natural Earth LABEL_X/LABEL_Y; not a capital
+ECU,Ecuador,-78.188375,-1.259076,Natural Earth LABEL_X/LABEL_Y; not a capital
+GRD,Grenada,-61.680461,12.113156,Natural Earth LABEL_X/LABEL_Y; not a capital
+GTM,Guatemala,-90.497134,14.982133,Natural Earth LABEL_X/LABEL_Y; not a capital
+GUY,Guyana,-58.942643,5.124317,Natural Earth LABEL_X/LABEL_Y; not a capital
+HND,Honduras,-86.887604,14.794801,Natural Earth LABEL_X/LABEL_Y; not a capital
+HTI,Haiti,-72.224051,19.263784,Natural Earth LABEL_X/LABEL_Y; not a capital
+JAM,Jamaica,-77.318767,18.137124,Natural Earth LABEL_X/LABEL_Y; not a capital
+LCA,Saint Lucia,-60.980094,13.892371,Natural Earth LABEL_X/LABEL_Y; not a capital
+MEX,Mexico,-102.289448,23.919988,Natural Earth LABEL_X/LABEL_Y; not a capital
+NIC,Nicaragua,-85.069347,12.670697,Natural Earth LABEL_X/LABEL_Y; not a capital
+PAN,Panama,-80.352106,8.72198,Natural Earth LABEL_X/LABEL_Y; not a capital
+PER,Peru,-72.90016,-12.976679,Natural Earth LABEL_X/LABEL_Y; not a capital
+PRY,Paraguay,-60.146394,-21.674509,Natural Earth LABEL_X/LABEL_Y; not a capital
+SLV,El Salvador,-88.890124,13.685371,Natural Earth LABEL_X/LABEL_Y; not a capital
+SUR,Suriname,-55.91094,4.143987,Natural Earth LABEL_X/LABEL_Y; not a capital
+TTO,Trinidad and Tobago,-60.9184,10.9989,Natural Earth LABEL_X/LABEL_Y; not a capital
+URY,Uruguay,-55.966942,-32.961127,Natural Earth LABEL_X/LABEL_Y; not a capital
+USA,United States of America,-97.482602,39.538479,Natural Earth LABEL_X/LABEL_Y; not a capital
+VEN,Venezuela,-64.599381,7.182476,Natural Earth LABEL_X/LABEL_Y; not a capital

@@ -100,7 +100,7 @@ class LocalExtensionModels(unittest.TestCase):
     def test_training_target_after_origin_is_rejected(self):
         panel = model_fixture()
         panel.loc[(panel.country_code == "ARG") & (panel.year == 2004), "target_year"] = 2007
-        with self.assertRaisesRegex(AssertionError, "Fuga temporal"):
+        with self.assertRaisesRegex(AssertionError, "Temporal leakage"):
             models.rolling_evaluate(panel, start_year=2005, model_features={"lean": ["gdp_growth"]})
 
     def test_original_default_predictions_are_unchanged_after_extension_evaluation(self):

@@ -1,0 +1,13 @@
+Feature ID,Missing share (proportion)
+gdp_growth,0.0008285004142502
+inflation,0.1217895608947804
+state_duration,0.0
+eiec,0.0
+oil_growth,0.0
+fuel_import_share_prior,0.140016570008285
+fuel_export_share_prior,0.1565865782932891
+oil_x_import_prior,0.140016570008285
+oil_x_export_prior,0.1565865782932891
+enso_mean,0.0
+agriculture_share_prior,0.115990057995029
+enso_x_agriculture_prior,0.115990057995029

@@ -1,0 +1,16 @@
+English interface migration validation - 15 October 2026 (UTC)
+
+110 offline tests passed, including archived-filename fallback, canonical-file precedence, English presentation identifiers and identical seeded paths for archived/canonical scenario names.
+All Python source and test files parse. All eight notebook code cells compile; execution counts are null and stored outputs are empty.
+The complete offline publication pipeline produced nine figures and six tables in a temporary validation folder while model fitting, simulation and network downloads were blocked.
+
+Numerical comparison against commit 43dba0d2dae5d7ea37d1233055411d1ce3df4ab7:
+- All 22 tracked raw-source files retain their exact bytes.
+- All 111 non-raw CSV/CSV.gz tables are exactly equal after translating only the three documented scenario identifiers. Numeric values, row order, columns, dtypes and every other string are unchanged.
+- All 46 renamed artifact paths exist under their canonical English names; obsolete paths were removed from the repository.
+- Each of the three stored simulations retains 105000 rows, 500 paths and 30 countries. All 315000 states, country codes, years, path identifiers and observed-initial flags are preserved.
+- Model formulas, lag choices, training windows, fitted probabilities, scores, classifications and scenario shock magnitudes are unchanged. No model was refitted or scenario rerun for this migration.
+
+Code, command-line help/messages, documentation, notebook text, chart labels and report prose use English. Source party names, author names and original bibliographic titles retain their source spelling. Explicit archived identifiers remain only where compatibility or provenance requires them.
+The seven existing diagnostic PNGs and nine publication figure masters already had English labels; they were retained without changing their plotted evidence. Relevant filenames, source references, CSV scenario identifiers and checksum inventories were updated.
+Generated Python bytecode was removed from version control; the existing ignore rules keep runtime caches untracked.

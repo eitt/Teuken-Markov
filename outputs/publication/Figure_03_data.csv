@@ -1,0 +1,36 @@
+country_code,n_pairs,n_changes,first_origin,last_origin,change_pct,low_coverage,map_state,country_name
+ARG,38,6,1985,2022,15.789473684210526,False,Observed,Argentina
+ATG,,,,,,False,NoPairs,Antigua and Barbuda
+BHS,38,6,1985,2022,15.789473684210526,False,Observed,The Bahamas
+BLZ,38,0,1985,2022,0.0,False,Observed,Belize
+BOL,38,6,1985,2022,15.789473684210526,False,Observed,Bolivia
+BRA,38,4,1985,2022,10.526315789473685,False,Observed,Brazil
+BRB,38,4,1985,2022,10.526315789473685,False,Observed,Barbados
+CAN,38,4,1985,2022,10.526315789473685,False,Observed,Canada
+CHL,30,4,1985,2022,13.333333333333334,False,Observed,Chile
+COL,21,3,1985,2022,14.285714285714286,False,Observed,Colombia
+CRI,38,4,1985,2022,10.526315789473685,False,Observed,Costa Rica
+CUB,38,0,1985,2022,0.0,False,Observed,Cuba
+DMA,,,,,,False,NoPairs,Dominica
+DOM,38,5,1985,2022,13.157894736842104,False,Observed,Dominican Republic
+ECU,31,2,1985,2022,6.451612903225806,False,Observed,Ecuador
+GRD,38,4,1985,2022,10.526315789473685,False,Observed,Grenada
+GTM,32,2,1986,2022,6.25,False,Observed,Guatemala
+GUY,38,0,1985,2022,0.0,False,Observed,Guyana
+HND,38,1,1985,2022,2.6315789473684212,False,Observed,Honduras
+HTI,11,1,2012,2022,9.090909090909092,False,Observed,Haiti
+JAM,38,4,1985,2022,10.526315789473685,False,Observed,Jamaica
+KNA,,,,,,False,NoPairs,Saint Kitts and Nevis
+LCA,38,5,1985,2022,13.157894736842104,False,Observed,Saint Lucia
+MEX,38,3,1985,2022,7.894736842105263,False,Observed,Mexico
+NIC,25,0,1985,2022,0.0,False,Observed,Nicaragua
+PAN,8,0,1990,2003,0.0,True,Observed,Panama
+PER,38,6,1985,2022,15.789473684210526,False,Observed,Peru
+PRY,38,2,1985,2022,5.2631578947368425,False,Observed,Paraguay
+SLV,38,3,1985,2022,7.894736842105263,False,Observed,El Salvador
+SUR,3,0,1989,2022,0.0,True,Observed,Suriname
+TTO,38,6,1985,2022,15.789473684210526,False,Observed,Trinidad and Tobago
+URY,38,2,1985,2022,5.2631578947368425,False,Observed,Uruguay
+USA,38,5,1985,2022,13.157894736842104,False,Observed,United States of America
+VCT,,,,,,False,NoPairs,Saint Vincent and the Grenadines
+VEN,10,1,1985,2022,10.0,False,Observed,Venezuela

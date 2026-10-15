@@ -1,0 +1,36 @@
+country_code,state,ideology_raw,map_state,state_label,symbol,observation_date,country_name
+ARG,Left,Left,Left,Left,L,2023-01-01,Argentina
+ATG,,,NoDPI,No DPI coverage,–,2023-01-01,Antigua and Barbuda
+BHS,Center,Center,Center,Center,C,2023-01-01,The Bahamas
+BLZ,Right,Right,Right,Right,R,2023-01-01,Belize
+BOL,Left,Left,Left,Left,L,2023-01-01,Bolivia
+BRA,Left,Left,Left,Left,L,2023-01-01,Brazil
+BRB,Left,Left,Left,Left,L,2023-01-01,Barbados
+CAN,Right,Right,Right,Right,R,2023-01-01,Canada
+CHL,Left,Left,Left,Left,L,2023-01-01,Chile
+COL,Left,Left,Left,Left,L,2023-01-01,Colombia
+CRI,Left,Left,Left,Left,L,2023-01-01,Costa Rica
+CUB,Left,Left,Left,Left,L,2023-01-01,Cuba
+DMA,,,NoDPI,No DPI coverage,–,2023-01-01,Dominica
+DOM,Left,Left,Left,Left,L,2023-01-01,Dominican Republic
+ECU,Right,Right,Right,Right,R,2023-01-01,Ecuador
+GRD,Right,Right,Right,Right,R,2023-01-01,Grenada
+GTM,Right,Right,Right,Right,R,2023-01-01,Guatemala
+GUY,Left,Left,Left,Left,L,2023-01-01,Guyana
+HND,Left,Left,Left,Left,L,2023-01-01,Honduras
+HTI,Center,Center,Center,Center,C,2023-01-01,Haiti
+JAM,Right,Right,Right,Right,R,2023-01-01,Jamaica
+KNA,,,NoDPI,No DPI coverage,–,2023-01-01,Saint Kitts and Nevis
+LCA,Left,Left,Left,Left,L,2023-01-01,Saint Lucia
+MEX,Left,Left,Left,Left,L,2023-01-01,Mexico
+NIC,Left,Left,Left,Left,L,2023-01-01,Nicaragua
+PAN,,0,Unknown,Unclassified,?,2023-01-01,Panama
+PER,Left,Left,Left,Left,L,2023-01-01,Peru
+PRY,Right,Right,Right,Right,R,2023-01-01,Paraguay
+SLV,Right,Right,Right,Right,R,2023-01-01,El Salvador
+SUR,Left,Left,Left,Left,L,2023-01-01,Suriname
+TTO,Right,Right,Right,Right,R,2023-01-01,Trinidad and Tobago
+URY,Right,Right,Right,Right,R,2023-01-01,Uruguay
+USA,Left,Left,Left,Left,L,2023-01-01,United States of America
+VCT,,,NoDPI,No DPI coverage,–,2023-01-01,Saint Vincent and the Grenadines
+VEN,Left,Left,Left,Left,L,2023-01-01,Venezuela

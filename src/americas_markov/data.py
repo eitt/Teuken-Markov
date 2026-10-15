@@ -276,7 +276,7 @@ def _require_file(root: Path, filename: str) -> Path:
         raise DataSourceError(f"Missing public-source input {path}. Run download_all(root) first.")
     manifest_path = _raw_dir(root) / "download_manifest.json"
     if not manifest_path.exists():
-        raise DataSourceError("Falta el manifiesto de las fuentes; ejecute run.py --download.")
+        raise DataSourceError("Source manifest is missing; run run.py --download.")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     entry = next((item for item in manifest.get("sources", {}).values()
                   if Path(item.get("raw_path", "")).name == filename), None)
@@ -291,7 +291,7 @@ def _require_file(root: Path, filename: str) -> Path:
         if verified:
             warnings.warn("DPI CSV has Git-normalised LF endings; exact original SHA256 verified after CRLF restoration.", RuntimeWarning)
     if not verified:
-        raise DataSourceError(f"El hash de {filename} no coincide con el manifiesto; no se usa como fuente verificada.")
+        raise DataSourceError(f"The hash of {filename} does not match the manifest; the file will not be used as a verified source.")
     return path
 
 
